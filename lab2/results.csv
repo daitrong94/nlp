@@ -1,0 +1,73 @@
+experiment,model,smoothing,split,perplexity,n_tokens,n_zero_prob,zero_rate,train_fraction,train_sentences,train_ppl,valid_ppl,valid_unseen_rate,train_unique_ngrams,total_ngrams,unseen_ngrams,unseen_rate,unseen_types,context,prediction,prediction_prob,top5,actual_next_word,actual_count_in_test,in_top5,top1_accuracy,top5_accuracy,context_seen_rate,rank,candidate,log_prob,avg_log_prob
+perplexity,Unigram,mle,train,1434.1646452767309,3059335.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Unigram,mle,valid,1233.4192816704463,396108.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Unigram,mle,test,1188.2096650680246,386954.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Unigram,laplace,train,1436.15926957786,3059335.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Unigram,laplace,valid,1238.057742022857,396108.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Unigram,laplace,test,1193.06802940943,386954.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Bigram,mle,train,125.34435379247867,3059335.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Bigram,mle,valid,inf,396108.0,96021.0,0.24241116059256568,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Bigram,mle,test,inf,386954.0,91629.0,0.23679558810607979,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Bigram,laplace,train,3111.57937700686,3059335.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Bigram,laplace,valid,3717.1792710457303,396108.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Bigram,laplace,test,3589.6923655476403,386954.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Trigram,mle,train,9.895176757356435,3059335.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Trigram,mle,valid,inf,396108.0,254391.0,0.642226362507195,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Trigram,mle,test,inf,386954.0,246618.0,0.6373315691270797,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Trigram,laplace,train,11887.758499931568,3059335.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Trigram,laplace,valid,19809.899682855663,396108.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+perplexity,Trigram,laplace,test,19612.276862521536,386954.0,0.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,
+corpus_size,Unigram,laplace,,,,,,0.1,16628.0,1368.495566138778,1377.1498740490429,0.036530441192806004,,,,,,,,,,,,,,,,,,,
+corpus_size,Bigram,laplace,,,,,,0.1,16628.0,7510.163583571509,11604.593337471902,0.4568350045947065,,,,,,,,,,,,,,,,,,,
+corpus_size,Trigram,laplace,,,,,,0.1,16628.0,16594.084306921388,32087.97274088932,0.8091909277267816,,,,,,,,,,,,,,,,,,,
+corpus_size,Unigram,laplace,,,,,,0.25,41570.0,1382.3675209564874,1293.2507139300874,0.01459450452906783,,,,,,,,,,,,,,,,,,,
+corpus_size,Bigram,laplace,,,,,,0.25,41570.0,5336.657225519924,7461.577810886572,0.3630020095529502,,,,,,,,,,,,,,,,,,,
+corpus_size,Trigram,laplace,,,,,,0.25,41570.0,14844.851679128271,27270.123743904896,0.7463696769567896,,,,,,,,,,,,,,,,,,,
+corpus_size,Unigram,laplace,,,,,,0.5,83141.0,1404.998920706267,1260.2468841820603,0.004743655770648409,,,,,,,,,,,,,,,,,,,
+corpus_size,Bigram,laplace,,,,,,0.5,83141.0,4094.848035456916,5267.5288103405255,0.299057327799489,,,,,,,,,,,,,,,,,,,
+corpus_size,Trigram,laplace,,,,,,0.5,83141.0,13458.834665493956,23521.58172740796,0.6958077090086542,,,,,,,,,,,,,,,,,,,
+corpus_size,Unigram,laplace,,,,,,1.0,166282.0,1436.15926957786,1238.057742022857,0.0,,,,,,,,,,,,,,,,,,,
+corpus_size,Bigram,laplace,,,,,,1.0,166282.0,3111.57937700686,3717.1792710457303,0.24241116059256568,,,,,,,,,,,,,,,,,,,
+corpus_size,Trigram,laplace,,,,,,1.0,166282.0,11887.758499931568,19809.899682855663,0.642226362507195,,,,,,,,,,,,,,,,,,,
+unseen_ngrams,Unigram,,valid,,,,,,,,,,48337.0,396108.0,0.0,0.0,0.0,,,,,,,,,,,,,,
+unseen_ngrams,Unigram,,test,,,,,,,,,,48337.0,386954.0,0.0,0.0,0.0,,,,,,,,,,,,,,
+unseen_ngrams,Bigram,,valid,,,,,,,,,,970945.0,396108.0,96021.0,0.24241116059256568,84169.0,,,,,,,,,,,,,,
+unseen_ngrams,Bigram,,test,,,,,,,,,,970945.0,386954.0,91629.0,0.23679558810607979,82221.0,,,,,,,,,,,,,,
+unseen_ngrams,Trigram,,valid,,,,,,,,,,2107942.0,396108.0,254391.0,0.642226362507195,237667.0,,,,,,,,,,,,,,
+unseen_ngrams,Trigram,,test,,,,,,,,,,2107942.0,386954.0,246618.0,0.6373315691270797,234440.0,,,,,,,,,,,,,,
+next_word_prediction,Bigram,,,,,,,,,,,,,,,,,the cat,house,0.11560693641618497,"house (0.116), to (0.064), and (0.052), town (0.046), queen (0.035)",had,1.0,False,,,,,,,
+next_word_prediction,Trigram,,,,,,,,,,,,,,,,,the cat,queen,0.29411764705882354,"queen (0.294), house (0.118), that (0.059), home (0.059), houses (0.059)",had,1.0,False,,,,,,,
+next_word_prediction,Bigram,,,,,,,,,,,,,,,,,natural language,</s>,0.13348946135831383,"</s> (0.133), and (0.082), of (0.059), that (0.023), is (0.021)",processing,2.0,False,,,,,,,
+next_word_prediction,Trigram,,,,,,,,,,,,,,,,,natural language,</s>,0.5,"</s> (0.500), 1980 (0.500)",processing,2.0,False,,,,,,,
+next_word_prediction,Bigram,,,,,,,,,,,,,,,,,machine learning,</s>,0.0967238689547582,"</s> (0.097), and (0.072), to (0.062), about (0.059), in (0.048)",models,2.0,False,,,,,,,
+next_word_prediction,Trigram,,,,,,,,,,,,,,,,,machine learning,and,0.14634146341463414,"and (0.146), based (0.122), to (0.098), </s> (0.098), approaches (0.098)",models,2.0,False,,,,,,,
+next_word_prediction,Bigram,,,,,,,,,,,,,,,,,in the,most,0.010532606259804287,"most (0.011), first (0.010), best (0.010), same (0.009), world (0.007)",world,44.0,True,,,,,,,
+next_word_prediction,Trigram,,,,,,,,,,,,,,,,,in the,world,0.02174815306715365,"world (0.022), past (0.015), first (0.011), united (0.010), future (0.010)",world,44.0,True,,,,,,,
+next_word_prediction,Bigram,,,,,,,,,,,,,,,,,one of the,most,0.010532606259804287,"most (0.011), first (0.010), best (0.010), same (0.009), world (0.007)",most,32.0,True,,,,,,,
+next_word_prediction,Trigram,,,,,,,,,,,,,,,,,one of the,most,0.019981267561660944,"most (0.020), best (0.011), world (0.008), year (0.008), time (0.006)",most,32.0,True,,,,,,,
+next_word_prediction,Bigram,,,,,,,,,,,,,,,,,i would like to,the,0.08550213024954352,"the (0.086), be (0.049), a (0.020), get (0.018), make (0.018)",take,2.0,False,,,,,,,
+next_word_prediction,Trigram,,,,,,,,,,,,,,,,,i would like to,see,0.055062166962699825,"see (0.055), be (0.046), have (0.041), thank (0.032), share (0.027)",take,2.0,False,,,,,,,
+next_word_prediction,Bigram,,,,,,,,,,,,,,,,,the united states,</s>,0.17771084337349397,"</s> (0.178), and (0.078), that (0.060), of (0.045), in (0.027)",and,4.0,True,,,,,,,
+next_word_prediction,Trigram,,,,,,,,,,,,,,,,,the united states,</s>,0.19220055710306408,"</s> (0.192), and (0.084), map (0.050), of (0.047), is (0.025)",and,4.0,True,,,,,,,
+next_word_prediction,Bigram,,,,,,,,,,,,,,,,,thank you for,the,0.14842851087022346,"the (0.148), a (0.074), your (0.030), you (0.021), all (0.015)",the,4.0,True,,,,,,,
+next_word_prediction,Trigram,,,,,,,,,,,,,,,,,thank you for,your,0.15261044176706828,"your (0.153), the (0.116), sharing (0.048), being (0.048), this (0.036)",the,4.0,True,,,,,,,
+next_word_accuracy,Bigram,,,,,,,,,,,,,,,,,,,,,,,,0.10333333333333333,0.25,1.0,,,,
+next_word_accuracy,Trigram,,,,,,,,,,,,,,,,,,,,,,,,0.1,0.18333333333333332,0.7333333333333333,,,,
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,machine learning,,,,,,,,,,1.0,is useful for NLP,-29.476855841887474,-7.3692139604718685
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,machine learning,,,,,,,,,,2.0,banana computer quickly,-32.382578652429544,-10.79419288414318
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,machine learning,,,,,,,,,,3.0,studies language models,-32.38626064378276,-10.795420214594253
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,machine learning,,,,,,,,,,1.0,banana computer quickly,-32.358705627765445,-10.786235209255148
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,machine learning,,,,,,,,,,2.0,studies language models,-32.358705627765445,-10.786235209255148
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,machine learning,,,,,,,,,,3.0,is useful for NLP,-40.74827267301326,-10.187068168253315
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,the weather,,,,,,,,,,1.0,is nice today,-27.15491339363099,-9.051637797876998
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,the weather,,,,,,,,,,2.0,banana the of,-31.19749875645757,-10.399166252152524
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,the weather,,,,,,,,,,3.0,today nice is,-32.39714404762941,-10.79904801587647
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,the weather,,,,,,,,,,1.0,is nice today,-29.795120778866554,-9.931706926288852
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,the weather,,,,,,,,,,2.0,today nice is,-32.35936686678612,-10.78645562226204
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,the weather,,,,,,,,,,3.0,banana the of,-32.35936686678612,-10.78645562226204
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,i want to,,,,,,,,,,1.0,go home,-13.609260473256665,-6.804630236628332
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,i want to,,,,,,,,,,2.0,home go to,-24.652977501418206,-8.217659167139402
+sentence_ranking,Bigram laplace,,,,,,,,,,,,,,,,,i want to,,,,,,,,,,3.0,computer banana quickly,-31.75304312724059,-10.584347709080197
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,i want to,,,,,,,,,,1.0,go home,-16.210710630718772,-8.105355315359386
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,i want to,,,,,,,,,,2.0,computer banana quickly,-32.38757745656034,-10.795859152186779
+sentence_ranking,Trigram laplace,,,,,,,,,,,,,,,,,i want to,,,,,,,,,,3.0,home go to,-32.38782566224138,-10.795941887413795
