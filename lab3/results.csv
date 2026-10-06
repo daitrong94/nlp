@@ -1,0 +1,678 @@
+experiment,model,setting,item,metric,value
+exp1_toy,count,window=1,doctor-physician,cosine,0.8164965809277259
+exp1_toy,count,window=1,doctor-nurse,cosine,0.0
+exp1_toy,count,window=1,doctor-hospital,cosine,0.0
+exp1_toy,count,window=1,cat-dog,cosine,0.9999999999999998
+exp1_toy,count,window=1,man-woman,cosine,1.0
+exp1_toy,count,window=1,doctor-banana,cosine,0.0
+exp1_toy,count,window=1,cat-car,cosine,0.0
+exp1_toy,count,window=1,matrix,vocabulary_size,26
+exp1_toy,count,window=1,matrix,non_zero,42
+exp1_toy,count,window=1,matrix,density,0.0621301775147929
+exp1_toy,count,window=2,doctor-physician,cosine,0.7071067811865475
+exp1_toy,count,window=2,doctor-nurse,cosine,0.0
+exp1_toy,count,window=2,doctor-hospital,cosine,0.0
+exp1_toy,count,window=2,cat-dog,cosine,0.75
+exp1_toy,count,window=2,man-woman,cosine,1.0
+exp1_toy,count,window=2,doctor-banana,cosine,0.0
+exp1_toy,count,window=2,cat-car,cosine,0.0
+exp1_toy,count,window=2,matrix,vocabulary_size,26
+exp1_toy,count,window=2,matrix,non_zero,64
+exp1_toy,count,window=2,matrix,density,0.09467455621301775
+exp1_toy,count,window=5,doctor-physician,cosine,0.6324555320336759
+exp1_toy,count,window=5,doctor-nurse,cosine,0.4472135954999579
+exp1_toy,count,window=5,doctor-hospital,cosine,0.4743416490252569
+exp1_toy,count,window=5,cat-dog,cosine,0.75
+exp1_toy,count,window=5,man-woman,cosine,0.9999999999999998
+exp1_toy,count,window=5,doctor-banana,cosine,0.0
+exp1_toy,count,window=5,cat-car,cosine,0.0
+exp1_toy,count,window=5,matrix,vocabulary_size,26
+exp1_toy,count,window=5,matrix,non_zero,92
+exp1_toy,count,window=5,matrix,density,0.13609467455621302
+exp1_c4,count,window=1,matrix,non_zero,3618871
+exp1_c4,count,window=1,matrix,density,0.0090471775
+exp1_c4,count,window=1,matrix,sparse_MB,41.490989685058594
+exp1_c4,count,window=1,matrix,dense_MB,3051.7578125
+exp1_c4,ppmi,window=1,matrix,non_zero,3032204
+exp1_c4,count,window=1,doctor-physician,cosine,0.9162645532646607
+exp1_c4,count,window=1,doctor-hospital,cosine,0.651777449998538
+exp1_c4,count,window=1,doctor-nurse,cosine,0.6481446522897529
+exp1_c4,count,window=1,cat-dog,cosine,0.8733738984030062
+exp1_c4,count,window=1,king-queen,cosine,0.8808068730683007
+exp1_c4,count,window=1,car-automobile,cosine,0.7608391353108015
+exp1_c4,count,window=1,computer-banana,cosine,0.5745688671506524
+exp1_c4,ppmi,window=1,doctor-physician,cosine,0.1552425387525611
+exp1_c4,ppmi,window=1,doctor-hospital,cosine,0.09568106639983667
+exp1_c4,ppmi,window=1,doctor-nurse,cosine,0.10393301719583035
+exp1_c4,ppmi,window=1,cat-dog,cosine,0.17773202922057257
+exp1_c4,ppmi,window=1,king-queen,cosine,0.15768178413106865
+exp1_c4,ppmi,window=1,car-automobile,cosine,0.18642364989422572
+exp1_c4,ppmi,window=1,computer-banana,cosine,0.022889122261289512
+exp1_c4,svd,window=1,doctor-physician,cosine,0.72220181044497
+exp1_c4,svd,window=1,doctor-hospital,cosine,0.3461764416396868
+exp1_c4,svd,window=1,doctor-nurse,cosine,0.6438512648968944
+exp1_c4,svd,window=1,cat-dog,cosine,0.7721427043410766
+exp1_c4,svd,window=1,king-queen,cosine,0.6024168711132378
+exp1_c4,svd,window=1,car-automobile,cosine,0.617976172989094
+exp1_c4,svd,window=1,computer-banana,cosine,0.021229560047554295
+exp1_c4,count,window=2,matrix,non_zero,6915141
+exp1_c4,count,window=2,matrix,density,0.0172878525
+exp1_c4,count,window=2,matrix,sparse_MB,79.21380615234375
+exp1_c4,count,window=2,matrix,dense_MB,3051.7578125
+exp1_c4,ppmi,window=2,matrix,non_zero,5585459
+exp1_c4,count,window=2,doctor-physician,cosine,0.9297873547407335
+exp1_c4,count,window=2,doctor-hospital,cosine,0.7530975656698351
+exp1_c4,count,window=2,doctor-nurse,cosine,0.7887559064842097
+exp1_c4,count,window=2,cat-dog,cosine,0.9209248045283142
+exp1_c4,count,window=2,king-queen,cosine,0.9188070149270465
+exp1_c4,count,window=2,car-automobile,cosine,0.8493961027221979
+exp1_c4,count,window=2,computer-banana,cosine,0.6950027528301617
+exp1_c4,ppmi,window=2,doctor-physician,cosine,0.16926438426580628
+exp1_c4,ppmi,window=2,doctor-hospital,cosine,0.0870876959535008
+exp1_c4,ppmi,window=2,doctor-nurse,cosine,0.1181119368536325
+exp1_c4,ppmi,window=2,cat-dog,cosine,0.1831149433579657
+exp1_c4,ppmi,window=2,king-queen,cosine,0.1896624912490393
+exp1_c4,ppmi,window=2,car-automobile,cosine,0.1643114393902952
+exp1_c4,ppmi,window=2,computer-banana,cosine,0.02341824915731904
+exp1_c4,svd,window=2,doctor-physician,cosine,0.8120322823929617
+exp1_c4,svd,window=2,doctor-hospital,cosine,0.469029873259528
+exp1_c4,svd,window=2,doctor-nurse,cosine,0.5991552363256207
+exp1_c4,svd,window=2,cat-dog,cosine,0.8231386239547227
+exp1_c4,svd,window=2,king-queen,cosine,0.765949294744825
+exp1_c4,svd,window=2,car-automobile,cosine,0.6201539365156931
+exp1_c4,svd,window=2,computer-banana,cosine,0.011343715309078427
+exp1_c4,count,window=5,matrix,non_zero,14075483
+exp1_c4,count,window=5,matrix,density,0.0351887075
+exp1_c4,count,window=5,matrix,sparse_MB,161.15741729736328
+exp1_c4,count,window=5,matrix,dense_MB,3051.7578125
+exp1_c4,ppmi,window=5,matrix,non_zero,10824743
+exp1_c4,count,window=5,doctor-physician,cosine,0.9487086768854324
+exp1_c4,count,window=5,doctor-hospital,cosine,0.8410330826638608
+exp1_c4,count,window=5,doctor-nurse,cosine,0.8741011224463513
+exp1_c4,count,window=5,cat-dog,cosine,0.9559963684072194
+exp1_c4,count,window=5,king-queen,cosine,0.9544359306479911
+exp1_c4,count,window=5,car-automobile,cosine,0.9311595316752587
+exp1_c4,count,window=5,computer-banana,cosine,0.8089263399427328
+exp1_c4,ppmi,window=5,doctor-physician,cosine,0.2052191462796917
+exp1_c4,ppmi,window=5,doctor-hospital,cosine,0.146712483257183
+exp1_c4,ppmi,window=5,doctor-nurse,cosine,0.1432975512852487
+exp1_c4,ppmi,window=5,cat-dog,cosine,0.207717331562398
+exp1_c4,ppmi,window=5,king-queen,cosine,0.22174035263055306
+exp1_c4,ppmi,window=5,car-automobile,cosine,0.1680881461092373
+exp1_c4,ppmi,window=5,computer-banana,cosine,0.029821213597319953
+exp1_c4,svd,window=5,doctor-physician,cosine,0.8254587459297129
+exp1_c4,svd,window=5,doctor-hospital,cosine,0.6244717632376011
+exp1_c4,svd,window=5,doctor-nurse,cosine,0.5947109250554231
+exp1_c4,svd,window=5,cat-dog,cosine,0.8321724109193845
+exp1_c4,svd,window=5,king-queen,cosine,0.7975590002986698
+exp1_c4,svd,window=5,car-automobile,cosine,0.6032743485574269
+exp1_c4,svd,window=5,computer-banana,cosine,0.045032769518452864
+core_most_similar,count,window=5,doctor,top1,child:0.9691
+core_most_similar,count,window=5,doctor,top2,dentist:0.9545
+core_most_similar,count,window=5,doctor,top3,physician:0.9487
+core_most_similar,count,window=5,doctor,top4,dog:0.9441
+core_most_similar,count,window=5,doctor,top5,plan:0.9425
+core_most_similar,count,window=5,hospital,top1,community:0.9490
+core_most_similar,count,window=5,hospital,top2,park:0.9483
+core_most_similar,count,window=5,hospital,top3,house:0.9479
+core_most_similar,count,window=5,hospital,top4,public:0.9476
+core_most_similar,count,window=5,hospital,top5,location:0.9456
+core_most_similar,count,window=5,patient,top1,proper:0.9666
+core_most_similar,count,window=5,patient,top2,test:0.9593
+core_most_similar,count,window=5,patient,top3,function:0.9588
+core_most_similar,count,window=5,patient,top4,for:0.9574
+core_most_similar,count,window=5,patient,top5,client:0.9574
+core_most_similar,count,window=5,disease,top1,treatment:0.9425
+core_most_similar,count,window=5,disease,top2,activity:0.9312
+core_most_similar,count,window=5,disease,top3,natural:0.9299
+core_most_similar,count,window=5,disease,top4,performance:0.9290
+core_most_similar,count,window=5,disease,top5,strength:0.9265
+core_most_similar,count,window=5,computer,top1,business:0.9548
+core_most_similar,count,window=5,computer,top2,home:0.9454
+core_most_similar,count,window=5,computer,top3,budget:0.9450
+core_most_similar,count,window=5,computer,top4,desktop:0.9393
+core_most_similar,count,window=5,computer,top5,child:0.9380
+core_most_similar,count,window=5,football,top1,kits:0.8575
+core_most_similar,count,window=5,football,top2,shirt:0.8132
+core_most_similar,count,window=5,football,top3,kingdom:0.7868
+core_most_similar,count,window=5,football,top4,emperor:0.7589
+core_most_similar,count,window=5,football,top5,cheap:0.7415
+core_most_similar,count,window=5,banana,top1,red:0.9130
+core_most_similar,count,window=5,banana,top2,texture:0.9119
+core_most_similar,count,window=5,banana,top3,bread:0.9108
+core_most_similar,count,window=5,banana,top4,white:0.9086
+core_most_similar,count,window=5,banana,top5,fruit:0.9084
+core_most_similar,ppmi,window=5,doctor,top1,doctors:0.2217
+core_most_similar,ppmi,window=5,doctor,top2,medical:0.2171
+core_most_similar,ppmi,window=5,doctor,top3,patients:0.2107
+core_most_similar,ppmi,window=5,doctor,top4,physician:0.2052
+core_most_similar,ppmi,window=5,doctor,top5,surgery:0.1943
+core_most_similar,ppmi,window=5,hospital,top1,medical:0.2454
+core_most_similar,ppmi,window=5,hospital,top2,university:0.2287
+core_most_similar,ppmi,window=5,hospital,top3,care:0.2226
+core_most_similar,ppmi,window=5,hospital,top4,medicine:0.2180
+core_most_similar,ppmi,window=5,hospital,top5,clinic:0.2141
+core_most_similar,ppmi,window=5,patient,top1,patients:0.2771
+core_most_similar,ppmi,window=5,patient,top2,treatment:0.2439
+core_most_similar,ppmi,window=5,patient,top3,care:0.2314
+core_most_similar,ppmi,window=5,patient,top4,clinical:0.2281
+core_most_similar,ppmi,window=5,patient,top5,medical:0.2228
+core_most_similar,ppmi,window=5,disease,top1,diseases:0.4373
+core_most_similar,ppmi,window=5,disease,top2,chronic:0.3410
+core_most_similar,ppmi,window=5,disease,top3,patients:0.3353
+core_most_similar,ppmi,window=5,disease,top4,diabetes:0.3315
+core_most_similar,ppmi,window=5,disease,top5,disorders:0.3309
+core_most_similar,ppmi,window=5,computer,top1,software:0.2820
+core_most_similar,ppmi,window=5,computer,top2,laptop:0.2514
+core_most_similar,ppmi,window=5,computer,top3,computers:0.2489
+core_most_similar,ppmi,window=5,computer,top4,device:0.2293
+core_most_similar,ppmi,window=5,computer,top5,usb:0.2286
+core_most_similar,ppmi,window=5,football,top1,replica:0.4404
+core_most_similar,ppmi,window=5,football,top2,shirt:0.3340
+core_most_similar,ppmi,window=5,football,top3,shirts:0.2821
+core_most_similar,ppmi,window=5,football,top4,basketball:0.2499
+core_most_similar,ppmi,window=5,football,top5,soccer:0.2432
+core_most_similar,ppmi,window=5,banana,top1,butter:0.2653
+core_most_similar,ppmi,window=5,banana,top2,pudding:0.2445
+core_most_similar,ppmi,window=5,banana,top3,fruit:0.2329
+core_most_similar,ppmi,window=5,banana,top4,peanut:0.2304
+core_most_similar,ppmi,window=5,banana,top5,yogurt:0.2303
+core_most_similar,svd,window=5,doctor,top1,physician:0.8255
+core_most_similar,svd,window=5,doctor,top2,doctors:0.8058
+core_most_similar,svd,window=5,doctor,top3,doctor's:0.7473
+core_most_similar,svd,window=5,doctor,top4,dentist:0.7428
+core_most_similar,svd,window=5,doctor,top5,clinic:0.7379
+core_most_similar,svd,window=5,hospital,top1,medical:0.7678
+core_most_similar,svd,window=5,hospital,top2,clinic:0.7641
+core_most_similar,svd,window=5,hospital,top3,care:0.7191
+core_most_similar,svd,window=5,hospital,top4,hospice:0.7161
+core_most_similar,svd,window=5,hospital,top5,outpatient:0.7108
+core_most_similar,svd,window=5,patient,top1,patients:0.8263
+core_most_similar,svd,window=5,patient,top2,diagnosis:0.7680
+core_most_similar,svd,window=5,patient,top3,patient's:0.7522
+core_most_similar,svd,window=5,patient,top4,clinical:0.7301
+core_most_similar,svd,window=5,patient,top5,doctor:0.7173
+core_most_similar,svd,window=5,disease,top1,diseases:0.9572
+core_most_similar,svd,window=5,disease,top2,infections:0.8769
+core_most_similar,svd,window=5,disease,top3,cancer:0.8614
+core_most_similar,svd,window=5,disease,top4,autoimmune:0.8608
+core_most_similar,svd,window=5,disease,top5,diabetes:0.8517
+core_most_similar,svd,window=5,computer,top1,computers:0.7948
+core_most_similar,svd,window=5,computer,top2,device:0.7534
+core_most_similar,svd,window=5,computer,top3,devices:0.7169
+core_most_similar,svd,window=5,computer,top4,laptop:0.6979
+core_most_similar,svd,window=5,computer,top5,desktop:0.6943
+core_most_similar,svd,window=5,football,top1,hockey:0.8458
+core_most_similar,svd,window=5,football,top2,baseball:0.8457
+core_most_similar,svd,window=5,football,top3,basketball:0.8421
+core_most_similar,svd,window=5,football,top4,soccer:0.7831
+core_most_similar,svd,window=5,football,top5,replica:0.7658
+core_most_similar,svd,window=5,banana,top1,caramel:0.8446
+core_most_similar,svd,window=5,banana,top2,peanut:0.8394
+core_most_similar,svd,window=5,banana,top3,pudding:0.8361
+core_most_similar,svd,window=5,banana,top4,apples:0.8216
+core_most_similar,svd,window=5,banana,top5,strawberry:0.8164
+exp2_word2vec,Skip-gram,"d=100,w=5",model,vocabulary_size,53644
+exp2_word2vec,Skip-gram,"d=100,w=5",model,train_seconds,247.2271888256073
+exp2_word2vec,CBOW,"d=100,w=5",model,vocabulary_size,53644
+exp2_word2vec,CBOW,"d=100,w=5",model,train_seconds,106.85021328926086
+exp2_inspect,Skip-gram,"d=100,w=5",doctor,top1,ophthalmologist:0.7785
+exp2_inspect,Skip-gram,"d=100,w=5",doctor,top2,dentist:0.7677
+exp2_inspect,Skip-gram,"d=100,w=5",doctor,top3,pharmacist:0.7599
+exp2_inspect,Skip-gram,"d=100,w=5",doctor,top4,veterinarian:0.7395
+exp2_inspect,Skip-gram,"d=100,w=5",doctor,top5,physician:0.7278
+exp2_inspect,CBOW,"d=100,w=5",doctor,top1,dentist:0.7946
+exp2_inspect,CBOW,"d=100,w=5",doctor,top2,veterinarian:0.7303
+exp2_inspect,CBOW,"d=100,w=5",doctor,top3,physician:0.7165
+exp2_inspect,CBOW,"d=100,w=5",doctor,top4,surgeon:0.7073
+exp2_inspect,CBOW,"d=100,w=5",doctor,top5,pharmacist:0.6999
+exp2_inspect,Skip-gram,"d=100,w=5",hospital,top1,upmc:0.7640
+exp2_inspect,Skip-gram,"d=100,w=5",hospital,top2,clinic:0.7102
+exp2_inspect,Skip-gram,"d=100,w=5",hospital,top3,icu:0.6990
+exp2_inspect,Skip-gram,"d=100,w=5",hospital,top4,samitivej:0.6788
+exp2_inspect,Skip-gram,"d=100,w=5",hospital,top5,pediatrics:0.6719
+exp2_inspect,CBOW,"d=100,w=5",hospital,top1,clinic:0.7658
+exp2_inspect,CBOW,"d=100,w=5",hospital,top2,icu:0.6402
+exp2_inspect,CBOW,"d=100,w=5",hospital,top3,clinics:0.6105
+exp2_inspect,CBOW,"d=100,w=5",hospital,top4,usc:0.6061
+exp2_inspect,CBOW,"d=100,w=5",hospital,top5,hospitals:0.5982
+exp2_inspect,Skip-gram,"d=100,w=5",patient,top1,patient's:0.7428
+exp2_inspect,Skip-gram,"d=100,w=5",patient,top2,patients:0.6904
+exp2_inspect,Skip-gram,"d=100,w=5",patient,top3,prescriber:0.6720
+exp2_inspect,Skip-gram,"d=100,w=5",patient,top4,optometrist:0.6671
+exp2_inspect,Skip-gram,"d=100,w=5",patient,top5,dentist:0.6667
+exp2_inspect,CBOW,"d=100,w=5",patient,top1,patient's:0.6702
+exp2_inspect,CBOW,"d=100,w=5",patient,top2,patients:0.6550
+exp2_inspect,CBOW,"d=100,w=5",patient,top3,physician:0.6441
+exp2_inspect,CBOW,"d=100,w=5",patient,top4,diagnosis:0.6096
+exp2_inspect,CBOW,"d=100,w=5",patient,top5,child:0.5985
+exp2_inspect,Skip-gram,"d=100,w=5",disease,top1,diseases:0.8626
+exp2_inspect,Skip-gram,"d=100,w=5",disease,top2,infection:0.8046
+exp2_inspect,Skip-gram,"d=100,w=5",disease,top3,celiac:0.7951
+exp2_inspect,Skip-gram,"d=100,w=5",disease,top4,autoimmune:0.7791
+exp2_inspect,Skip-gram,"d=100,w=5",disease,top5,osteoporosis:0.7746
+exp2_inspect,CBOW,"d=100,w=5",disease,top1,diseases:0.8003
+exp2_inspect,CBOW,"d=100,w=5",disease,top2,infection:0.7775
+exp2_inspect,CBOW,"d=100,w=5",disease,top3,obesity:0.7551
+exp2_inspect,CBOW,"d=100,w=5",disease,top4,chronic:0.7514
+exp2_inspect,CBOW,"d=100,w=5",disease,top5,arthritis:0.7454
+exp2_inspect,Skip-gram,"d=100,w=5",computer,top1,198x:0.6943
+exp2_inspect,Skip-gram,"d=100,w=5",computer,top2,phone's:0.6881
+exp2_inspect,Skip-gram,"d=100,w=5",computer,top3,laptop:0.6712
+exp2_inspect,Skip-gram,"d=100,w=5",computer,top4,computers:0.6683
+exp2_inspect,Skip-gram,"d=100,w=5",computer,top5,simulators:0.6603
+exp2_inspect,CBOW,"d=100,w=5",computer,top1,device:0.7045
+exp2_inspect,CBOW,"d=100,w=5",computer,top2,desktop:0.7031
+exp2_inspect,CBOW,"d=100,w=5",computer,top3,laptop:0.6592
+exp2_inspect,CBOW,"d=100,w=5",computer,top4,browser:0.6319
+exp2_inspect,CBOW,"d=100,w=5",computer,top5,software:0.6262
+exp2_inspect,Skip-gram,"d=100,w=5",football,top1,replica:0.7760
+exp2_inspect,Skip-gram,"d=100,w=5",football,top2,soccer:0.7413
+exp2_inspect,Skip-gram,"d=100,w=5",football,top3,shirtre:0.7079
+exp2_inspect,Skip-gram,"d=100,w=5",football,top4,shirt:0.7035
+exp2_inspect,Skip-gram,"d=100,w=5",football,top5,basketball:0.6989
+exp2_inspect,CBOW,"d=100,w=5",football,top1,replica:0.6935
+exp2_inspect,CBOW,"d=100,w=5",football,top2,baseball:0.6754
+exp2_inspect,CBOW,"d=100,w=5",football,top3,soccer:0.6724
+exp2_inspect,CBOW,"d=100,w=5",football,top4,basketball:0.6396
+exp2_inspect,CBOW,"d=100,w=5",football,top5,preseason:0.6123
+exp2_inspect,Skip-gram,"d=100,w=5",banana,top1,chutney:0.7467
+exp2_inspect,Skip-gram,"d=100,w=5",banana,top2,lentil:0.7404
+exp2_inspect,Skip-gram,"d=100,w=5",banana,top3,squash:0.7371
+exp2_inspect,Skip-gram,"d=100,w=5",banana,top4,tomato:0.7298
+exp2_inspect,Skip-gram,"d=100,w=5",banana,top5,panko:0.7295
+exp2_inspect,CBOW,"d=100,w=5",banana,top1,pudding:0.8616
+exp2_inspect,CBOW,"d=100,w=5",banana,top2,peppers:0.8454
+exp2_inspect,CBOW,"d=100,w=5",banana,top3,strawberries:0.8445
+exp2_inspect,CBOW,"d=100,w=5",banana,top4,carrot:0.8431
+exp2_inspect,CBOW,"d=100,w=5",banana,top5,flavored:0.8413
+prediction1,Skip-gram,"d=100,w=5",doctor-physician,cosine,0.7278259992599487
+prediction1,Skip-gram,"d=100,w=5",doctor-hospital,cosine,0.5635150074958801
+prediction1,Skip-gram,"d=100,w=5",doctor-banana,cosine,0.02556261047720909
+prediction1,Skip-gram,"d=100,w=5",doctor-car,cosine,0.36571216583251953
+prediction1,Skip-gram,"d=100,w=5",physician-hospital,cosine,0.5965718030929565
+prediction1,Skip-gram,"d=100,w=5",physician-banana,cosine,-0.05029821768403053
+prediction1,Skip-gram,"d=100,w=5",physician-car,cosine,0.31664925813674927
+prediction1,Skip-gram,"d=100,w=5",hospital-banana,cosine,0.10418736189603806
+prediction1,Skip-gram,"d=100,w=5",hospital-car,cosine,0.3682621717453003
+prediction1,Skip-gram,"d=100,w=5",banana-car,cosine,0.04108913615345955
+prediction1,CBOW,"d=100,w=5",doctor-physician,cosine,0.7164638042449951
+prediction1,CBOW,"d=100,w=5",doctor-hospital,cosine,0.4840451776981354
+prediction1,CBOW,"d=100,w=5",doctor-banana,cosine,-0.1363435685634613
+prediction1,CBOW,"d=100,w=5",doctor-car,cosine,0.3060398995876312
+prediction1,CBOW,"d=100,w=5",physician-hospital,cosine,0.5555329322814941
+prediction1,CBOW,"d=100,w=5",physician-banana,cosine,-0.23084226250648499
+prediction1,CBOW,"d=100,w=5",physician-car,cosine,0.14205606281757355
+prediction1,CBOW,"d=100,w=5",hospital-banana,cosine,-0.13429005444049835
+prediction1,CBOW,"d=100,w=5",hospital-car,cosine,0.2269444465637207
+prediction1,CBOW,"d=100,w=5",banana-car,cosine,-0.05570541322231293
+exp3_window,Skip-gram,window=2,doctor-physician,cosine,0.7582795023918152
+exp3_window,Skip-gram,window=2,doctor-hospital,cosine,0.5510327816009521
+exp3_window,Skip-gram,window=2,doctor-nurse,cosine,0.6167329549789429
+exp3_window,Skip-gram,window=2,doctor-disease,cosine,0.37141188979148865
+exp3_window,Skip-gram,window=2,cat-dog,cosine,0.7376441359519958
+exp3_window,Skip-gram,window=2,king-queen,cosine,0.7087821364402771
+exp3_window,Skip-gram,window=2,hot-cold,cosine,0.7471499443054199
+exp3_window,Skip-gram,window=2,computer-banana,cosine,0.052390068769454956
+exp3_window,Skip-gram,window=2,benchmark,train_s,132.7094612121582
+exp3_window,Skip-gram,window=2,benchmark,wordsim353_spearman,0.566030654948321
+exp3_window,Skip-gram,window=2,benchmark,wordsim353_oov%,2.8328611898017
+exp3_window,Skip-gram,window=2,benchmark,simlex999_spearman,0.3503287235794488
+exp3_window,Skip-gram,window=2,benchmark,simlex999_oov%,0.3003003003003003
+exp3_window,Skip-gram,window=2,benchmark,analogy_acc,0.23377535101404057
+exp3_window,Skip-gram,window=2,benchmark,analogy_semantic,0.09075984990619138
+exp3_window,Skip-gram,window=2,benchmark,analogy_syntactic,0.30504908835904626
+exp3_window,Skip-gram,window=2,benchmark,analogy_questions,12820
+exp3_window,Skip-gram,window=5,doctor-physician,cosine,0.7278259992599487
+exp3_window,Skip-gram,window=5,doctor-hospital,cosine,0.5635150074958801
+exp3_window,Skip-gram,window=5,doctor-nurse,cosine,0.6005448698997498
+exp3_window,Skip-gram,window=5,doctor-disease,cosine,0.4560246467590332
+exp3_window,Skip-gram,window=5,cat-dog,cosine,0.7838667035102844
+exp3_window,Skip-gram,window=5,king-queen,cosine,0.7134916186332703
+exp3_window,Skip-gram,window=5,hot-cold,cosine,0.7478009462356567
+exp3_window,Skip-gram,window=5,computer-banana,cosine,0.048701975494623184
+exp3_window,Skip-gram,window=5,benchmark,train_s,247.2271888256073
+exp3_window,Skip-gram,window=5,benchmark,wordsim353_spearman,0.6181759058402706
+exp3_window,Skip-gram,window=5,benchmark,wordsim353_oov%,2.8328611898017
+exp3_window,Skip-gram,window=5,benchmark,simlex999_spearman,0.34807211188752263
+exp3_window,Skip-gram,window=5,benchmark,simlex999_oov%,0.3003003003003003
+exp3_window,Skip-gram,window=5,benchmark,analogy_acc,0.2766770670826833
+exp3_window,Skip-gram,window=5,benchmark,analogy_semantic,0.1894934333958724
+exp3_window,Skip-gram,window=5,benchmark,analogy_syntactic,0.32012622720897616
+exp3_window,Skip-gram,window=5,benchmark,analogy_questions,12820
+exp3_window,Skip-gram,window=10,doctor-physician,cosine,0.6734027862548828
+exp3_window,Skip-gram,window=10,doctor-hospital,cosine,0.5581386089324951
+exp3_window,Skip-gram,window=10,doctor-nurse,cosine,0.5760850310325623
+exp3_window,Skip-gram,window=10,doctor-disease,cosine,0.4763531982898712
+exp3_window,Skip-gram,window=10,cat-dog,cosine,0.7779492139816284
+exp3_window,Skip-gram,window=10,king-queen,cosine,0.742051899433136
+exp3_window,Skip-gram,window=10,hot-cold,cosine,0.7646297216415405
+exp3_window,Skip-gram,window=10,computer-banana,cosine,0.06763482838869095
+exp3_window,Skip-gram,window=10,benchmark,train_s,284.86573123931885
+exp3_window,Skip-gram,window=10,benchmark,wordsim353_spearman,0.6376519969841918
+exp3_window,Skip-gram,window=10,benchmark,wordsim353_oov%,2.8328611898017
+exp3_window,Skip-gram,window=10,benchmark,simlex999_spearman,0.332534308031271
+exp3_window,Skip-gram,window=10,benchmark,simlex999_oov%,0.3003003003003003
+exp3_window,Skip-gram,window=10,benchmark,analogy_acc,0.2788611544461779
+exp3_window,Skip-gram,window=10,benchmark,analogy_semantic,0.2272514071294559
+exp3_window,Skip-gram,window=10,benchmark,analogy_syntactic,0.30458158017765313
+exp3_window,Skip-gram,window=10,benchmark,analogy_questions,12820
+exp4_dimension,Skip-gram,dim=50,benchmark,train_s,218.38098740577698
+exp4_dimension,Skip-gram,dim=50,benchmark,size_MB,20.46356201171875
+exp4_dimension,Skip-gram,dim=50,doctor-physician,cosine,0.8456368446350098
+exp4_dimension,Skip-gram,dim=50,doctor-hospital,cosine,0.638496458530426
+exp4_dimension,Skip-gram,dim=50,doctor-nurse,cosine,0.7257245779037476
+exp4_dimension,Skip-gram,dim=50,doctor-disease,cosine,0.5328012704849243
+exp4_dimension,Skip-gram,dim=50,cat-dog,cosine,0.849672794342041
+exp4_dimension,Skip-gram,dim=50,benchmark,wordsim353_spearman,0.5711421530989076
+exp4_dimension,Skip-gram,dim=50,benchmark,wordsim353_oov%,2.8328611898017
+exp4_dimension,Skip-gram,dim=50,benchmark,simlex999_spearman,0.31301433147966873
+exp4_dimension,Skip-gram,dim=50,benchmark,simlex999_oov%,0.3003003003003003
+exp4_dimension,Skip-gram,dim=50,benchmark,analogy_acc,0.22441497659906395
+exp4_dimension,Skip-gram,dim=50,benchmark,analogy_semantic,0.1348499061913696
+exp4_dimension,Skip-gram,dim=50,benchmark,analogy_syntactic,0.26905095839177184
+exp4_dimension,Skip-gram,dim=50,benchmark,analogy_questions,12820
+exp4_dimension,Skip-gram,dim=50,benchmark,downstream_acc,0.9888888888888888
+exp4_dimension,Skip-gram,dim=50,benchmark,downstream_std,0.022222222222222233
+exp4_dimension,Skip-gram,dim=100,benchmark,train_s,247.2271888256073
+exp4_dimension,Skip-gram,dim=100,benchmark,size_MB,40.9271240234375
+exp4_dimension,Skip-gram,dim=100,doctor-physician,cosine,0.7278259992599487
+exp4_dimension,Skip-gram,dim=100,doctor-hospital,cosine,0.5635150074958801
+exp4_dimension,Skip-gram,dim=100,doctor-nurse,cosine,0.6005448698997498
+exp4_dimension,Skip-gram,dim=100,doctor-disease,cosine,0.4560246467590332
+exp4_dimension,Skip-gram,dim=100,cat-dog,cosine,0.7838667035102844
+exp4_dimension,Skip-gram,dim=100,benchmark,wordsim353_spearman,0.6181759058402706
+exp4_dimension,Skip-gram,dim=100,benchmark,wordsim353_oov%,2.8328611898017
+exp4_dimension,Skip-gram,dim=100,benchmark,simlex999_spearman,0.34807211188752263
+exp4_dimension,Skip-gram,dim=100,benchmark,simlex999_oov%,0.3003003003003003
+exp4_dimension,Skip-gram,dim=100,benchmark,analogy_acc,0.2766770670826833
+exp4_dimension,Skip-gram,dim=100,benchmark,analogy_semantic,0.1894934333958724
+exp4_dimension,Skip-gram,dim=100,benchmark,analogy_syntactic,0.32012622720897616
+exp4_dimension,Skip-gram,dim=100,benchmark,analogy_questions,12820
+exp4_dimension,Skip-gram,dim=100,benchmark,downstream_acc,0.9777777777777777
+exp4_dimension,Skip-gram,dim=100,benchmark,downstream_std,0.027216552697590882
+exp4_dimension,Skip-gram,dim=300,benchmark,train_s,331.10588574409485
+exp4_dimension,Skip-gram,dim=300,benchmark,size_MB,122.7813720703125
+exp4_dimension,Skip-gram,dim=300,doctor-physician,cosine,0.5452237129211426
+exp4_dimension,Skip-gram,dim=300,doctor-hospital,cosine,0.3479153513908386
+exp4_dimension,Skip-gram,dim=300,doctor-nurse,cosine,0.38181185722351074
+exp4_dimension,Skip-gram,dim=300,doctor-disease,cosine,0.2204829901456833
+exp4_dimension,Skip-gram,dim=300,cat-dog,cosine,0.44606679677963257
+exp4_dimension,Skip-gram,dim=300,benchmark,wordsim353_spearman,0.6052489913999808
+exp4_dimension,Skip-gram,dim=300,benchmark,wordsim353_oov%,2.8328611898017
+exp4_dimension,Skip-gram,dim=300,benchmark,simlex999_spearman,0.3791913215159249
+exp4_dimension,Skip-gram,dim=300,benchmark,simlex999_oov%,0.3003003003003003
+exp4_dimension,Skip-gram,dim=300,benchmark,analogy_acc,0.25405616224648986
+exp4_dimension,Skip-gram,dim=300,benchmark,analogy_semantic,0.1522045028142589
+exp4_dimension,Skip-gram,dim=300,benchmark,analogy_syntactic,0.30481533426834967
+exp4_dimension,Skip-gram,dim=300,benchmark,analogy_questions,12820
+exp4_dimension,Skip-gram,dim=300,benchmark,downstream_acc,0.9866666666666667
+exp4_dimension,Skip-gram,dim=300,benchmark,downstream_std,0.02372684056006959
+exp4_dimension,"PPMI (20,000 chiều, sparse)",window=5,benchmark,downstream_acc,0.9822222222222223
+exp4_dimension,PPMI + SVD (100 chiều),window=5,benchmark,downstream_acc,0.9888888888888888
+corpus_size,Skip-gram,100 sentences seed=0,doctor-physician,cosine,0.9980177283287048
+corpus_size,Skip-gram,100 sentences seed=0,doctor,mean_cos_all_words,0.9631444215774536
+corpus_size,Skip-gram,100 sentences seed=1,doctor-physician,cosine,0.9974585175514221
+corpus_size,Skip-gram,100 sentences seed=1,doctor,mean_cos_all_words,0.9490039348602295
+corpus_size,Skip-gram,100 sentences seed=2,doctor-physician,cosine,0.9982200264930725
+corpus_size,Skip-gram,100 sentences seed=2,doctor,mean_cos_all_words,0.9602034687995911
+corpus_size,Skip-gram,100 sentences seed=3,doctor-physician,cosine,0.9982843399047852
+corpus_size,Skip-gram,100 sentences seed=3,doctor,mean_cos_all_words,0.956575334072113
+corpus_size,Skip-gram,100 sentences seed=4,doctor-physician,cosine,0.997768759727478
+corpus_size,Skip-gram,100 sentences seed=4,doctor,mean_cos_all_words,0.9596129655838013
+corpus_size,Skip-gram,docs=1000,doctor-physician,"cos(doctor, physician)",0.6436662673950195
+corpus_size,Skip-gram,docs=1000,doctor-physician,rank physician,11139
+corpus_size,Skip-gram,docs=1000,doctor-physician,"cos(doctor, banana)",0.7217874526977539
+corpus_size,Skip-gram,docs=1000,doctor-physician,"mean cos(doctor, mọi từ)",0.7080444693565369
+corpus_size,Skip-gram,docs=5000,doctor-physician,"cos(doctor, physician)",0.6247590780258179
+corpus_size,Skip-gram,docs=5000,doctor-physician,rank physician,34
+corpus_size,Skip-gram,docs=5000,doctor-physician,"cos(doctor, banana)",0.2126074731349945
+corpus_size,Skip-gram,docs=5000,doctor-physician,"mean cos(doctor, mọi từ)",0.36927467584609985
+corpus_size,Skip-gram,docs=10000,doctor-physician,"cos(doctor, physician)",0.728717565536499
+corpus_size,Skip-gram,docs=10000,doctor-physician,rank physician,3
+corpus_size,Skip-gram,docs=10000,doctor-physician,"cos(doctor, banana)",0.03906792029738426
+corpus_size,Skip-gram,docs=10000,doctor-physician,"mean cos(doctor, mọi từ)",0.3170650899410248
+corpus_size,Skip-gram,docs=30000,doctor-physician,"cos(doctor, physician)",0.7278259992599487
+corpus_size,Skip-gram,docs=30000,doctor-physician,rank physician,5
+corpus_size,Skip-gram,docs=30000,doctor-physician,"cos(doctor, banana)",0.02556261047720909
+corpus_size,Skip-gram,docs=30000,doctor-physician,"mean cos(doctor, mọi từ)",0.24433843791484833
+eval_similarity,intuition,,doctor-physician,score,9.5
+eval_similarity,skipgram,,doctor-physician,score,0.7278259992599487
+eval_similarity,cbow,,doctor-physician,score,0.7164638042449951
+eval_similarity,ppmi_svd,,doctor-physician,score,0.8254587459297129
+eval_similarity,intuition,,car-automobile,score,9.5
+eval_similarity,skipgram,,car-automobile,score,0.7280222773551941
+eval_similarity,cbow,,car-automobile,score,0.592058002948761
+eval_similarity,ppmi_svd,,car-automobile,score,0.6032743485574269
+eval_similarity,intuition,,football-soccer,score,8.5
+eval_similarity,skipgram,,football-soccer,score,0.741284191608429
+eval_similarity,cbow,,football-soccer,score,0.6723987460136414
+eval_similarity,ppmi_svd,,football-soccer,score,0.7831134118274069
+eval_similarity,intuition,,coffee-tea,score,7.5
+eval_similarity,skipgram,,coffee-tea,score,0.7976769804954529
+eval_similarity,cbow,,coffee-tea,score,0.7836900949478149
+eval_similarity,ppmi_svd,,coffee-tea,score,0.765013315050797
+eval_similarity,intuition,,cat-dog,score,7.0
+eval_similarity,skipgram,,cat-dog,score,0.7838667035102844
+eval_similarity,cbow,,cat-dog,score,0.76839679479599
+eval_similarity,ppmi_svd,,cat-dog,score,0.8321724109193845
+eval_similarity,intuition,,king-queen,score,7.0
+eval_similarity,skipgram,,king-queen,score,0.7134916186332703
+eval_similarity,cbow,,king-queen,score,0.7264701128005981
+eval_similarity,ppmi_svd,,king-queen,score,0.7975590002986698
+eval_similarity,intuition,,doctor-nurse,score,6.5
+eval_similarity,skipgram,,doctor-nurse,score,0.6005448698997498
+eval_similarity,cbow,,doctor-nurse,score,0.5801953077316284
+eval_similarity,ppmi_svd,,doctor-nurse,score,0.5947109250554231
+eval_similarity,intuition,,banana-apple,score,7.0
+eval_similarity,skipgram,,banana-apple,score,0.43774157762527466
+eval_similarity,cbow,,banana-apple,score,0.3757573366165161
+eval_similarity,ppmi_svd,,banana-apple,score,0.5434864158432337
+eval_similarity,intuition,,man-woman,score,6.5
+eval_similarity,skipgram,,man-woman,score,0.7872639298439026
+eval_similarity,cbow,,man-woman,score,0.8083362579345703
+eval_similarity,ppmi_svd,,man-woman,score,0.7285299518998398
+eval_similarity,intuition,,doctor-hospital,score,4.0
+eval_similarity,skipgram,,doctor-hospital,score,0.5635150074958801
+eval_similarity,cbow,,doctor-hospital,score,0.4840451776981354
+eval_similarity,ppmi_svd,,doctor-hospital,score,0.6244717632376011
+eval_similarity,intuition,,bank-money,score,4.0
+eval_similarity,skipgram,,bank-money,score,0.4100446403026581
+eval_similarity,cbow,,bank-money,score,0.36759451031684875
+eval_similarity,ppmi_svd,,bank-money,score,0.5156815403548131
+eval_similarity,intuition,,doctor-disease,score,3.0
+eval_similarity,skipgram,,doctor-disease,score,0.4560246467590332
+eval_similarity,cbow,,doctor-disease,score,0.3559105694293976
+eval_similarity,ppmi_svd,,doctor-disease,score,0.37954742380871886
+eval_similarity,intuition,,bank-river,score,2.0
+eval_similarity,skipgram,,bank-river,score,0.29436320066452026
+eval_similarity,cbow,,bank-river,score,0.15299826860427856
+eval_similarity,ppmi_svd,,bank-river,score,0.11867814918056736
+eval_similarity,intuition,,hot-cold,score,2.0
+eval_similarity,skipgram,,hot-cold,score,0.7478009462356567
+eval_similarity,cbow,,hot-cold,score,0.6501505374908447
+eval_similarity,ppmi_svd,,hot-cold,score,0.725326893425872
+eval_similarity,intuition,,good-bad,score,2.0
+eval_similarity,skipgram,,good-bad,score,0.742522120475769
+eval_similarity,cbow,,good-bad,score,0.7451549768447876
+eval_similarity,ppmi_svd,,good-bad,score,0.7119011451894384
+eval_similarity,intuition,,doctor-banana,score,0.5
+eval_similarity,skipgram,,doctor-banana,score,0.02556261047720909
+eval_similarity,cbow,,doctor-banana,score,-0.1363435685634613
+eval_similarity,ppmi_svd,,doctor-banana,score,-0.016032162270253156
+eval_similarity,intuition,,computer-banana,score,0.5
+eval_similarity,skipgram,,computer-banana,score,0.048701975494623184
+eval_similarity,cbow,,computer-banana,score,-0.14838626980781555
+eval_similarity,ppmi_svd,,computer-banana,score,0.045032769518452864
+eval_similarity,skipgram,,17 pairs,spearman_vs_intuition,0.5098905321680862
+eval_similarity,cbow,,17 pairs,spearman_vs_intuition,0.5691514172626821
+eval_similarity,ppmi_svd,,17 pairs,spearman_vs_intuition,0.6839693821334619
+eval_benchmark,ppmi_svd,"d=100,w=5",benchmark,wordsim353_spearman,0.6016650734541931
+eval_benchmark,ppmi_svd,"d=100,w=5",benchmark,simlex-999_spearman,0.30195737795104477
+eval_benchmark,skipgram,"d=100,w=5",benchmark,wordsim353_spearman,0.6181759058402706
+eval_benchmark,skipgram,"d=100,w=5",benchmark,simlex999_spearman,0.34807211188752263
+eval_benchmark,skipgram,"d=100,w=5",benchmark,analogy_acc,0.2766770670826833
+eval_benchmark,skipgram,"d=100,w=5",benchmark,analogy_semantic,0.1894934333958724
+eval_benchmark,skipgram,"d=100,w=5",benchmark,analogy_syntactic,0.32012622720897616
+eval_benchmark,cbow,"d=100,w=5",benchmark,wordsim353_spearman,0.5739303781714793
+eval_benchmark,cbow,"d=100,w=5",benchmark,simlex999_spearman,0.2998065399222331
+eval_benchmark,cbow,"d=100,w=5",benchmark,analogy_acc,0.25881435257410296
+eval_benchmark,cbow,"d=100,w=5",benchmark,analogy_semantic,0.125234521575985
+eval_benchmark,cbow,"d=100,w=5",benchmark,analogy_syntactic,0.32538569424964936
+eval_analogy,skipgram,,king-man+woman,top5,queen; gulet; lila; prince; terry
+eval_analogy,skipgram,,king-man+woman,top1_correct,True
+eval_analogy,cbow,,king-man+woman,top5,queen; prince; charles; eleanor; henry
+eval_analogy,cbow,,king-man+woman,top1_correct,True
+eval_analogy,ppmi_svd,,king-man+woman,top5,queen; prince; albert; elizabeth; princess
+eval_analogy,ppmi_svd,,king-man+woman,top1_correct,True
+eval_analogy,skipgram,,paris-france+italy,top5,venice; florence; vall; budapest; teatro
+eval_analogy,skipgram,,paris-france+italy,top1_correct,False
+eval_analogy,cbow,,paris-france+italy,top5,terre; venice; santa; boca; biennale
+eval_analogy,cbow,,paris-france+italy,top1_correct,False
+eval_analogy,ppmi_svd,,paris-france+italy,top5,venice; amsterdam; brussels; copenhagen; munich
+eval_analogy,ppmi_svd,,paris-france+italy,top1_correct,False
+eval_analogy,skipgram,,paris-france+japan,top5,china; 1989; canberra; taiwan; shanghai
+eval_analogy,skipgram,,paris-france+japan,top1_correct,False
+eval_analogy,cbow,,paris-france+japan,top5,helsinki; amsterdam; 1950s; 1989; italy
+eval_analogy,cbow,,paris-france+japan,top1_correct,False
+eval_analogy,ppmi_svd,,paris-france+japan,top5,tokyo; shanghai; dubai; moscow; london
+eval_analogy,ppmi_svd,,paris-france+japan,top1_correct,True
+eval_analogy,skipgram,,boy-man+woman,top5,girl; toddler; mom; mother; sister's
+eval_analogy,skipgram,,boy-man+woman,top1_correct,True
+eval_analogy,cbow,,boy-man+woman,top5,girl; mom; daughter; mum; girlfriend
+eval_analogy,cbow,,boy-man+woman,top1_correct,True
+eval_analogy,ppmi_svd,,boy-man+woman,top5,girl; mom; she's; lady; sister
+eval_analogy,ppmi_svd,,boy-man+woman,top1_correct,True
+eval_analogy,skipgram,,sister-brother+father,top5,mother; aunt; son; nephew; daughter
+eval_analogy,skipgram,,sister-brother+father,top1_correct,True
+eval_analogy,cbow,,sister-brother+father,top5,wife; son; daughter; mother; neighbor
+eval_analogy,cbow,,sister-brother+father,top1_correct,False
+eval_analogy,ppmi_svd,,sister-brother+father,top5,mother; daughter; wife; her; son
+eval_analogy,ppmi_svd,,sister-brother+father,top1_correct,True
+eval_analogy,skipgram,,bigger-big+small,top5,larger; smaller; remodels; large; sleeker
+eval_analogy,skipgram,,bigger-big+small,top1_correct,False
+eval_analogy,cbow,,bigger-big+small,top5,larger; smaller; less; heavier; quicker
+eval_analogy,cbow,,bigger-big+small,top1_correct,False
+eval_analogy,ppmi_svd,,bigger-big+small,top5,larger; smaller; sized; large; tiny
+eval_analogy,ppmi_svd,,bigger-big+small,top1_correct,False
+eval_analogy,skipgram,,better-good+bad,top5,worse; mediocrity; faster; stun; cuter
+eval_analogy,skipgram,,better-good+bad,top1_correct,True
+eval_analogy,cbow,,better-good+bad,top5,worse; faster; harder; quicker; slower
+eval_analogy,cbow,,better-good+bad,top1_correct,True
+eval_analogy,ppmi_svd,,better-good+bad,top5,won't; worse; trying; even; might
+eval_analogy,ppmi_svd,,better-good+bad,top1_correct,False
+eval_analogy,skipgram,,walking-walk+swim,top5,biking; riding; swimming; kayaking; fishing
+eval_analogy,skipgram,,walking-walk+swim,top1_correct,False
+eval_analogy,cbow,,walking-walk+swim,top5,skiing; hiking; riding; biking; kayaking
+eval_analogy,cbow,,walking-walk+swim,top1_correct,False
+eval_analogy,ppmi_svd,,walking-walk+swim,top5,biking; kayaking; surfing; diving; fishing
+eval_analogy,ppmi_svd,,walking-walk+swim,top1_correct,False
+eval_analogy,skipgram,,cars-car+dog,top5,dogs; cats; horses; bunnies; cat
+eval_analogy,skipgram,,cars-car+dog,top1_correct,True
+eval_analogy,cbow,,cars-car+dog,top5,dogs; horses; cats; sheep; puppies
+eval_analogy,cbow,,cars-car+dog,top1_correct,True
+eval_analogy,ppmi_svd,,cars-car+dog,top5,dogs; cats; cat; horses; animals
+eval_analogy,ppmi_svd,,cars-car+dog,top1_correct,True
+eval_analogy,skipgram,,hospital-doctor+teacher,top5,twinning; kaiserslautern; student; elmira; preschool
+eval_analogy,skipgram,,hospital-doctor+teacher,top1_correct,False
+eval_analogy,cbow,,hospital-doctor+teacher,top5,cafeteria; university's; elementary; college; dartmouth
+eval_analogy,cbow,,hospital-doctor+teacher,top1_correct,False
+eval_analogy,ppmi_svd,,hospital-doctor+teacher,top5,school; student; elementary; education; teaching
+eval_analogy,ppmi_svd,,hospital-doctor+teacher,top1_correct,True
+application_search,tfidf,medical treatment,rank1,doc_id,1826
+application_search,tfidf,medical treatment,rank2,doc_id,2758
+application_search,tfidf,medical treatment,rank3,doc_id,3542
+application_search,tfidf,medical treatment,rank4,doc_id,3630
+application_search,tfidf,medical treatment,rank5,doc_id,3586
+application_search,expansion,medical treatment,rank1,doc_id,2319
+application_search,expansion,medical treatment,rank2,doc_id,2109
+application_search,expansion,medical treatment,rank3,doc_id,129
+application_search,expansion,medical treatment,rank4,doc_id,674
+application_search,expansion,medical treatment,rank5,doc_id,1564
+application_search,embedding,medical treatment,rank1,doc_id,280
+application_search,embedding,medical treatment,rank2,doc_id,3666
+application_search,embedding,medical treatment,rank3,doc_id,2180
+application_search,embedding,medical treatment,rank4,doc_id,2777
+application_search,embedding,medical treatment,rank5,doc_id,4410
+application_search,tfidf,football match,rank1,doc_id,3255
+application_search,tfidf,football match,rank2,doc_id,3203
+application_search,tfidf,football match,rank3,doc_id,1915
+application_search,tfidf,football match,rank4,doc_id,3177
+application_search,tfidf,football match,rank5,doc_id,2518
+application_search,expansion,football match,rank1,doc_id,834
+application_search,expansion,football match,rank2,doc_id,1296
+application_search,expansion,football match,rank3,doc_id,1893
+application_search,expansion,football match,rank4,doc_id,2266
+application_search,expansion,football match,rank5,doc_id,505
+application_search,embedding,football match,rank1,doc_id,1915
+application_search,embedding,football match,rank2,doc_id,1098
+application_search,embedding,football match,rank3,doc_id,370
+application_search,embedding,football match,rank4,doc_id,1063
+application_search,embedding,football match,rank5,doc_id,3605
+application_search,tfidf,car repair,rank1,doc_id,4737
+application_search,tfidf,car repair,rank2,doc_id,4377
+application_search,tfidf,car repair,rank3,doc_id,4780
+application_search,tfidf,car repair,rank4,doc_id,4444
+application_search,tfidf,car repair,rank5,doc_id,409
+application_search,expansion,car repair,rank1,doc_id,4737
+application_search,expansion,car repair,rank2,doc_id,4444
+application_search,expansion,car repair,rank3,doc_id,4377
+application_search,expansion,car repair,rank4,doc_id,1094
+application_search,expansion,car repair,rank5,doc_id,4495
+application_search,embedding,car repair,rank1,doc_id,4737
+application_search,embedding,car repair,rank2,doc_id,879
+application_search,embedding,car repair,rank3,doc_id,409
+application_search,embedding,car repair,rank4,doc_id,339
+application_search,embedding,car repair,rank5,doc_id,4213
+application_search,tfidf,computer software,rank1,doc_id,833
+application_search,tfidf,computer software,rank2,doc_id,2610
+application_search,tfidf,computer software,rank3,doc_id,3820
+application_search,tfidf,computer software,rank4,doc_id,2934
+application_search,tfidf,computer software,rank5,doc_id,1630
+application_search,expansion,computer software,rank1,doc_id,3820
+application_search,expansion,computer software,rank2,doc_id,833
+application_search,expansion,computer software,rank3,doc_id,3008
+application_search,expansion,computer software,rank4,doc_id,2230
+application_search,expansion,computer software,rank5,doc_id,3876
+application_search,embedding,computer software,rank1,doc_id,3820
+application_search,embedding,computer software,rank2,doc_id,2839
+application_search,embedding,computer software,rank3,doc_id,974
+application_search,embedding,computer software,rank4,doc_id,1210
+application_search,embedding,computer software,rank5,doc_id,2173
+application_search,tfidf,medical treatment,top5,docs_without_query_word,0
+application_search,expansion,medical treatment,top5,docs_without_query_word,0
+application_search,embedding,medical treatment,top5,docs_without_query_word,1
+application_search,tfidf,football match,top5,docs_without_query_word,0
+application_search,expansion,football match,top5,docs_without_query_word,1
+application_search,embedding,football match,top5,docs_without_query_word,3
+application_search,tfidf,car repair,top5,docs_without_query_word,0
+application_search,expansion,car repair,top5,docs_without_query_word,1
+application_search,embedding,car repair,top5,docs_without_query_word,0
+application_search,tfidf,computer software,top5,docs_without_query_word,0
+application_search,expansion,computer software,top5,docs_without_query_word,0
+application_search,embedding,computer software,top5,docs_without_query_word,2
+error_analysis,Skip-gram,"d=100,w=5",doctor-nurse,cosine,0.6005448698997498
+error_analysis,Skip-gram,"d=100,w=5",doctor-hospital,cosine,0.5635150074958801
+error_analysis,Skip-gram,"d=100,w=5",doctor-disease,cosine,0.4560246467590332
+error_analysis,Skip-gram,"d=100,w=5",doctor-physician,cosine,0.7278259992599487
+error_analysis,Skip-gram,"d=100,w=5",cat-dog,cosine,0.7838667035102844
+error_analysis,Skip-gram,"d=100,w=5",hot-cold,cosine,0.7478009462356567
+error_analysis,Skip-gram,"d=100,w=5",good-bad,cosine,0.742522120475769
+error_analysis,Skip-gram,"d=100,w=5",football-replica,cosine,0.775988757610321
+error_analysis,Skip-gram,"d=100,w=5",football-soccer,cosine,0.741284191608429
+error_analysis,Skip-gram,"d=100,w=5",hospital-upmc,cosine,0.764037013053894
+error_analysis,Skip-gram,"d=100,w=5",hospital-clinic,cosine,0.7101519107818604
+error_analysis,Skip-gram,"d=100,w=5",banana-chutney,cosine,0.7466709017753601
+error_analysis,Skip-gram,"d=100,w=5",banana-lentil,cosine,0.7403614521026611
+error_analysis,Skip-gram,"d=100,w=5",doctor-ophthalmologist,cosine,0.7785149216651917
+error_analysis,Skip-gram,"d=100,w=5",doctor-dentist,cosine,0.7676665186882019
+polysemy_bank,Skip-gram,finance,bank,occurrences,414
+polysemy_bank,Skip-gram,finance,bank,"cos(static bank, sense centroid)",0.5633326310477347
+polysemy_bank,Skip-gram,finance,bank,"cos(sense centroid, money)",0.6121242077127699
+polysemy_bank,Skip-gram,finance,bank,"cos(sense centroid, river)",0.3237771041918657
+polysemy_bank,Skip-gram,river,bank,occurrences,12
+polysemy_bank,Skip-gram,river,bank,"cos(static bank, sense centroid)",0.4387391085562745
+polysemy_bank,Skip-gram,river,bank,"cos(sense centroid, money)",0.40848039828276617
+polysemy_bank,Skip-gram,river,bank,"cos(sense centroid, river)",0.635144630756701
+polysemy_bank,context-average,finance,bank,loo_centroid_acc,0.9685990338164251
+polysemy_bank,context-average,river,bank,loo_centroid_acc,0.9166666666666666
