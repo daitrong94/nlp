@@ -1,0 +1,258 @@
+experiment,model,setting,split,metric,value
+exp1_inspection,-,raw,train,samples,25000.0
+exp1_inspection,-,raw,train,classes,2.0
+exp1_inspection,-,raw,train,missing_text,0.0
+exp1_inspection,-,raw,train,missing_label,0.0
+exp1_inspection,-,raw,train,duplicate_docs,96.0
+exp1_inspection,-,raw,train,len_mean,233.61876
+exp1_inspection,-,raw,train,len_median,174.0
+exp1_inspection,-,raw,train,len_min,10.0
+exp1_inspection,-,raw,train,len_max,2473.0
+exp1_inspection,-,raw,test,samples,25000.0
+exp1_inspection,-,raw,test,classes,2.0
+exp1_inspection,-,raw,test,missing_text,0.0
+exp1_inspection,-,raw,test,missing_label,0.0
+exp1_inspection,-,raw,test,duplicate_docs,199.0
+exp1_inspection,-,raw,test,len_mean,228.345
+exp1_inspection,-,raw,test,len_median,172.0
+exp1_inspection,-,raw,test,len_min,6.0
+exp1_inspection,-,raw,test,len_max,2246.0
+exp1_inspection,-,raw,train&test,overlap_docs,123.0
+exp1_split,-,dedup,train,samples,19923.0
+exp1_split,-,dedup,train,positive_pct,50.07779952818351
+exp1_split,-,dedup,validation,samples,4981.0
+exp1_split,-,dedup,validation,positive_pct,50.090343304557315
+exp1_split,-,dedup,test,samples,24678.0
+exp1_split,-,dedup,test,positive_pct,50.29581003322797
+leakage,TF-IDF + LR,fit on train (đúng),test,accuracy,0.8899019369478888
+leakage,TF-IDF + LR,fit on train (đúng),test,precision,0.891464104013567
+leakage,TF-IDF + LR,fit on train (đúng),test,recall,0.8893812439574605
+leakage,TF-IDF + LR,fit on train (đúng),test,f1,0.8904214559386974
+leakage,TF-IDF + LR,fit on train+test (leakage),test,accuracy,0.8897398492584488
+leakage,TF-IDF + LR,fit on train+test (leakage),test,precision,0.8921259205308731
+leakage,TF-IDF + LR,fit on train+test (leakage),test,recall,0.8881727360618756
+leakage,TF-IDF + LR,fit on train+test (leakage),test,f1,0.8901449392385643
+exp2_baseline,TF-IDF + LR,unigram C=0.25,validation,f1,0.8784421715184894
+exp2_baseline,TF-IDF + LR,unigram C=1,validation,f1,0.8928430209568999
+exp2_baseline,TF-IDF + LR,unigram C=4,validation,f1,0.8961141950832673
+exp2_baseline,TF-IDF + LR,unigram C=16,validation,f1,0.8958003169572107
+exp2_baseline,TF-IDF + LR,unigram,-,C,4.0
+exp2_baseline,TF-IDF + LR,unigram,-,train_time_s,3.863388799999939
+exp2_baseline,TF-IDF + LR,unigram,-,vocabulary,43172.0
+exp2_baseline,TF-IDF + LR,unigram,validation,accuracy,0.8948002409154788
+exp2_baseline,TF-IDF + LR,unigram,validation,precision,0.8866222047861907
+exp2_baseline,TF-IDF + LR,unigram,validation,recall,0.905811623246493
+exp2_baseline,TF-IDF + LR,unigram,validation,f1,0.8961141950832673
+exp2_baseline,TF-IDF + LR,unigram,test,accuracy,0.8899019369478888
+exp2_baseline,TF-IDF + LR,unigram,test,precision,0.891464104013567
+exp2_baseline,TF-IDF + LR,unigram,test,recall,0.8893812439574605
+exp2_baseline,TF-IDF + LR,unigram,test,f1,0.8904214559386974
+exp3_representation,Avg Word2Vec + LR,word2vec,-,w2v_train_time_s,79.56199390000006
+exp3_representation,Avg Word2Vec + LR,word2vec,-,w2v_vocabulary,27006.0
+exp3_representation,Avg Word2Vec + LR,C=0.25,validation,f1,0.868457711442786
+exp3_representation,Avg Word2Vec + LR,C=1,validation,f1,0.8687350835322196
+exp3_representation,Avg Word2Vec + LR,C=4,validation,f1,0.8685100457529341
+exp3_representation,Avg Word2Vec + LR,C=16,validation,f1,0.8686305732484076
+exp3_representation,Avg Word2Vec + LR,best,-,C,1.0
+exp3_representation,Avg Word2Vec + LR,best,-,train_time_s,9.01656479999997
+exp3_representation,Avg Word2Vec + LR,best,validation,accuracy,0.8674964866492673
+exp3_representation,Avg Word2Vec + LR,best,validation,precision,0.8622187129885511
+exp3_representation,Avg Word2Vec + LR,best,validation,recall,0.8753507014028056
+exp3_representation,Avg Word2Vec + LR,best,validation,f1,0.8687350835322196
+exp3_representation,Avg Word2Vec + LR,best,test,accuracy,0.8597131047896912
+exp3_representation,Avg Word2Vec + LR,best,test,precision,0.8684340523629178
+exp3_representation,Avg Word2Vec + LR,best,test,recall,0.8498227521753142
+exp3_representation,Avg Word2Vec + LR,best,test,f1,0.8590276081114098
+exp3_representation,Avg Word2Vec + LR,best,-,train_time_incl_w2v_s,88.57855870000003
+exp3_representation,TF-IDF + Linear SVM,C=0.05,validation,f1,0.8874901652242329
+exp3_representation,TF-IDF + Linear SVM,C=0.25,validation,f1,0.8974663499604117
+exp3_representation,TF-IDF + Linear SVM,C=1,validation,f1,0.8925390856916683
+exp3_representation,TF-IDF + Linear SVM,C=4,validation,f1,0.8803012286959968
+exp3_representation,TF-IDF + Linear SVM,best,-,C,0.25
+exp3_representation,TF-IDF + Linear SVM,best,-,train_time_s,3.7464339999999083
+exp3_representation,TF-IDF + Linear SVM,best,-,vocabulary,43172.0
+exp3_representation,TF-IDF + Linear SVM,best,validation,accuracy,0.8960048183095763
+exp3_representation,TF-IDF + Linear SVM,best,validation,precision,0.8865858427845131
+exp3_representation,TF-IDF + Linear SVM,best,validation,recall,0.9086172344689378
+exp3_representation,TF-IDF + Linear SVM,best,validation,f1,0.8974663499604117
+exp3_representation,TF-IDF + Linear SVM,best,test,accuracy,0.8900235027149688
+exp3_representation,TF-IDF + Linear SVM,best,test,precision,0.8908592616475899
+exp3_representation,TF-IDF + Linear SVM,best,test,recall,0.8904286174669674
+exp3_representation,TF-IDF + Linear SVM,best,test,f1,0.8906438875010073
+exp3_representation,TF-IDF + LR,best,-,C,4.0
+exp3_representation,TF-IDF + LR,best,-,train_time_s,3.863388799999939
+exp3_representation,TF-IDF + LR,best,-,vocabulary,43172.0
+exp3_representation,TF-IDF + LR,best,validation,accuracy,0.8948002409154788
+exp3_representation,TF-IDF + LR,best,validation,precision,0.8866222047861907
+exp3_representation,TF-IDF + LR,best,validation,recall,0.905811623246493
+exp3_representation,TF-IDF + LR,best,validation,f1,0.8961141950832673
+exp3_representation,TF-IDF + LR,best,test,accuracy,0.8899019369478888
+exp3_representation,TF-IDF + LR,best,test,precision,0.891464104013567
+exp3_representation,TF-IDF + LR,best,test,recall,0.8893812439574605
+exp3_representation,TF-IDF + LR,best,test,f1,0.8904214559386974
+exp4_word_order,Avg Word2Vec,this movie is good | this movie is not good,-,cosine,0.9756557941436768
+exp4_word_order,A,this movie is good,-,p_pos,0.8250003882182361
+exp4_word_order,A,this movie is not good,-,p_pos,0.36991134581082336
+exp4_word_order,B,this movie is good,-,p_pos,0.993747353553772
+exp4_word_order,B,this movie is not good,-,p_pos,0.7144930958747864
+exp4_word_order,Avg Word2Vec,this movie is good | good is movie this,-,cosine,1.0
+exp4_word_order,A,this movie is good,-,p_pos,0.8250003882182361
+exp4_word_order,A,good is movie this,-,p_pos,0.8250003882182361
+exp4_word_order,B,this movie is good,-,p_pos,0.993747353553772
+exp4_word_order,B,good is movie this,-,p_pos,0.993747353553772
+exp4_word_order,Avg Word2Vec,i like this movie | i do not like this movie,-,cosine,0.9514203667640686
+exp4_word_order,A,i like this movie,-,p_pos,0.2998107350569441
+exp4_word_order,A,i do not like this movie,-,p_pos,0.04896551831945669
+exp4_word_order,B,i like this movie,-,p_pos,0.5147838592529297
+exp4_word_order,B,i do not like this movie,-,p_pos,0.02887127362191677
+exp4_word_order,Avg Word2Vec,not bad at all | bad,-,cosine,0.7406255602836609
+exp4_word_order,A,not bad at all,-,p_pos,0.00018974775569201486
+exp4_word_order,A,bad,-,p_pos,2.665670065649622e-05
+exp4_word_order,B,not bad at all,-,p_pos,3.9021033444441855e-06
+exp4_word_order,B,bad,-,p_pos,7.580403494677421e-22
+exp5_ngram,TF-IDF + LR,uni+bigram C=0.25,validation,f1,0.8765505020673361
+exp5_ngram,TF-IDF + LR,uni+bigram C=1,validation,f1,0.8944664031620554
+exp5_ngram,TF-IDF + LR,uni+bigram C=4,validation,f1,0.9005940594059406
+exp5_ngram,TF-IDF + LR,uni+bigram C=16,validation,f1,0.9067460317460317
+exp5_ngram,TF-IDF + LR,uni+bigram,-,C,16.0
+exp5_ngram,TF-IDF + LR,uni+bigram,-,train_time_s,16.071145500000057
+exp5_ngram,TF-IDF + LR,uni+bigram,-,vocabulary,365203.0
+exp5_ngram,TF-IDF + LR,uni+bigram,validation,accuracy,0.9056414374623569
+exp5_ngram,TF-IDF + LR,uni+bigram,validation,precision,0.8978388998035364
+exp5_ngram,TF-IDF + LR,uni+bigram,validation,recall,0.9158316633266533
+exp5_ngram,TF-IDF + LR,uni+bigram,validation,f1,0.9067460317460317
+exp5_ngram,TF-IDF + LR,uni+bigram,test,accuracy,0.9065969689602075
+exp5_ngram,TF-IDF + LR,uni+bigram,test,precision,0.9047008889244814
+exp5_ngram,TF-IDF + LR,uni+bigram,test,recall,0.9101675797615211
+exp5_ngram,TF-IDF + LR,uni+bigram,test,f1,0.9074260010442187
+exp5_ngram,TF-IDF + LR uni+bigram,this movie is good,-,p_pos,0.9318809713629701
+exp5_ngram,TF-IDF + LR uni+bigram,this movie is not good,-,p_pos,0.05480111025278789
+exp5_ngram,TF-IDF + LR uni+bigram,not bad at all,-,p_pos,0.0064200394299868575
+exp_vocab_stopwords,TF-IDF + LR,max_features=100,-,vocabulary,100.0
+exp_vocab_stopwords,TF-IDF + LR,max_features=100,-,train_time_s,4.155313400000068
+exp_vocab_stopwords,TF-IDF + LR,max_features=100,validation,val_accuracy,0.7167235494880546
+exp_vocab_stopwords,TF-IDF + LR,max_features=100,validation,val_f1,0.7187562288220052
+exp_vocab_stopwords,TF-IDF + LR,max_features=100,test,test_accuracy,0.7287057297998217
+exp_vocab_stopwords,TF-IDF + LR,max_features=100,test,test_f1,0.7316740811991503
+exp_vocab_stopwords,TF-IDF + LR,max_features=500,-,vocabulary,500.0
+exp_vocab_stopwords,TF-IDF + LR,max_features=500,-,train_time_s,3.9567027000000508
+exp_vocab_stopwords,TF-IDF + LR,max_features=500,validation,val_accuracy,0.8325637422204376
+exp_vocab_stopwords,TF-IDF + LR,max_features=500,validation,val_f1,0.834326579261025
+exp_vocab_stopwords,TF-IDF + LR,max_features=500,test,test_accuracy,0.8427749412432126
+exp_vocab_stopwords,TF-IDF + LR,max_features=500,test,test_f1,0.8447875830066406
+exp_vocab_stopwords,TF-IDF + LR,max_features=1000,-,vocabulary,1000.0
+exp_vocab_stopwords,TF-IDF + LR,max_features=1000,-,train_time_s,3.999608999999964
+exp_vocab_stopwords,TF-IDF + LR,max_features=1000,validation,val_accuracy,0.8644850431640233
+exp_vocab_stopwords,TF-IDF + LR,max_features=1000,validation,val_f1,0.8661511005353956
+exp_vocab_stopwords,TF-IDF + LR,max_features=1000,test,test_accuracy,0.8663992219790907
+exp_vocab_stopwords,TF-IDF + LR,max_features=1000,test,test_f1,0.8680513867210949
+exp_vocab_stopwords,TF-IDF + LR,max_features=5000,-,vocabulary,5000.0
+exp_vocab_stopwords,TF-IDF + LR,max_features=5000,-,train_time_s,3.993427800000063
+exp_vocab_stopwords,TF-IDF + LR,max_features=5000,validation,val_accuracy,0.8843605701666332
+exp_vocab_stopwords,TF-IDF + LR,max_features=5000,validation,val_f1,0.8857596191987307
+exp_vocab_stopwords,TF-IDF + LR,max_features=5000,test,test_accuracy,0.8838641705162493
+exp_vocab_stopwords,TF-IDF + LR,max_features=5000,test,test_f1,0.884686569566267
+exp_vocab_stopwords,TF-IDF + LR,max_features=20000,-,vocabulary,20000.0
+exp_vocab_stopwords,TF-IDF + LR,max_features=20000,-,train_time_s,4.2237815000000865
+exp_vocab_stopwords,TF-IDF + LR,max_features=20000,validation,val_accuracy,0.89419795221843
+exp_vocab_stopwords,TF-IDF + LR,max_features=20000,validation,val_f1,0.8955815335843075
+exp_vocab_stopwords,TF-IDF + LR,max_features=20000,test,test_accuracy,0.887308533916849
+exp_vocab_stopwords,TF-IDF + LR,max_features=20000,test,test_f1,0.8876681342650563
+exp_vocab_stopwords,TF-IDF + LR,max_features=None,-,vocabulary,43172.0
+exp_vocab_stopwords,TF-IDF + LR,max_features=None,-,train_time_s,5.548871700000063
+exp_vocab_stopwords,TF-IDF + LR,max_features=None,validation,val_accuracy,0.8948002409154788
+exp_vocab_stopwords,TF-IDF + LR,max_features=None,validation,val_f1,0.8961141950832673
+exp_vocab_stopwords,TF-IDF + LR,max_features=None,test,test_accuracy,0.8899019369478888
+exp_vocab_stopwords,TF-IDF + LR,max_features=None,test,test_f1,0.8904214559386974
+exp_vocab_stopwords,TF-IDF + LR,bỏ stopwords (sklearn),-,vocabulary,42862.0
+exp_vocab_stopwords,TF-IDF + LR,bỏ stopwords (sklearn),-,train_time_s,3.1880727000000206
+exp_vocab_stopwords,TF-IDF + LR,bỏ stopwords (sklearn),validation,val_accuracy,0.8917887974302349
+exp_vocab_stopwords,TF-IDF + LR,bỏ stopwords (sklearn),validation,val_f1,0.8934993084370678
+exp_vocab_stopwords,TF-IDF + LR,bỏ stopwords (sklearn),test,test_accuracy,0.8829321663019694
+exp_vocab_stopwords,TF-IDF + LR,bỏ stopwords (sklearn),test,test_f1,0.8834563717778047
+exp_vocab_stopwords,TF-IDF + LR,"bỏ stopwords, giữ phủ định",-,vocabulary,42868.0
+exp_vocab_stopwords,TF-IDF + LR,"bỏ stopwords, giữ phủ định",-,train_time_s,2.866249800000105
+exp_vocab_stopwords,TF-IDF + LR,"bỏ stopwords, giữ phủ định",validation,val_accuracy,0.8925918490263
+exp_vocab_stopwords,TF-IDF + LR,"bỏ stopwords, giữ phủ định",validation,val_f1,0.8938702638365403
+exp_vocab_stopwords,TF-IDF + LR,"bỏ stopwords, giữ phủ định",test,test_accuracy,0.8841883458951293
+exp_vocab_stopwords,TF-IDF + LR,"bỏ stopwords, giữ phủ định",test,test_f1,0.8847022752944973
+evaluation,TF-IDF + LR,final,test,accuracy,0.8899019369478888
+evaluation,TF-IDF + LR,final,test,precision,0.891464104013567
+evaluation,TF-IDF + LR,final,test,recall,0.8893812439574605
+evaluation,TF-IDF + LR,final,test,f1,0.8904214559386974
+evaluation,Avg Word2Vec + LR,final,test,accuracy,0.8597131047896912
+evaluation,Avg Word2Vec + LR,final,test,precision,0.8684340523629178
+evaluation,Avg Word2Vec + LR,final,test,recall,0.8498227521753142
+evaluation,Avg Word2Vec + LR,final,test,f1,0.8590276081114098
+evaluation,TF-IDF + Linear SVM,final,test,accuracy,0.8900235027149688
+evaluation,TF-IDF + Linear SVM,final,test,precision,0.8908592616475899
+evaluation,TF-IDF + Linear SVM,final,test,recall,0.8904286174669674
+evaluation,TF-IDF + Linear SVM,final,test,f1,0.8906438875010073
+evaluation,TF-IDF (uni+bigram) + LR,final,test,accuracy,0.9065969689602075
+evaluation,TF-IDF (uni+bigram) + LR,final,test,precision,0.9047008889244814
+evaluation,TF-IDF (uni+bigram) + LR,final,test,recall,0.9101675797615211
+evaluation,TF-IDF (uni+bigram) + LR,final,test,f1,0.9074260010442187
+evaluation,TF-IDF + LR,confusion_matrix,test,TP,11039.0
+evaluation,TF-IDF + LR,confusion_matrix,test,FN,1373.0
+evaluation,TF-IDF + LR,confusion_matrix,test,FP,1344.0
+evaluation,TF-IDF + LR,confusion_matrix,test,TN,10922.0
+evaluation,Avg Word2Vec + LR,confusion_matrix,test,TP,10548.0
+evaluation,Avg Word2Vec + LR,confusion_matrix,test,FN,1864.0
+evaluation,Avg Word2Vec + LR,confusion_matrix,test,FP,1598.0
+evaluation,Avg Word2Vec + LR,confusion_matrix,test,TN,10668.0
+evaluation,TF-IDF + Linear SVM,confusion_matrix,test,TP,11052.0
+evaluation,TF-IDF + Linear SVM,confusion_matrix,test,FN,1360.0
+evaluation,TF-IDF + Linear SVM,confusion_matrix,test,FP,1354.0
+evaluation,TF-IDF + Linear SVM,confusion_matrix,test,TN,10912.0
+evaluation,TF-IDF (uni+bigram) + LR,confusion_matrix,test,TP,11297.0
+evaluation,TF-IDF (uni+bigram) + LR,confusion_matrix,test,FN,1115.0
+evaluation,TF-IDF (uni+bigram) + LR,confusion_matrix,test,FP,1190.0
+evaluation,TF-IDF (uni+bigram) + LR,confusion_matrix,test,TN,11076.0
+evaluation_imbalanced,Majority (luôn negative),95/5,test,accuracy,0.9499690210656754
+evaluation_imbalanced,Majority (luôn negative),95/5,test,precision,0.0
+evaluation_imbalanced,Majority (luôn negative),95/5,test,recall,0.0
+evaluation_imbalanced,Majority (luôn negative),95/5,test,f1,0.0
+evaluation_imbalanced,TF-IDF + LR,95/5,test,accuracy,0.8909541511771994
+evaluation_imbalanced,TF-IDF + LR,95/5,test,precision,0.30218068535825543
+evaluation_imbalanced,TF-IDF + LR,95/5,test,recall,0.9009287925696594
+evaluation_imbalanced,TF-IDF + LR,95/5,test,f1,0.4525660964230171
+weights,TF-IDF + LR,unigram,-,great,9.860630794243917
+weights,TF-IDF + LR,unigram,-,excellent,8.118735831736311
+weights,TF-IDF + LR,unigram,-,7,7.977729295922604
+weights,TF-IDF + LR,unigram,-,perfect,7.229985079959285
+weights,TF-IDF + LR,unigram,-,best,6.324498310725415
+weights,TF-IDF + LR,unigram,-,wonderful,6.243354689521902
+weights,TF-IDF + LR,unigram,-,8,5.615150059365422
+weights,TF-IDF + LR,unigram,-,amazing,5.570903606160864
+weights,TF-IDF + LR,unigram,-,favorite,5.252837741212991
+weights,TF-IDF + LR,unigram,-,brilliant,5.133833441212892
+weights,TF-IDF + LR,unigram,-,well,5.0163348240581325
+weights,TF-IDF + LR,unigram,-,superb,4.989741557719312
+weights,TF-IDF + LR,unigram,-,highly,4.909904589815109
+weights,TF-IDF + LR,unigram,-,loved,4.894102110738118
+weights,TF-IDF + LR,unigram,-,love,4.820720896258801
+weights,TF-IDF + LR,unigram,-,enjoyed,4.790136788327532
+weights,TF-IDF + LR,unigram,-,enjoyable,4.709832392553263
+weights,TF-IDF + LR,unigram,-,today,4.660535791309341
+weights,TF-IDF + LR,unigram,-,fun,4.6315966233382095
+weights,TF-IDF + LR,unigram,-,rare,4.620355634984782
+weights,TF-IDF + LR,unigram,-,worst,-12.291944602277637
+weights,TF-IDF + LR,unigram,-,bad,-10.146444603886305
+weights,TF-IDF + LR,unigram,-,waste,-9.238715381039611
+weights,TF-IDF + LR,unigram,-,awful,-8.929025493480589
+weights,TF-IDF + LR,unigram,-,boring,-7.882025926560407
+weights,TF-IDF + LR,unigram,-,poor,-6.950819952640685
+weights,TF-IDF + LR,unigram,-,poorly,-6.877098144170022
+weights,TF-IDF + LR,unigram,-,disappointment,-6.801138109728782
+weights,TF-IDF + LR,unigram,-,worse,-6.465958756757206
+weights,TF-IDF + LR,unigram,-,dull,-6.055581744968013
+weights,TF-IDF + LR,unigram,-,terrible,-6.032886416703366
+weights,TF-IDF + LR,unigram,-,nothing,-5.972282971777313
+weights,TF-IDF + LR,unigram,-,avoid,-5.905647804648809
+weights,TF-IDF + LR,unigram,-,fails,-5.798712541323392
+weights,TF-IDF + LR,unigram,-,unfortunately,-5.797861968766311
+weights,TF-IDF + LR,unigram,-,save,-5.658670579774761
+weights,TF-IDF + LR,unigram,-,annoying,-5.529897968895808
+weights,TF-IDF + LR,unigram,-,horrible,-5.422267309548723
+weights,TF-IDF + LR,unigram,-,no,-5.357280182118369
+weights,TF-IDF + LR,unigram,-,lame,-5.231420914537025
