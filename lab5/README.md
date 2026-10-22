@@ -70,4 +70,5 @@ Vocabulary 20,002 cho sequence model (43,172 cho TF-IDF). Train time của seque
 - Tool: Claude Code
 - Purpose: viết code, chạy experiment, soạn nháp các file .md
 - Generated: rnn_cell.py, sequence_classification.ipynb, results.csv, các hình .png, bản nháp calculations.md, prediction.md, error_analysis.md, reflection.md
+- Modified: không
 - Verified: unit test trong rnn_cell.py (Bài 1, so với torch.nn.RNNCell / torch.nn.RNN với cùng weight, sai số 1e-16), kiểm tra hidden state tại token cuối khớp với pack_padded_sequence, số tham số tính tay khớp với PyTorch, đối chiếu số liệu trong các file .md với output của notebook
