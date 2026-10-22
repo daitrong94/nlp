@@ -195,11 +195,11 @@ h_t &= (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t
 \end{aligned}
 $$
 
-Update gate làm cùng lúc việc của forget gate và input gate: $z_t$ nhỏ thì giữ $h_{t-1}$, $z_t$ lớn thì ghi đè bằng $\tilde{h}_t$. GRU có 3 khối trọng số so với 4 của LSTM, nên với cùng hidden size thì ít tham số hơn khoảng 25%:
+Update gate làm cùng lúc việc của forget gate và input gate: $z_t$ nhỏ thì giữ $h_{t-1}$, $z_t$ lớn thì ghi đè bằng $\tilde{h}_t$. GRU có 3 khối trọng số so với 4 của LSTM, nên với cùng hidden size thì ít tham số hơn khoảng 25%. Gọi $N$ là số tham số, $I$ là kích thước input, $H$ là hidden size:
 
 $$
-\#\text{params}_{\text{GRU}} = 3\left(H \cdot I + H \cdot H + 2H\right), \qquad
-\#\text{params}_{\text{LSTM}} = 4\left(H \cdot I + H \cdot H + 2H\right)
+N_{\text{GRU}} = 3\left(H \cdot I + H \cdot H + 2H\right), \qquad
+N_{\text{LSTM}} = 4\left(H \cdot I + H \cdot H + 2H\right)
 $$
 
 Với $I = 100$, $H = 128$ (cấu hình trong notebook): GRU có $88{,}320$ tham số, LSTM có $117{,}760$ và Simple RNN có $29{,}440$, khớp với số đếm của PyTorch.
