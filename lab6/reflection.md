@@ -44,7 +44,7 @@ Cần positional encoding để có thứ tự, multi-head để học nhiều k
 - **Tại sao dùng softmax?** Biến score thành trọng số dương có tổng bằng 1, giữ thứ tự, và khả vi.
 - **Q, K, V có vai trò gì?** Q là "đang tìm gì", K là "mỗi token có gì để so khớp", V là "thông tin được lấy ra".
 - **Context vector tính thế nào?** $c = \sum_i \alpha_i v_i$.
-- **Tại sao chia $\sqrt{d_k}$?** $\operatorname{Var}(q^\top k) = d_k$. Không chia thì softmax gần one-hot và gradient gần 0.
+- **Tại sao chia $\sqrt{d_k}$?** $\mathrm{Var}(q^\top k) = d_k$. Không chia thì softmax gần one-hot và gradient gần 0.
 - **Self-attention khác attention thường ở đâu?** Q, K, V đều tạo từ cùng một sequence, nên mỗi token tương tác với mọi token khác.
 - **Sequence dài gấp đôi thì sao?** Attention matrix lớn gấp 4.
 - **Attention có chứng minh model đang reasoning không?** Không. Attention chỉ là trọng số trộn các value.

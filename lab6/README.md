@@ -22,7 +22,7 @@ Sau đó chạy self_attention.ipynb (khoảng 20 - 25 phút trên CPU). Noteboo
 - Experiment 1 - 3 dùng Word2Vec (d = 100) train trên train split.
 - Ba classifier, cùng cách train như LAB 05:
   - **LSTM:** dùng hidden state cuối.
-  - **Self-Attention:** $H = \operatorname{softmax}(QK^\top / \sqrt{128})V$, rồi pooling $c = \sum_t \beta_t h_t$.
+  - **Self-Attention:** $H = \mathrm{softmax}(QK^\top / \sqrt{128})V$, rồi pooling $c = \sum_t \beta_t h_t$.
   - **Self-Attention + pos:** như trên, cộng thêm positional embedding.
 - Self-attention viết tay, không dùng `nn.MultiheadAttention`.
 

@@ -35,7 +35,7 @@ $h_t$ vừa chứa token hiện tại ($0.5$) vừa mang thông tin cũ ($0.17$)
 ## Mục 9 - Vanishing / exploding gradient
 
 $$
-\frac{\partial h_T}{\partial h_t} = \prod_{k=t+1}^{T} \operatorname{diag}(1 - h_k^2)\, W_{hh}
+\frac{\partial h_T}{\partial h_t} = \prod_{k=t+1}^{T} \mathrm{diag}(1 - h_k^2)\, W_{hh}
 $$
 
 Tích có $T - t$ thừa số, mỗi thừa số có $1 - h_k^2 \le 1$:

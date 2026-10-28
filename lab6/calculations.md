@@ -9,7 +9,7 @@ $$
 ## Ví dụ trong đề
 
 - $q = [1, 0]$, $k_1 = [1, 0]$, $k_2 = [0, 1]$: $s = [1, 0]$, nên query chú ý $k_1$ nhiều hơn.
-- $\operatorname{softmax}([2, 1, 0]) = [0.665, 0.245, 0.090]$: token đầu nhận attention lớn nhất.
+- $\mathrm{softmax}([2, 1, 0]) = [0.665, 0.245, 0.090]$: token đầu nhận attention lớn nhất.
 
 ## Bài 1 - Scores
 
@@ -52,7 +52,7 @@ $q = [1, 0]$; keys $[1, 0]$, $[0, 1]$, $[1, 1]$; values $[1, 0]$, $[0, 2]$, $[2,
 | Không scale | $[4, 2, 0]$ | $[0.867,\ 0.117,\ 0.016]$ |
 | Chia $\sqrt{4} = 2$ | $[2, 1, 0]$ | $[0.665,\ 0.245,\ 0.090]$ |
 
-Scaling làm softmax **bớt tập trung**. Lý do cần chia: $\operatorname{Var}(q^\top k) = d_k$, nên khi $d_k$ lớn thì score lớn, softmax gần one-hot và gradient gần 0.
+Scaling làm softmax **bớt tập trung**. Lý do cần chia: $\mathrm{Var}(q^\top k) = d_k$, nên khi $d_k$ lớn thì score lớn, softmax gần one-hot và gradient gần 0.
 
 ## Temperature
 
@@ -71,7 +71,7 @@ T thấp thì phân phối tập trung, T cao thì phẳng (entropy tối đa $\
 Với $x = [1000, 1001, 1002]$, tính $e^{1000}$ bị tràn số và cho nan. Trừ $\max(x) = 1002$ trước:
 
 $$
-\operatorname{softmax}([-2, -1, 0]) = [0.090,\ 0.245,\ 0.665]
+\mathrm{softmax}([-2, -1, 0]) = [0.090,\ 0.245,\ 0.665]
 $$
 
 Phép trừ không đổi kết quả vì $e^{-m}$ là thừa số chung của tử và mẫu: $\dfrac{e^{x_i - m}}{\sum_j e^{x_j - m}} = \dfrac{e^{x_i}}{\sum_j e^{x_j}}$.
