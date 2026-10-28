@@ -1,0 +1,730 @@
+experiment,model,setting,split,metric,value
+calc,-,bai2,-,alpha,"[0.09, 0.2447, 0.6652]"
+calc,-,bai4,-,context,"[1.267, 0.733]"
+stability,-,"[1000,1001,1002]",-,naive,"[nan, nan, nan]"
+stability,-,"[1000,1001,1002]",-,stable,"[0.09, 0.2447, 0.6652]"
+calc_self_attention,-,I->I,-,weight,0.4011120926797859
+calc_self_attention,-,I->like,-,weight,0.1977758146404282
+calc_self_attention,-,I->cats,-,weight,0.4011120926797859
+calc_self_attention,-,like->I,-,weight,0.28399540974126003
+calc_self_attention,-,like->like,-,weight,0.14002924504337802
+calc_self_attention,-,like->cats,-,weight,0.5759753452153619
+calc_self_attention,-,cats->I,-,weight,0.3056952508389744
+calc_self_attention,-,cats->like,-,weight,0.07431963111601946
+calc_self_attention,-,cats->cats,-,weight,0.619985118045006
+exp1_distribution,A: sentiment,all,-,entropy_dot,1.9403979985292874
+exp1_distribution,A: sentiment,all,-,entropy_scaled,2.299608121262247
+exp1_distribution,A: sentiment,the,-,score,1.7207508385123518
+exp1_distribution,A: sentiment,the,-,attention,0.03284210468381146
+exp1_distribution,A: sentiment,movie,-,score,2.8291931267840607
+exp1_distribution,A: sentiment,movie,-,attention,0.09949960355993413
+exp1_distribution,A: sentiment,was,-,score,2.138604122428763
+exp1_distribution,A: sentiment,was,-,attention,0.04987723346592433
+exp1_distribution,A: sentiment,surprisingly,-,score,2.786116282186244
+exp1_distribution,A: sentiment,surprisingly,-,attention,0.09530447964140873
+exp1_distribution,A: sentiment,good,-,score,4.172815307578002
+exp1_distribution,A: sentiment,good,-,attention,0.3813722150541067
+exp1_distribution,A: sentiment,despite,-,score,1.604285654150586
+exp1_distribution,A: sentiment,despite,-,attention,0.02923147931154372
+exp1_distribution,A: sentiment,a,-,score,1.6627239894363979
+exp1_distribution,A: sentiment,a,-,attention,0.030990618277958265
+exp1_distribution,A: sentiment,very,-,score,2.6182721177103216
+exp1_distribution,A: sentiment,very,-,attention,0.08057856335177749
+exp1_distribution,A: sentiment,slow,-,score,3.1796205892993554
+exp1_distribution,A: sentiment,slow,-,attention,0.14125702769045614
+exp1_distribution,A: sentiment,beginning,-,score,2.307367699169061
+exp1_distribution,A: sentiment,beginning,-,attention,0.05904667496307896
+exp1_distribution,B: topic,all,-,entropy_dot,2.160110279812537
+exp1_distribution,B: topic,all,-,entropy_scaled,2.3012633200361456
+exp1_distribution,B: topic,the,-,score,1.5691727000148772
+exp1_distribution,B: topic,the,-,attention,0.0472117488009683
+exp1_distribution,B: topic,movie,-,score,3.179158007240818
+exp1_distribution,B: topic,movie,-,attention,0.23618799670477808
+exp1_distribution,B: topic,was,-,score,2.038138146036818
+exp1_distribution,B: topic,was,-,attention,0.07546041566333145
+exp1_distribution,B: topic,surprisingly,-,score,2.203849110056457
+exp1_distribution,B: topic,surprisingly,-,attention,0.08906079148330097
+exp1_distribution,B: topic,good,-,score,2.156634789682761
+exp1_distribution,B: topic,good,-,attention,0.08495356954163535
+exp1_distribution,B: topic,despite,-,score,1.619459761389145
+exp1_distribution,B: topic,despite,-,attention,0.0496465964986929
+exp1_distribution,B: topic,a,-,score,1.5438070061828482
+exp1_distribution,B: topic,a,-,attention,0.04602925087847035
+exp1_distribution,B: topic,very,-,score,2.2332194589941112
+exp1_distribution,B: topic,very,-,attention,0.09171532954220929
+exp1_distribution,B: topic,slow,-,score,2.8260967700577533
+exp1_distribution,B: topic,slow,-,attention,0.1659301384288485
+exp1_distribution,B: topic,beginning,-,score,2.4490090211037034
+exp1_distribution,B: topic,beginning,-,attention,0.11380416245776476
+temperature,A: sentiment,T=0.5,-,max_weight,0.728162856355171
+temperature,A: sentiment,T=0.5,-,entropy,1.064428570954872
+temperature,A: sentiment,T=1.0,-,max_weight,0.3813722150541067
+temperature,A: sentiment,T=1.0,-,entropy,1.9403979985292874
+temperature,A: sentiment,T=2.0,-,max_weight,0.21324552937882668
+temperature,A: sentiment,T=2.0,-,entropy,2.218570298462114
+scaling,không scaling,d_k=4,-,std(score),2.024773868297963
+scaling,không scaling,d_k=4,-,mean max weight,0.4970533848696288
+scaling,không scaling,d_k=4,-,mean entropy,1.4248021418413785
+scaling,không scaling,d_k=4,-,mean ‖∂α/∂s‖,0.33180520364262756
+scaling,chia √d_k,d_k=4,-,std(score),1.0123869341489815
+scaling,chia √d_k,d_k=4,-,mean max weight,0.308117987671247
+scaling,chia √d_k,d_k=4,-,mean entropy,1.9404468685926488
+scaling,chia √d_k,d_k=4,-,mean ‖∂α/∂s‖,0.3390407285065489
+scaling,không scaling,d_k=16,-,std(score),4.036501267903063
+scaling,không scaling,d_k=16,-,mean max weight,0.7318476144973892
+scaling,không scaling,d_k=16,-,mean entropy,0.7314540945180582
+scaling,không scaling,d_k=16,-,mean ‖∂α/∂s‖,0.2702271132583463
+scaling,chia √d_k,d_k=16,-,std(score),1.0091253169757657
+scaling,chia √d_k,d_k=16,-,mean max weight,0.3187264925659283
+scaling,chia √d_k,d_k=16,-,mean entropy,1.9233668950296767
+scaling,chia √d_k,d_k=16,-,mean ‖∂α/∂s‖,0.3468724664776898
+scaling,không scaling,d_k=64,-,std(score),7.9812123552392995
+scaling,không scaling,d_k=64,-,mean max weight,0.8712791863002639
+scaling,không scaling,d_k=64,-,mean entropy,0.32916022853850574
+scaling,không scaling,d_k=64,-,mean ‖∂α/∂s‖,0.1600519348220229
+scaling,chia √d_k,d_k=64,-,std(score),0.9976515444049124
+scaling,chia √d_k,d_k=64,-,mean max weight,0.318687005457205
+scaling,chia √d_k,d_k=64,-,mean entropy,1.9292389980970024
+scaling,chia √d_k,d_k=64,-,mean ‖∂α/∂s‖,0.34596554263884116
+scaling,không scaling,d_k=256,-,std(score),16.04398862176271
+scaling,không scaling,d_k=256,-,mean max weight,0.9270803561755069
+scaling,không scaling,d_k=256,-,mean entropy,0.1761704975300416
+scaling,không scaling,d_k=256,-,mean ‖∂α/∂s‖,0.09370513022617286
+scaling,chia √d_k,d_k=256,-,std(score),1.0027492888601695
+scaling,chia √d_k,d_k=256,-,mean max weight,0.3174724520788975
+scaling,chia √d_k,d_k=256,-,mean entropy,1.9264682668846904
+scaling,chia √d_k,d_k=256,-,mean ‖∂α/∂s‖,0.34704415157583673
+scaling,không scaling,d_k=1024,-,std(score),32.01858757342585
+scaling,không scaling,d_k=1024,-,mean max weight,0.965577511054842
+scaling,không scaling,d_k=1024,-,mean entropy,0.08252952962576174
+scaling,không scaling,d_k=1024,-,mean ‖∂α/∂s‖,0.04628171757526891
+scaling,chia √d_k,d_k=1024,-,std(score),1.0005808616695577
+scaling,chia √d_k,d_k=1024,-,mean max weight,0.32334793526018807
+scaling,chia √d_k,d_k=1024,-,mean entropy,1.9188303110307456
+scaling,chia √d_k,d_k=1024,-,mean ‖∂α/∂s‖,0.34772311842443265
+vocab,-,-,-,vocab_size,20002
+exp4_models,LSTM,L=200,-,best_epoch,5
+exp4_models,LSTM,L=200,-,train_time_s,389.4278053000003
+exp4_models,LSTM,L=200,-,time_per_epoch_s,46.739801825000086
+exp4_models,LSTM,L=200,-,params,2118089
+exp4_models,LSTM,epoch=1,train,train_loss,0.6519915449752726
+exp4_models,LSTM,epoch=1,validation,val_loss,0.6184965609289561
+exp4_models,LSTM,epoch=1,validation,val_accuracy,0.6689419795221843
+exp4_models,LSTM,epoch=1,validation,val_f1,0.7326957367482574
+exp4_models,LSTM,epoch=1,validation,epoch_time_s,60.03636940000024
+exp4_models,LSTM,epoch=2,train,train_loss,0.5449011361722229
+exp4_models,LSTM,epoch=2,validation,val_loss,0.5213398598500989
+exp4_models,LSTM,epoch=2,validation,val_accuracy,0.7524593455129492
+exp4_models,LSTM,epoch=2,validation,val_f1,0.7660785429709732
+exp4_models,LSTM,epoch=2,validation,epoch_time_s,62.143002499999966
+exp4_models,LSTM,epoch=3,train,train_loss,0.44339618593916585
+exp4_models,LSTM,epoch=3,validation,val_loss,0.4553682287306841
+exp4_models,LSTM,epoch=3,validation,val_accuracy,0.7926119253162016
+exp4_models,LSTM,epoch=3,validation,val_f1,0.7771305285868393
+exp4_models,LSTM,epoch=3,validation,epoch_time_s,62.57154260000016
+exp4_models,LSTM,epoch=4,train,train_loss,0.35763477713373754
+exp4_models,LSTM,epoch=4,validation,val_loss,0.46888341927411786
+exp4_models,LSTM,epoch=4,validation,val_accuracy,0.779160811082112
+exp4_models,LSTM,epoch=4,validation,val_f1,0.7489730716567777
+exp4_models,LSTM,epoch=4,validation,epoch_time_s,34.2851270000001
+exp4_models,LSTM,epoch=5,train,train_loss,0.30068257832206446
+exp4_models,LSTM,epoch=5,validation,val_loss,0.4161708144064098
+exp4_models,LSTM,epoch=5,validation,val_accuracy,0.8261393294519173
+exp4_models,LSTM,epoch=5,validation,val_f1,0.8301960784313726
+exp4_models,LSTM,epoch=5,validation,epoch_time_s,35.87254040000016
+exp4_models,LSTM,epoch=6,train,train_loss,0.2344509370205052
+exp4_models,LSTM,epoch=6,validation,val_loss,0.42233315626635115
+exp4_models,LSTM,epoch=6,validation,val_accuracy,0.8329652680184702
+exp4_models,LSTM,epoch=6,validation,val_f1,0.8396299151888974
+exp4_models,LSTM,epoch=6,validation,epoch_time_s,38.807068900000104
+exp4_models,LSTM,epoch=7,train,train_loss,0.18812115084568204
+exp4_models,LSTM,epoch=7,validation,val_loss,0.4381307929495145
+exp4_models,LSTM,epoch=7,validation,val_accuracy,0.8470186709496085
+exp4_models,LSTM,epoch=7,validation,val_f1,0.8526112185686654
+exp4_models,LSTM,epoch=7,validation,epoch_time_s,43.53086600000006
+exp4_models,LSTM,epoch=8,train,train_loss,0.14262649816546594
+exp4_models,LSTM,epoch=8,validation,val_loss,0.45710919571617925
+exp4_models,LSTM,epoch=8,validation,val_accuracy,0.8482232483437061
+exp4_models,LSTM,epoch=8,validation,val_f1,0.85
+exp4_models,LSTM,epoch=8,validation,epoch_time_s,36.6718977999999
+exp4_models,LSTM,L=200,test,accuracy,0.824580598103574
+exp4_models,LSTM,L=200,test,precision,0.8193599367838799
+exp4_models,LSTM,L=200,test,recall,0.8354012246213341
+exp4_models,LSTM,L=200,test,f1,0.8273028284198348
+exp4_models,Self-Attention,L=200,-,best_epoch,3
+exp4_models,Self-Attention,L=200,-,train_time_s,270.08376750000025
+exp4_models,Self-Attention,L=200,-,time_per_epoch_s,31.722715487500125
+exp4_models,Self-Attention,L=200,-,params,2038857
+exp4_models,Self-Attention,epoch=1,train,train_loss,0.5380282239915616
+exp4_models,Self-Attention,epoch=1,validation,val_loss,0.4339673033192627
+exp4_models,Self-Attention,epoch=1,validation,val_accuracy,0.7954226059024292
+exp4_models,Self-Attention,epoch=1,validation,val_f1,0.8074815794445495
+exp4_models,Self-Attention,epoch=1,validation,epoch_time_s,34.48463309999988
+exp4_models,Self-Attention,epoch=2,train,train_loss,0.3582734847166916
+exp4_models,Self-Attention,epoch=2,validation,val_loss,0.366015285319989
+exp4_models,Self-Attention,epoch=2,validation,val_accuracy,0.8387873920899418
+exp4_models,Self-Attention,epoch=2,validation,val_f1,0.8376794016575703
+exp4_models,Self-Attention,epoch=2,validation,epoch_time_s,35.54886170000009
+exp4_models,Self-Attention,epoch=3,train,train_loss,0.27903662239853616
+exp4_models,Self-Attention,epoch=3,validation,val_loss,0.3569286218767696
+exp4_models,Self-Attention,epoch=3,validation,val_accuracy,0.845814093555511
+exp4_models,Self-Attention,epoch=3,validation,val_f1,0.8524779101037264
+exp4_models,Self-Attention,epoch=3,validation,epoch_time_s,27.59327220000023
+exp4_models,Self-Attention,epoch=4,train,train_loss,0.2187669602873119
+exp4_models,Self-Attention,epoch=4,validation,val_loss,0.36203459944124217
+exp4_models,Self-Attention,epoch=4,validation,val_accuracy,0.8526400321220639
+exp4_models,Self-Attention,epoch=4,validation,val_f1,0.8530824659727783
+exp4_models,Self-Attention,epoch=4,validation,epoch_time_s,33.68429460000016
+exp4_models,Self-Attention,epoch=5,train,train_loss,0.17054594857610267
+exp4_models,Self-Attention,epoch=5,validation,val_loss,0.3962094253951368
+exp4_models,Self-Attention,epoch=5,validation,val_accuracy,0.8522385063240313
+exp4_models,Self-Attention,epoch=5,validation,val_f1,0.8525050100200401
+exp4_models,Self-Attention,epoch=5,validation,epoch_time_s,32.39670350000006
+exp4_models,Self-Attention,epoch=6,train,train_loss,0.12641644960563178
+exp4_models,Self-Attention,epoch=6,validation,val_loss,0.4503125251663037
+exp4_models,Self-Attention,epoch=6,validation,val_accuracy,0.8488255370407549
+exp4_models,Self-Attention,epoch=6,validation,val_f1,0.8484604548198833
+exp4_models,Self-Attention,epoch=6,validation,epoch_time_s,29.851881500000218
+exp4_models,Self-Attention,epoch=7,train,train_loss,0.088244273330423
+exp4_models,Self-Attention,epoch=7,validation,val_loss,0.5577946763751871
+exp4_models,Self-Attention,epoch=7,validation,val_accuracy,0.8452118048584621
+exp4_models,Self-Attention,epoch=7,validation,val_f1,0.8503784203376674
+exp4_models,Self-Attention,epoch=7,validation,epoch_time_s,30.40567060000012
+exp4_models,Self-Attention,epoch=8,train,train_loss,0.05283321741096485
+exp4_models,Self-Attention,epoch=8,validation,val_loss,0.7185180276889501
+exp4_models,Self-Attention,epoch=8,validation,val_accuracy,0.8422003613732182
+exp4_models,Self-Attention,epoch=8,validation,val_f1,0.8478513356562137
+exp4_models,Self-Attention,epoch=8,validation,epoch_time_s,29.816406700000243
+exp4_models,Self-Attention,L=200,test,accuracy,0.836575087122133
+exp4_models,Self-Attention,L=200,test,precision,0.8185689301193826
+exp4_models,Self-Attention,L=200,test,recall,0.867305833064776
+exp4_models,Self-Attention,L=200,test,f1,0.8422329147596135
+exp4_models,Self-Attention + pos,L=200,-,best_epoch,3
+exp4_models,Self-Attention + pos,L=200,-,train_time_s,300.1236385000002
+exp4_models,Self-Attention + pos,L=200,-,time_per_epoch_s,35.26837720000009
+exp4_models,Self-Attention + pos,L=200,-,params,2058857
+exp4_models,Self-Attention + pos,epoch=1,train,train_loss,0.5589622689114393
+exp4_models,Self-Attention + pos,epoch=1,validation,val_loss,0.4375889013686973
+exp4_models,Self-Attention + pos,epoch=1,validation,val_accuracy,0.7936157398112829
+exp4_models,Self-Attention + pos,epoch=1,validation,val_f1,0.808351976137211
+exp4_models,Self-Attention + pos,epoch=1,validation,epoch_time_s,32.05635620000021
+exp4_models,Self-Attention + pos,epoch=2,train,train_loss,0.35684362290668203
+exp4_models,Self-Attention + pos,epoch=2,validation,val_loss,0.36669083037846156
+exp4_models,Self-Attention + pos,epoch=2,validation,val_accuracy,0.8341698454125678
+exp4_models,Self-Attention + pos,epoch=2,validation,val_f1,0.834136546184739
+exp4_models,Self-Attention + pos,epoch=2,validation,epoch_time_s,35.11631710000029
+exp4_models,Self-Attention + pos,epoch=3,train,train_loss,0.26163606989403443
+exp4_models,Self-Attention + pos,epoch=3,validation,val_loss,0.36370844280782494
+exp4_models,Self-Attention + pos,epoch=3,validation,val_accuracy,0.8478217225456736
+exp4_models,Self-Attention + pos,epoch=3,validation,val_f1,0.8510805500982318
+exp4_models,Self-Attention + pos,epoch=3,validation,epoch_time_s,35.125104700000065
+exp4_models,Self-Attention + pos,epoch=4,train,train_loss,0.18635966261365547
+exp4_models,Self-Attention + pos,epoch=4,validation,val_loss,0.39626815528797166
+exp4_models,Self-Attention + pos,epoch=4,validation,val_accuracy,0.8486247741417386
+exp4_models,Self-Attention + pos,epoch=4,validation,val_f1,0.8480451430874647
+exp4_models,Self-Attention + pos,epoch=4,validation,epoch_time_s,33.926048300000275
+exp4_models,Self-Attention + pos,epoch=5,train,train_loss,0.11267401025141242
+exp4_models,Self-Attention + pos,epoch=5,validation,val_loss,0.5094598029081036
+exp4_models,Self-Attention + pos,epoch=5,validation,val_accuracy,0.8411965468781369
+exp4_models,Self-Attention + pos,epoch=5,validation,val_f1,0.8473856839668146
+exp4_models,Self-Attention + pos,epoch=5,validation,epoch_time_s,31.568548700000065
+exp4_models,Self-Attention + pos,epoch=6,train,train_loss,0.055553833882561444
+exp4_models,Self-Attention + pos,epoch=6,validation,val_loss,0.6705748666049393
+exp4_models,Self-Attention + pos,epoch=6,validation,val_accuracy,0.8355751857056816
+exp4_models,Self-Attention + pos,epoch=6,validation,val_f1,0.8437321121923297
+exp4_models,Self-Attention + pos,epoch=6,validation,epoch_time_s,30.555502599999727
+exp4_models,Self-Attention + pos,epoch=7,train,train_loss,0.019828131633155274
+exp4_models,Self-Attention + pos,epoch=7,validation,val_loss,0.804775691380721
+exp4_models,Self-Attention + pos,epoch=7,validation,val_accuracy,0.8379843404938767
+exp4_models,Self-Attention + pos,epoch=7,validation,val_f1,0.8419815938907382
+exp4_models,Self-Attention + pos,epoch=7,validation,epoch_time_s,45.65922109999974
+exp4_models,Self-Attention + pos,epoch=8,train,train_loss,0.004945760210996106
+exp4_models,Self-Attention + pos,epoch=8,validation,val_loss,0.8904550128124887
+exp4_models,Self-Attention + pos,epoch=8,validation,val_accuracy,0.8361774744027304
+exp4_models,Self-Attention + pos,epoch=8,validation,val_f1,0.8396856581532417
+exp4_models,Self-Attention + pos,epoch=8,validation,epoch_time_s,38.13991890000034
+exp4_models,Self-Attention + pos,L=200,test,accuracy,0.8326849825755734
+exp4_models,Self-Attention + pos,L=200,test,precision,0.832410305803034
+exp4_models,Self-Attention + pos,L=200,test,recall,0.8355623590074122
+exp4_models,Self-Attention + pos,L=200,test,f1,0.8339833541071932
+exp4_models,TF-IDF + LR,full text,test,accuracy,0.8899019369478888
+exp4_models,TF-IDF + LR,full text,test,precision,0.891464104013567
+exp4_models,TF-IDF + LR,full text,test,recall,0.8893812439574605
+exp4_models,TF-IDF + LR,full text,test,f1,0.8904214559386974
+exp4_models,TF-IDF + LR,full text,-,train_time_s,5.220784100000856
+exp4_models,TF-IDF + LR,full text,-,C,4
+exp4_models,TF-IDF + LR,full text,-,params,43173
+exp3_visualization,"Word2Vec, W = I",cat->the,-,weight,0.10740671768983605
+exp3_visualization,"Word2Vec, W = I",cat->cat,-,weight,0.23605132299740095
+exp3_visualization,"Word2Vec, W = I",cat->that,-,weight,0.10586751809432017
+exp3_visualization,"Word2Vec, W = I",cat->i,-,weight,0.1125913602500149
+exp3_visualization,"Word2Vec, W = I",cat->adopted,-,weight,0.11272917086626098
+exp3_visualization,"Word2Vec, W = I",cat->yesterday,-,weight,0.1038355439869594
+exp3_visualization,"Word2Vec, W = I",cat->is,-,weight,0.10827330630140526
+exp3_visualization,"Word2Vec, W = I",cat->sleeping,-,weight,0.11324505981380233
+exp3_visualization,"Word2Vec, W ngẫu nhiên",cat->the,-,weight,0.11793886646861257
+exp3_visualization,"Word2Vec, W ngẫu nhiên",cat->cat,-,weight,0.11796555345252818
+exp3_visualization,"Word2Vec, W ngẫu nhiên",cat->that,-,weight,0.11787717088459031
+exp3_visualization,"Word2Vec, W ngẫu nhiên",cat->i,-,weight,0.12674182720779878
+exp3_visualization,"Word2Vec, W ngẫu nhiên",cat->adopted,-,weight,0.1329455821638724
+exp3_visualization,"Word2Vec, W ngẫu nhiên",cat->yesterday,-,weight,0.12293537014974817
+exp3_visualization,"Word2Vec, W ngẫu nhiên",cat->is,-,weight,0.12157127263135674
+exp3_visualization,"Word2Vec, W ngẫu nhiên",cat->sleeping,-,weight,0.1420243570414928
+exp3_visualization,Self-Attention (trained),cat->the,-,weight,0.23961891
+exp3_visualization,Self-Attention (trained),cat->cat,-,weight,0.033214472
+exp3_visualization,Self-Attention (trained),cat->that,-,weight,0.24870044
+exp3_visualization,Self-Attention (trained),cat->i,-,weight,0.18044795
+exp3_visualization,Self-Attention (trained),cat->adopted,-,weight,0.021850195
+exp3_visualization,Self-Attention (trained),cat->yesterday,-,weight,0.0764837
+exp3_visualization,Self-Attention (trained),cat->is,-,weight,0.07140983
+exp3_visualization,Self-Attention (trained),cat->sleeping,-,weight,0.12827443
+exp3_visualization,Self-Attention + pos (trained),cat->the,-,weight,0.038646154
+exp3_visualization,Self-Attention + pos (trained),cat->cat,-,weight,0.009080151
+exp3_visualization,Self-Attention + pos (trained),cat->that,-,weight,0.06855932
+exp3_visualization,Self-Attention + pos (trained),cat->i,-,weight,0.17561446
+exp3_visualization,Self-Attention + pos (trained),cat->adopted,-,weight,0.073075496
+exp3_visualization,Self-Attention + pos (trained),cat->yesterday,-,weight,0.19507992
+exp3_visualization,Self-Attention + pos (trained),cat->is,-,weight,0.40365958
+exp3_visualization,Self-Attention + pos (trained),cat->sleeping,-,weight,0.036284912
+exp3_visualization,"Word2Vec, W = I",adopted->the,-,weight,0.10835087209504772
+exp3_visualization,"Word2Vec, W = I",adopted->cat,-,weight,0.11474662343187528
+exp3_visualization,"Word2Vec, W = I",adopted->that,-,weight,0.10780875357183614
+exp3_visualization,"Word2Vec, W = I",adopted->i,-,weight,0.1067804533936689
+exp3_visualization,"Word2Vec, W = I",adopted->adopted,-,weight,0.22198341226903198
+exp3_visualization,"Word2Vec, W = I",adopted->yesterday,-,weight,0.10899502423878853
+exp3_visualization,"Word2Vec, W = I",adopted->is,-,weight,0.1017731208551068
+exp3_visualization,"Word2Vec, W = I",adopted->sleeping,-,weight,0.1295617401446446
+exp3_visualization,"Word2Vec, W ngẫu nhiên",adopted->the,-,weight,0.13332794534180967
+exp3_visualization,"Word2Vec, W ngẫu nhiên",adopted->cat,-,weight,0.12224110670701847
+exp3_visualization,"Word2Vec, W ngẫu nhiên",adopted->that,-,weight,0.12493888465389412
+exp3_visualization,"Word2Vec, W ngẫu nhiên",adopted->i,-,weight,0.12247226098379771
+exp3_visualization,"Word2Vec, W ngẫu nhiên",adopted->adopted,-,weight,0.13002539550997327
+exp3_visualization,"Word2Vec, W ngẫu nhiên",adopted->yesterday,-,weight,0.12173140179908326
+exp3_visualization,"Word2Vec, W ngẫu nhiên",adopted->is,-,weight,0.1176438302178616
+exp3_visualization,"Word2Vec, W ngẫu nhiên",adopted->sleeping,-,weight,0.12761917478656198
+exp3_visualization,Self-Attention (trained),adopted->the,-,weight,0.00012471087
+exp3_visualization,Self-Attention (trained),adopted->cat,-,weight,0.91498876
+exp3_visualization,Self-Attention (trained),adopted->that,-,weight,0.0030914475
+exp3_visualization,Self-Attention (trained),adopted->i,-,weight,0.03640939
+exp3_visualization,Self-Attention (trained),adopted->adopted,-,weight,0.041779663
+exp3_visualization,Self-Attention (trained),adopted->yesterday,-,weight,0.00189507
+exp3_visualization,Self-Attention (trained),adopted->is,-,weight,1.8058196e-06
+exp3_visualization,Self-Attention (trained),adopted->sleeping,-,weight,0.001709115
+exp3_visualization,Self-Attention + pos (trained),adopted->the,-,weight,0.24240723
+exp3_visualization,Self-Attention + pos (trained),adopted->cat,-,weight,0.030398618
+exp3_visualization,Self-Attention + pos (trained),adopted->that,-,weight,0.008688818
+exp3_visualization,Self-Attention + pos (trained),adopted->i,-,weight,0.073391244
+exp3_visualization,Self-Attention + pos (trained),adopted->adopted,-,weight,0.009695558
+exp3_visualization,Self-Attention + pos (trained),adopted->yesterday,-,weight,0.62480724
+exp3_visualization,Self-Attention + pos (trained),adopted->is,-,weight,0.005474387
+exp3_visualization,Self-Attention + pos (trained),adopted->sleeping,-,weight,0.0051368433
+exp3_visualization,"Word2Vec, W = I",sleeping->the,-,weight,0.1049467642206591
+exp3_visualization,"Word2Vec, W = I",sleeping->cat,-,weight,0.11105554960237819
+exp3_visualization,"Word2Vec, W = I",sleeping->that,-,weight,0.10709601858607723
+exp3_visualization,"Word2Vec, W = I",sleeping->i,-,weight,0.1083105003379975
+exp3_visualization,"Word2Vec, W = I",sleeping->adopted,-,weight,0.12482287193479381
+exp3_visualization,"Word2Vec, W = I",sleeping->yesterday,-,weight,0.12225565574459529
+exp3_visualization,"Word2Vec, W = I",sleeping->is,-,weight,0.09839050228937793
+exp3_visualization,"Word2Vec, W = I",sleeping->sleeping,-,weight,0.22312213728412106
+exp3_visualization,"Word2Vec, W ngẫu nhiên",sleeping->the,-,weight,0.12307874008953042
+exp3_visualization,"Word2Vec, W ngẫu nhiên",sleeping->cat,-,weight,0.11344898278809044
+exp3_visualization,"Word2Vec, W ngẫu nhiên",sleeping->that,-,weight,0.11773238675929551
+exp3_visualization,"Word2Vec, W ngẫu nhiên",sleeping->i,-,weight,0.12866006100576183
+exp3_visualization,"Word2Vec, W ngẫu nhiên",sleeping->adopted,-,weight,0.14095205332755242
+exp3_visualization,"Word2Vec, W ngẫu nhiên",sleeping->yesterday,-,weight,0.12187687499347595
+exp3_visualization,"Word2Vec, W ngẫu nhiên",sleeping->is,-,weight,0.1247828872934458
+exp3_visualization,"Word2Vec, W ngẫu nhiên",sleeping->sleeping,-,weight,0.12946801374284764
+exp3_visualization,Self-Attention (trained),sleeping->the,-,weight,0.47719562
+exp3_visualization,Self-Attention (trained),sleeping->cat,-,weight,5.239021e-06
+exp3_visualization,Self-Attention (trained),sleeping->that,-,weight,0.0026440974
+exp3_visualization,Self-Attention (trained),sleeping->i,-,weight,0.00017058449
+exp3_visualization,Self-Attention (trained),sleeping->adopted,-,weight,1.6286705e-05
+exp3_visualization,Self-Attention (trained),sleeping->yesterday,-,weight,0.0011723627
+exp3_visualization,Self-Attention (trained),sleeping->is,-,weight,0.5151479
+exp3_visualization,Self-Attention (trained),sleeping->sleeping,-,weight,0.003647929
+exp3_visualization,Self-Attention + pos (trained),sleeping->the,-,weight,0.004987843
+exp3_visualization,Self-Attention + pos (trained),sleeping->cat,-,weight,0.046780117
+exp3_visualization,Self-Attention + pos (trained),sleeping->that,-,weight,0.019245908
+exp3_visualization,Self-Attention + pos (trained),sleeping->i,-,weight,0.18373783
+exp3_visualization,Self-Attention + pos (trained),sleeping->adopted,-,weight,0.1393724
+exp3_visualization,Self-Attention + pos (trained),sleeping->yesterday,-,weight,0.0015624512
+exp3_visualization,Self-Attention + pos (trained),sleeping->is,-,weight,0.1691715
+exp3_visualization,Self-Attention + pos (trained),sleeping->sleeping,-,weight,0.43514198
+exp3_visualization,"Word2Vec, W = I",book->the,-,weight,0.1011821473284633
+exp3_visualization,"Word2Vec, W = I",book->book,-,weight,0.22064410592345848
+exp3_visualization,"Word2Vec, W = I",book->that,-,weight,0.10324435081591235
+exp3_visualization,"Word2Vec, W = I",book->i,-,weight,0.11699681140762537
+exp3_visualization,"Word2Vec, W = I",book->bought,-,weight,0.1348085007850052
+exp3_visualization,"Word2Vec, W = I",book->yesterday,-,weight,0.115623545743068
+exp3_visualization,"Word2Vec, W = I",book->was,-,weight,0.10769126551304552
+exp3_visualization,"Word2Vec, W = I",book->expensive,-,weight,0.0998092724834217
+exp3_visualization,"Word2Vec, W ngẫu nhiên",book->the,-,weight,0.13491244179703404
+exp3_visualization,"Word2Vec, W ngẫu nhiên",book->book,-,weight,0.1333854749147398
+exp3_visualization,"Word2Vec, W ngẫu nhiên",book->that,-,weight,0.1297704450421709
+exp3_visualization,"Word2Vec, W ngẫu nhiên",book->i,-,weight,0.13343848338533962
+exp3_visualization,"Word2Vec, W ngẫu nhiên",book->bought,-,weight,0.11116671751836094
+exp3_visualization,"Word2Vec, W ngẫu nhiên",book->yesterday,-,weight,0.11342405470308618
+exp3_visualization,"Word2Vec, W ngẫu nhiên",book->was,-,weight,0.13507154808908092
+exp3_visualization,"Word2Vec, W ngẫu nhiên",book->expensive,-,weight,0.10883083455018763
+exp3_visualization,Self-Attention (trained),book->the,-,weight,0.041692175
+exp3_visualization,Self-Attention (trained),book->book,-,weight,0.18145783
+exp3_visualization,Self-Attention (trained),book->that,-,weight,0.020032458
+exp3_visualization,Self-Attention (trained),book->i,-,weight,0.039745137
+exp3_visualization,Self-Attention (trained),book->bought,-,weight,0.05088014
+exp3_visualization,Self-Attention (trained),book->yesterday,-,weight,0.27412108
+exp3_visualization,Self-Attention (trained),book->was,-,weight,0.11107954
+exp3_visualization,Self-Attention (trained),book->expensive,-,weight,0.28099167
+exp3_visualization,Self-Attention + pos (trained),book->the,-,weight,0.061868284
+exp3_visualization,Self-Attention + pos (trained),book->book,-,weight,0.00891454
+exp3_visualization,Self-Attention + pos (trained),book->that,-,weight,0.0012171526
+exp3_visualization,Self-Attention + pos (trained),book->i,-,weight,0.24267101
+exp3_visualization,Self-Attention + pos (trained),book->bought,-,weight,0.07776774
+exp3_visualization,Self-Attention + pos (trained),book->yesterday,-,weight,0.498065
+exp3_visualization,Self-Attention + pos (trained),book->was,-,weight,0.099303044
+exp3_visualization,Self-Attention + pos (trained),book->expensive,-,weight,0.010193213
+exp3_visualization,"Word2Vec, W = I",bought->the,-,weight,0.08570814822735176
+exp3_visualization,"Word2Vec, W = I",bought->book,-,weight,0.11252903806773545
+exp3_visualization,"Word2Vec, W = I",bought->that,-,weight,0.09046645532905484
+exp3_visualization,"Word2Vec, W = I",bought->i,-,weight,0.1120830463416828
+exp3_visualization,"Word2Vec, W = I",bought->bought,-,weight,0.2377169369487245
+exp3_visualization,"Word2Vec, W = I",bought->yesterday,-,weight,0.1534434178930064
+exp3_visualization,"Word2Vec, W = I",bought->was,-,weight,0.10676415667618992
+exp3_visualization,"Word2Vec, W = I",bought->expensive,-,weight,0.10128880051625438
+exp3_visualization,"Word2Vec, W ngẫu nhiên",bought->the,-,weight,0.13973564489178597
+exp3_visualization,"Word2Vec, W ngẫu nhiên",bought->book,-,weight,0.12365800925587142
+exp3_visualization,"Word2Vec, W ngẫu nhiên",bought->that,-,weight,0.12727915335734952
+exp3_visualization,"Word2Vec, W ngẫu nhiên",bought->i,-,weight,0.13000409120188872
+exp3_visualization,"Word2Vec, W ngẫu nhiên",bought->bought,-,weight,0.11531976240740463
+exp3_visualization,"Word2Vec, W ngẫu nhiên",bought->yesterday,-,weight,0.12133720959576205
+exp3_visualization,"Word2Vec, W ngẫu nhiên",bought->was,-,weight,0.12183545119729058
+exp3_visualization,"Word2Vec, W ngẫu nhiên",bought->expensive,-,weight,0.12083067809264712
+exp3_visualization,Self-Attention (trained),bought->the,-,weight,5.1474082e-08
+exp3_visualization,Self-Attention (trained),bought->book,-,weight,0.34781298
+exp3_visualization,Self-Attention (trained),bought->that,-,weight,0.00084110437
+exp3_visualization,Self-Attention (trained),bought->i,-,weight,0.009315512
+exp3_visualization,Self-Attention (trained),bought->bought,-,weight,0.08194492
+exp3_visualization,Self-Attention (trained),bought->yesterday,-,weight,0.0022833918
+exp3_visualization,Self-Attention (trained),bought->was,-,weight,0.3187145
+exp3_visualization,Self-Attention (trained),bought->expensive,-,weight,0.23908755
+exp3_visualization,Self-Attention + pos (trained),bought->the,-,weight,0.15070182
+exp3_visualization,Self-Attention + pos (trained),bought->book,-,weight,0.031441003
+exp3_visualization,Self-Attention + pos (trained),bought->that,-,weight,0.026207251
+exp3_visualization,Self-Attention + pos (trained),bought->i,-,weight,0.18131562
+exp3_visualization,Self-Attention + pos (trained),bought->bought,-,weight,0.14674431
+exp3_visualization,Self-Attention + pos (trained),bought->yesterday,-,weight,0.022701725
+exp3_visualization,Self-Attention + pos (trained),bought->was,-,weight,0.04880874
+exp3_visualization,Self-Attention + pos (trained),bought->expensive,-,weight,0.39207947
+exp3_visualization,"Word2Vec, W = I",expensive->the,-,weight,0.09638543478190738
+exp3_visualization,"Word2Vec, W = I",expensive->book,-,weight,0.09956055312739612
+exp3_visualization,"Word2Vec, W = I",expensive->that,-,weight,0.10345961132022331
+exp3_visualization,"Word2Vec, W = I",expensive->i,-,weight,0.10610501368286618
+exp3_visualization,"Word2Vec, W = I",expensive->bought,-,weight,0.12104044492172591
+exp3_visualization,"Word2Vec, W = I",expensive->yesterday,-,weight,0.10934397344752572
+exp3_visualization,"Word2Vec, W = I",expensive->was,-,weight,0.10407983603855006
+exp3_visualization,"Word2Vec, W = I",expensive->expensive,-,weight,0.2600251326798053
+exp3_visualization,"Word2Vec, W ngẫu nhiên",expensive->the,-,weight,0.12657944801923052
+exp3_visualization,"Word2Vec, W ngẫu nhiên",expensive->book,-,weight,0.1356907857001545
+exp3_visualization,"Word2Vec, W ngẫu nhiên",expensive->that,-,weight,0.12825872040960573
+exp3_visualization,"Word2Vec, W ngẫu nhiên",expensive->i,-,weight,0.12878116089878733
+exp3_visualization,"Word2Vec, W ngẫu nhiên",expensive->bought,-,weight,0.12627113253232183
+exp3_visualization,"Word2Vec, W ngẫu nhiên",expensive->yesterday,-,weight,0.12574859006022873
+exp3_visualization,"Word2Vec, W ngẫu nhiên",expensive->was,-,weight,0.11493640568366073
+exp3_visualization,"Word2Vec, W ngẫu nhiên",expensive->expensive,-,weight,0.11373375669601068
+exp3_visualization,Self-Attention (trained),expensive->the,-,weight,0.12863402
+exp3_visualization,Self-Attention (trained),expensive->book,-,weight,0.120805204
+exp3_visualization,Self-Attention (trained),expensive->that,-,weight,0.03242438
+exp3_visualization,Self-Attention (trained),expensive->i,-,weight,0.11074828
+exp3_visualization,Self-Attention (trained),expensive->bought,-,weight,0.09690406
+exp3_visualization,Self-Attention (trained),expensive->yesterday,-,weight,0.13149829
+exp3_visualization,Self-Attention (trained),expensive->was,-,weight,0.15049827
+exp3_visualization,Self-Attention (trained),expensive->expensive,-,weight,0.22848746
+exp3_visualization,Self-Attention + pos (trained),expensive->the,-,weight,0.0063742558
+exp3_visualization,Self-Attention + pos (trained),expensive->book,-,weight,0.0037823527
+exp3_visualization,Self-Attention + pos (trained),expensive->that,-,weight,0.0021601836
+exp3_visualization,Self-Attention + pos (trained),expensive->i,-,weight,0.74283487
+exp3_visualization,Self-Attention + pos (trained),expensive->bought,-,weight,0.021432202
+exp3_visualization,Self-Attention + pos (trained),expensive->yesterday,-,weight,0.0008850314
+exp3_visualization,Self-Attention + pos (trained),expensive->was,-,weight,0.20662275
+exp3_visualization,Self-Attention + pos (trained),expensive->expensive,-,weight,0.0159084
+exp4_order,TF-IDF+LR,this movie is good | this movie is not good,-,p_pos_S1,0.825
+exp4_order,TF-IDF+LR,this movie is good | this movie is not good,-,p_pos_S2,0.37
+exp4_order,LSTM,this movie is good | this movie is not good,-,p_pos_S1,0.679
+exp4_order,LSTM,this movie is good | this movie is not good,-,p_pos_S2,0.462
+exp4_order,Self-Attention,this movie is good | this movie is not good,-,p_pos_S1,1.0
+exp4_order,Self-Attention,this movie is good | this movie is not good,-,p_pos_S2,0.813
+exp4_order,Self-Attention + pos,this movie is good | this movie is not good,-,p_pos_S1,1.0
+exp4_order,Self-Attention + pos,this movie is good | this movie is not good,-,p_pos_S2,1.0
+exp4_order,TF-IDF+LR,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_S1,0.002
+exp4_order,TF-IDF+LR,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_S2,0.002
+exp4_order,LSTM,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_S1,0.258
+exp4_order,LSTM,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_S2,0.134
+exp4_order,Self-Attention,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_S1,0.035
+exp4_order,Self-Attention,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_S2,0.035
+exp4_order,Self-Attention + pos,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_S1,0.0
+exp4_order,Self-Attention + pos,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_S2,0.007
+exp4_order,TF-IDF+LR,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_S1,0.37
+exp4_order,TF-IDF+LR,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_S2,0.37
+exp4_order,LSTM,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_S1,0.694
+exp4_order,LSTM,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_S2,0.328
+exp4_order,Self-Attention,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_S1,0.106
+exp4_order,Self-Attention,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_S2,0.106
+exp4_order,Self-Attention + pos,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_S1,0.896
+exp4_order,Self-Attention + pos,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_S2,0.026
+exp4_order,TF-IDF+LR,"great actors , boring story | boring actors , great story",-,p_pos_S1,0.139
+exp4_order,TF-IDF+LR,"great actors , boring story | boring actors , great story",-,p_pos_S2,0.139
+exp4_order,LSTM,"great actors , boring story | boring actors , great story",-,p_pos_S1,0.21
+exp4_order,LSTM,"great actors , boring story | boring actors , great story",-,p_pos_S2,0.405
+exp4_order,Self-Attention,"great actors , boring story | boring actors , great story",-,p_pos_S1,0.0
+exp4_order,Self-Attention,"great actors , boring story | boring actors , great story",-,p_pos_S2,0.0
+exp4_order,Self-Attention + pos,"great actors , boring story | boring actors , great story",-,p_pos_S1,0.937
+exp4_order,Self-Attention + pos,"great actors , boring story | boring actors , great story",-,p_pos_S2,0.03
+exp4_order,TF-IDF+LR,i loved it at first but now i hate it | i hated it at first but now i love it,-,p_pos_S1,0.993
+exp4_order,TF-IDF+LR,i loved it at first but now i hate it | i hated it at first but now i love it,-,p_pos_S2,0.934
+exp4_order,LSTM,i loved it at first but now i hate it | i hated it at first but now i love it,-,p_pos_S1,0.923
+exp4_order,LSTM,i loved it at first but now i hate it | i hated it at first but now i love it,-,p_pos_S2,0.873
+exp4_order,Self-Attention,i loved it at first but now i hate it | i hated it at first but now i love it,-,p_pos_S1,1.0
+exp4_order,Self-Attention,i loved it at first but now i hate it | i hated it at first but now i love it,-,p_pos_S2,1.0
+exp4_order,Self-Attention + pos,i loved it at first but now i hate it | i hated it at first but now i love it,-,p_pos_S1,1.0
+exp4_order,Self-Attention + pos,i loved it at first but now i hate it | i hated it at first but now i love it,-,p_pos_S2,1.0
+exp4_order,TF-IDF+LR,good is movie this | this movie is good,-,p_pos_S1,0.825
+exp4_order,TF-IDF+LR,good is movie this | this movie is good,-,p_pos_S2,0.825
+exp4_order,LSTM,good is movie this | this movie is good,-,p_pos_S1,0.453
+exp4_order,LSTM,good is movie this | this movie is good,-,p_pos_S2,0.679
+exp4_order,Self-Attention,good is movie this | this movie is good,-,p_pos_S1,1.0
+exp4_order,Self-Attention,good is movie this | this movie is good,-,p_pos_S2,1.0
+exp4_order,Self-Attention + pos,good is movie this | this movie is good,-,p_pos_S1,1.0
+exp4_order,Self-Attention + pos,good is movie this | this movie is good,-,p_pos_S2,1.0
+exp4_long_range,LSTM,filler=2 beginning,-,separation,0.2966110110282898
+exp4_long_range,LSTM,filler=2 beginning,-,accuracy,0.7
+exp4_long_range,LSTM,filler=2 beginning,-,logit_separation,1.7426542043685913
+exp4_long_range,Self-Attention,filler=2 beginning,-,separation,0.3450240194797516
+exp4_long_range,Self-Attention,filler=2 beginning,-,accuracy,0.675
+exp4_long_range,Self-Attention,filler=2 beginning,-,logit_separation,5.685373306274414
+exp4_long_range,Self-Attention + pos,filler=2 beginning,-,separation,0.37913206219673157
+exp4_long_range,Self-Attention + pos,filler=2 beginning,-,accuracy,0.7
+exp4_long_range,Self-Attention + pos,filler=2 beginning,-,logit_separation,6.538043022155762
+exp4_long_range,TF-IDF+LR,filler=2 beginning,-,separation,0.3790668686925033
+exp4_long_range,TF-IDF+LR,filler=2 beginning,-,accuracy,0.725
+exp4_long_range,TF-IDF+LR,filler=2 beginning,-,logit_separation,2.9022933853007418
+exp4_long_range,LSTM,filler=2 middle,-,separation,0.2688247263431549
+exp4_long_range,LSTM,filler=2 middle,-,accuracy,0.675
+exp4_long_range,LSTM,filler=2 middle,-,logit_separation,1.6161620616912842
+exp4_long_range,Self-Attention,filler=2 middle,-,separation,0.3450239896774292
+exp4_long_range,Self-Attention,filler=2 middle,-,accuracy,0.675
+exp4_long_range,Self-Attention,filler=2 middle,-,logit_separation,5.685373306274414
+exp4_long_range,Self-Attention + pos,filler=2 middle,-,separation,0.4564862847328186
+exp4_long_range,Self-Attention + pos,filler=2 middle,-,accuracy,0.725
+exp4_long_range,Self-Attention + pos,filler=2 middle,-,logit_separation,6.8325629234313965
+exp4_long_range,TF-IDF+LR,filler=2 middle,-,separation,0.3790668686925033
+exp4_long_range,TF-IDF+LR,filler=2 middle,-,accuracy,0.725
+exp4_long_range,TF-IDF+LR,filler=2 middle,-,logit_separation,2.9022933853007418
+exp4_long_range,LSTM,filler=2 end,-,separation,0.509576678276062
+exp4_long_range,LSTM,filler=2 end,-,accuracy,0.8
+exp4_long_range,LSTM,filler=2 end,-,logit_separation,3.630906581878662
+exp4_long_range,Self-Attention,filler=2 end,-,separation,0.345024049282074
+exp4_long_range,Self-Attention,filler=2 end,-,accuracy,0.675
+exp4_long_range,Self-Attention,filler=2 end,-,logit_separation,5.685373783111572
+exp4_long_range,Self-Attention + pos,filler=2 end,-,separation,0.44597873091697693
+exp4_long_range,Self-Attention + pos,filler=2 end,-,accuracy,0.725
+exp4_long_range,Self-Attention + pos,filler=2 end,-,logit_separation,6.638557434082031
+exp4_long_range,TF-IDF+LR,filler=2 end,-,separation,0.3790668686925033
+exp4_long_range,TF-IDF+LR,filler=2 end,-,accuracy,0.725
+exp4_long_range,TF-IDF+LR,filler=2 end,-,logit_separation,2.9022933853007418
+exp4_long_range,LSTM,filler=6 beginning,-,separation,0.0027922899462282658
+exp4_long_range,LSTM,filler=6 beginning,-,accuracy,0.5
+exp4_long_range,LSTM,filler=6 beginning,-,logit_separation,0.04175538942217827
+exp4_long_range,Self-Attention,filler=6 beginning,-,separation,0.026795893907546997
+exp4_long_range,Self-Attention,filler=6 beginning,-,accuracy,0.5
+exp4_long_range,Self-Attention,filler=6 beginning,-,logit_separation,2.8908705711364746
+exp4_long_range,Self-Attention + pos,filler=6 beginning,-,separation,0.03998809680342674
+exp4_long_range,Self-Attention + pos,filler=6 beginning,-,accuracy,0.5
+exp4_long_range,Self-Attention + pos,filler=6 beginning,-,logit_separation,2.6897671222686768
+exp4_long_range,TF-IDF+LR,filler=6 beginning,-,separation,0.08460694744711206
+exp4_long_range,TF-IDF+LR,filler=6 beginning,-,accuracy,0.5
+exp4_long_range,TF-IDF+LR,filler=6 beginning,-,logit_separation,1.688174201149108
+exp4_long_range,LSTM,filler=6 middle,-,separation,0.0039122579619288445
+exp4_long_range,LSTM,filler=6 middle,-,accuracy,0.5
+exp4_long_range,LSTM,filler=6 middle,-,logit_separation,0.05458766967058182
+exp4_long_range,Self-Attention,filler=6 middle,-,separation,0.026795903220772743
+exp4_long_range,Self-Attention,filler=6 middle,-,accuracy,0.5
+exp4_long_range,Self-Attention,filler=6 middle,-,logit_separation,2.8908705711364746
+exp4_long_range,Self-Attention + pos,filler=6 middle,-,separation,0.06365092098712921
+exp4_long_range,Self-Attention + pos,filler=6 middle,-,accuracy,0.5
+exp4_long_range,Self-Attention + pos,filler=6 middle,-,logit_separation,2.88474702835083
+exp4_long_range,TF-IDF+LR,filler=6 middle,-,separation,0.08460694744711206
+exp4_long_range,TF-IDF+LR,filler=6 middle,-,accuracy,0.5
+exp4_long_range,TF-IDF+LR,filler=6 middle,-,logit_separation,1.688174201149108
+exp4_long_range,LSTM,filler=6 end,-,separation,0.41327720880508423
+exp4_long_range,LSTM,filler=6 end,-,accuracy,0.75
+exp4_long_range,LSTM,filler=6 end,-,logit_separation,3.473266124725342
+exp4_long_range,Self-Attention,filler=6 end,-,separation,0.026795893907546997
+exp4_long_range,Self-Attention,filler=6 end,-,accuracy,0.5
+exp4_long_range,Self-Attention,filler=6 end,-,logit_separation,2.8908705711364746
+exp4_long_range,Self-Attention + pos,filler=6 end,-,separation,0.043057020753622055
+exp4_long_range,Self-Attention + pos,filler=6 end,-,accuracy,0.5
+exp4_long_range,Self-Attention + pos,filler=6 end,-,logit_separation,2.5069596767425537
+exp4_long_range,TF-IDF+LR,filler=6 end,-,separation,0.08460694744711206
+exp4_long_range,TF-IDF+LR,filler=6 end,-,accuracy,0.5
+exp4_long_range,TF-IDF+LR,filler=6 end,-,logit_separation,1.688174201149108
+exp4_long_range,LSTM,filler=10 beginning,-,separation,4.867315146839246e-05
+exp4_long_range,LSTM,filler=10 beginning,-,accuracy,0.5
+exp4_long_range,LSTM,filler=10 beginning,-,logit_separation,0.0007831752300262451
+exp4_long_range,Self-Attention,filler=10 beginning,-,separation,0.012557354755699635
+exp4_long_range,Self-Attention,filler=10 beginning,-,accuracy,0.5
+exp4_long_range,Self-Attention,filler=10 beginning,-,logit_separation,2.124830722808838
+exp4_long_range,Self-Attention + pos,filler=10 beginning,-,separation,0.008473923429846764
+exp4_long_range,Self-Attention + pos,filler=10 beginning,-,accuracy,0.5
+exp4_long_range,Self-Attention + pos,filler=10 beginning,-,logit_separation,1.9187053442001343
+exp4_long_range,TF-IDF+LR,filler=10 beginning,-,separation,0.038053496466069106
+exp4_long_range,TF-IDF+LR,filler=10 beginning,-,accuracy,0.5
+exp4_long_range,TF-IDF+LR,filler=10 beginning,-,logit_separation,1.315849823151084
+exp4_long_range,LSTM,filler=10 middle,-,separation,0.00022249520407058299
+exp4_long_range,LSTM,filler=10 middle,-,accuracy,0.5
+exp4_long_range,LSTM,filler=10 middle,-,logit_separation,0.004193496890366077
+exp4_long_range,Self-Attention,filler=10 middle,-,separation,0.012557348236441612
+exp4_long_range,Self-Attention,filler=10 middle,-,accuracy,0.5
+exp4_long_range,Self-Attention,filler=10 middle,-,logit_separation,2.1248302459716797
+exp4_long_range,Self-Attention + pos,filler=10 middle,-,separation,0.014690792188048363
+exp4_long_range,Self-Attention + pos,filler=10 middle,-,accuracy,0.5
+exp4_long_range,Self-Attention + pos,filler=10 middle,-,logit_separation,1.73586905002594
+exp4_long_range,TF-IDF+LR,filler=10 middle,-,separation,0.038053496466069106
+exp4_long_range,TF-IDF+LR,filler=10 middle,-,accuracy,0.5
+exp4_long_range,TF-IDF+LR,filler=10 middle,-,logit_separation,1.315849823151084
+exp4_long_range,LSTM,filler=10 end,-,separation,0.3964264392852783
+exp4_long_range,LSTM,filler=10 end,-,accuracy,0.675
+exp4_long_range,LSTM,filler=10 end,-,logit_separation,3.4474761486053467
+exp4_long_range,Self-Attention,filler=10 end,-,separation,0.012557348236441612
+exp4_long_range,Self-Attention,filler=10 end,-,accuracy,0.5
+exp4_long_range,Self-Attention,filler=10 end,-,logit_separation,2.124830722808838
+exp4_long_range,Self-Attention + pos,filler=10 end,-,separation,0.010816765017807484
+exp4_long_range,Self-Attention + pos,filler=10 end,-,accuracy,0.5
+exp4_long_range,Self-Attention + pos,filler=10 end,-,logit_separation,1.8086096048355103
+exp4_long_range,TF-IDF+LR,filler=10 end,-,separation,0.038053496466069106
+exp4_long_range,TF-IDF+LR,filler=10 end,-,accuracy,0.5
+exp4_long_range,TF-IDF+LR,filler=10 end,-,logit_separation,1.315849823151084
+exp4_position_profile,LSTM: ‖∂z/∂e_t‖,last20,test,share_pct,29.728912353515625
+exp4_position_profile,Self-Attention: ‖∂z/∂e_t‖,last20,test,share_pct,10.272431373596191
+exp4_position_profile,Self-Attention + pos: ‖∂z/∂e_t‖,last20,test,share_pct,10.899658203125
+exp4_position_profile,Self-Attention: β_t,last20,test,share_pct,10.022720336914062
+exp4_position_profile,Self-Attention: (βA)_t,last20,test,share_pct,10.303564071655273
+exp4_position_profile,Self-Attention + pos: β_t,last20,test,share_pct,9.993894577026367
+exp4_position_profile,Self-Attention + pos: (βA)_t,last20,test,share_pct,10.59280014038086
+exp4_position_profile,LSTM: ‖∂z/∂e_t‖,first20,test,share_pct,3.1870250701904297
+exp4_position_profile,Self-Attention: ‖∂z/∂e_t‖,first20,test,share_pct,10.256057739257812
+exp4_position_profile,Self-Attention + pos: ‖∂z/∂e_t‖,first20,test,share_pct,11.050439834594727
+exp4_position_profile,Self-Attention: β_t,first20,test,share_pct,10.000423431396484
+exp4_position_profile,Self-Attention: (βA)_t,first20,test,share_pct,10.418370246887207
+exp4_position_profile,Self-Attention + pos: β_t,first20,test,share_pct,9.94460391998291
+exp4_position_profile,Self-Attention + pos: (βA)_t,first20,test,share_pct,11.44915771484375
+exp4_acc_by_length,n_reviews,≤50,test,n_reviews,635.0
+exp4_acc_by_length,LSTM,≤50,test,accuracy,0.8771653543307086
+exp4_acc_by_length,Self-Attention,≤50,test,accuracy,0.8771653543307086
+exp4_acc_by_length,Self-Attention + pos,≤50,test,accuracy,0.8598425196850393
+exp4_acc_by_length,TF-IDF + LR,≤50,test,accuracy,0.8913385826771654
+exp4_acc_by_length,n_reviews,51-100,test,n_reviews,2485.0
+exp4_acc_by_length,LSTM,51-100,test,accuracy,0.8651911468812877
+exp4_acc_by_length,Self-Attention,51-100,test,accuracy,0.8639839034205231
+exp4_acc_by_length,Self-Attention + pos,51-100,test,accuracy,0.8551307847082495
+exp4_acc_by_length,TF-IDF + LR,51-100,test,accuracy,0.8941649899396378
+exp4_acc_by_length,n_reviews,101-200,test,n_reviews,11603.0
+exp4_acc_by_length,LSTM,101-200,test,accuracy,0.860639489787124
+exp4_acc_by_length,Self-Attention,101-200,test,accuracy,0.8590881668534
+exp4_acc_by_length,Self-Attention + pos,101-200,test,accuracy,0.8583986899939671
+exp4_acc_by_length,TF-IDF + LR,101-200,test,accuracy,0.8900284409204516
+exp4_acc_by_length,n_reviews,201-400,test,n_reviews,6887.0
+exp4_acc_by_length,LSTM,201-400,test,accuracy,0.7853927689850443
+exp4_acc_by_length,Self-Attention,201-400,test,accuracy,0.8157397996224771
+exp4_acc_by_length,Self-Attention + pos,201-400,test,accuracy,0.8092057499636998
+exp4_acc_by_length,TF-IDF + LR,201-400,test,accuracy,0.8883403513866706
+exp4_acc_by_length,n_reviews,>400,test,n_reviews,3068.0
+exp4_acc_by_length,LSTM,>400,test,accuracy,0.7323989569752282
+exp4_acc_by_length,Self-Attention,>400,test,accuracy,0.7676010430247718
+exp4_acc_by_length,Self-Attention + pos,>400,test,accuracy,0.7643415906127771
+exp4_acc_by_length,TF-IDF + LR,>400,test,accuracy,0.8891786179921773
+exp5_cost,-,T=10,-,phần tử T²,100
+exp5_cost,-,T=10,-,"A float32, 1 câu (MB)",0.0003814697265625
+exp5_cost,-,T=10,-,"A float32, batch 64 (MB)",0.0244140625
+exp5_cost,-,T=10,-,NumPy attention (ms),0.04091929896346727
+exp5_cost,-,T=10,-,PyTorch self-attention (ms),0.24148913917929513
+exp5_cost,-,T=10,-,PyTorch LSTM (ms),0.37617556390979195
+exp5_cost,-,T=100,-,phần tử T²,10000
+exp5_cost,-,T=100,-,"A float32, 1 câu (MB)",0.03814697265625
+exp5_cost,-,T=100,-,"A float32, batch 64 (MB)",2.44140625
+exp5_cost,-,T=100,-,NumPy attention (ms),0.3109045548652817
+exp5_cost,-,T=100,-,PyTorch self-attention (ms),0.37570225281519004
+exp5_cost,-,T=100,-,PyTorch LSTM (ms),0.857863142856721
+exp5_cost,-,T=500,-,phần tử T²,250000
+exp5_cost,-,T=500,-,"A float32, 1 câu (MB)",0.95367431640625
+exp5_cost,-,T=500,-,"A float32, batch 64 (MB)",61.03515625
+exp5_cost,-,T=500,-,NumPy attention (ms),7.961576315808902
+exp5_cost,-,T=500,-,PyTorch self-attention (ms),1.2919974248958295
+exp5_cost,-,T=500,-,PyTorch LSTM (ms),3.1024494845360566
+exp5_cost,-,T=1000,-,phần tử T²,1000000
+exp5_cost,-,T=1000,-,"A float32, 1 câu (MB)",3.814697265625
+exp5_cost,-,T=1000,-,"A float32, batch 64 (MB)",244.140625
+exp5_cost,-,T=1000,-,NumPy attention (ms),30.54770999997345
+exp5_cost,-,T=1000,-,PyTorch self-attention (ms),4.112537837844118
+exp5_cost,-,T=1000,-,PyTorch LSTM (ms),7.80426410256041
+exp5_cost,-,T=2000,-,phần tử T²,4000000
+exp5_cost,-,T=2000,-,"A float32, 1 câu (MB)",15.2587890625
+exp5_cost,-,T=2000,-,"A float32, batch 64 (MB)",976.5625
+exp5_cost,-,T=2000,-,NumPy attention (ms),115.031833333281
+exp5_cost,-,T=2000,-,PyTorch self-attention (ms),14.240259090911422
+exp5_cost,-,T=2000,-,PyTorch LSTM (ms),15.10781499996483
+exp5_cost,-,T=4000,-,phần tử T²,16000000
+exp5_cost,-,T=4000,-,"A float32, 1 câu (MB)",61.03515625
+exp5_cost,-,T=4000,-,"A float32, batch 64 (MB)",3906.25
+exp5_cost,-,T=4000,-,NumPy attention (ms),394.32880000003934
+exp5_cost,-,T=4000,-,PyTorch self-attention (ms),52.03033333327767
+exp5_cost,-,T=4000,-,PyTorch LSTM (ms),30.44503999999506
+exp5_cost,NumPy attention (ms),T=500..4000,-,loglog_slope,1.8803500542147376
+exp5_cost,PyTorch self-attention (ms),T=500..4000,-,loglog_slope,1.7786908088547582
+exp5_cost,PyTorch LSTM (ms),T=500..4000,-,loglog_slope,1.083714326697728
+evaluation,TF-IDF + LR,final,test,accuracy,0.8899019369478888
+evaluation,TF-IDF + LR,final,test,precision,0.891464104013567
+evaluation,TF-IDF + LR,final,test,recall,0.8893812439574605
+evaluation,TF-IDF + LR,final,test,f1,0.8904214559386974
+evaluation,LSTM,final,test,accuracy,0.824580598103574
+evaluation,LSTM,final,test,precision,0.8193599367838799
+evaluation,LSTM,final,test,recall,0.8354012246213341
+evaluation,LSTM,final,test,f1,0.8273028284198348
+evaluation,Self-Attention,final,test,accuracy,0.836575087122133
+evaluation,Self-Attention,final,test,precision,0.8185689301193826
+evaluation,Self-Attention,final,test,recall,0.867305833064776
+evaluation,Self-Attention,final,test,f1,0.8422329147596135
+evaluation,Self-Attention + pos,final,test,accuracy,0.8326849825755734
+evaluation,Self-Attention + pos,final,test,precision,0.832410305803034
+evaluation,Self-Attention + pos,final,test,recall,0.8355623590074122
+evaluation,Self-Attention + pos,final,test,f1,0.8339833541071932
+evaluation,TF-IDF + LR,confusion_matrix,test,TP,11039
+evaluation,TF-IDF + LR,confusion_matrix,test,FN,1373
+evaluation,TF-IDF + LR,confusion_matrix,test,FP,1344
+evaluation,TF-IDF + LR,confusion_matrix,test,TN,10922
+evaluation,LSTM,confusion_matrix,test,TP,10369
+evaluation,LSTM,confusion_matrix,test,FN,2043
+evaluation,LSTM,confusion_matrix,test,FP,2286
+evaluation,LSTM,confusion_matrix,test,TN,9980
+evaluation,Self-Attention,confusion_matrix,test,TP,10765
+evaluation,Self-Attention,confusion_matrix,test,FN,1647
+evaluation,Self-Attention,confusion_matrix,test,FP,2386
+evaluation,Self-Attention,confusion_matrix,test,TN,9880
+evaluation,Self-Attention + pos,confusion_matrix,test,TP,10371
+evaluation,Self-Attention + pos,confusion_matrix,test,FN,2041
+evaluation,Self-Attention + pos,confusion_matrix,test,FP,2088
+evaluation,Self-Attention + pos,confusion_matrix,test,TN,10178
+application,Self-Attention,I like this movie.,-,p_pos,1.7501773982075974e-05
+application,Self-Attention,I do not like this movie.,-,p_pos,4.817379704036284e-06
+application,Self-Attention,"I thought this movie would be bad, but it was actually excellent.",-,p_pos,0.04127715528011322
+application,Self-Attention,This movie is not bad at all.,-,p_pos,8.463078415843484e-07
+application,Self-Attention,"The cast is wonderful, but the story is boring and the ending is awful.",-,p_pos,0.9971145391464233
+faithfulness,Self-Attention,300 reviews,test,H(β)/ln n,0.996744269038585
+faithfulness,Self-Attention,300 reviews,test,H(A_i)/ln n (trung bình hàng),0.7136987000394089
+faithfulness,Self-Attention,300 reviews,test,max A_i (trung bình hàng),0.17348267138004303
+faithfulness,Self-Attention,300 reviews,test,spearman β vs |Δz|,-0.028454610387332088
+faithfulness,Self-Attention,300 reviews,test,spearman βA vs |Δz|,0.35382608673697274
+faithfulness,Self-Attention,300 reviews,test,top1 β = top1 |Δz|,0.11666666666666667
+faithfulness,Self-Attention,300 reviews,test,top1 βA = top1 |Δz|,0.5266666666666666
+faithfulness,Self-Attention,300 reviews,test,|Δz| bỏ top-3 β,1.2367660999298096
+faithfulness,Self-Attention,300 reviews,test,|Δz| bỏ top-3 βA,1.2887046337127686
+faithfulness,Self-Attention,300 reviews,test,|Δz| bỏ 3 ngẫu nhiên,0.24893727898597717
+faithfulness,Self-Attention,300 reviews,test,|Δz| bỏ top-3 |Δz|,1.2535279989242554
