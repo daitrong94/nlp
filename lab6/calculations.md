@@ -1,6 +1,6 @@
 # Calculations
 
-> Xem bằng Markdown Preview (`Ctrl+Shift+V`) để hiển thị công thức. Mọi kết quả được kiểm tra lại bằng `attention_numpy.py`.
+> Mọi kết quả được kiểm tra lại bằng `attention_numpy.py`.
 
 $$
 s_i = q^\top k_i, \qquad \alpha_i = \frac{e^{s_i}}{\sum_j e^{s_j}}, \qquad c = \sum_i \alpha_i v_i

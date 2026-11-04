@@ -1,6 +1,6 @@
 # Calculations
 
-> Xem bằng Markdown Preview (`Ctrl+Shift+V`). Đề không cho số cụ thể của X, W ở Bài 1 và $W_2, b_2$ ở bài FFN, nên các ma trận đó là **giả định**. Mọi kết quả được kiểm lại trong notebook (mục 1).
+> Đề không cho số cụ thể của X, W ở Bài 1 và $W_2, b_2$ ở bài FFN, nên các ma trận đó là **giả định**. Mọi kết quả được kiểm lại trong notebook (mục 1).
 
 ## Bài 1 - Một attention head ($X \in \mathbb{R}^{3 \times 4}$, $d_k = 2$)
 

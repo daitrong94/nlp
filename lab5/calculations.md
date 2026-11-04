@@ -1,7 +1,5 @@
 # Calculations
 
-> Xem bằng Markdown Preview (`Ctrl+Shift+V`) để hiển thị công thức.
-
 ## Bài 1 - Một bước RNN
 
 $h_t = \tanh(W_{xh}x_t + W_{hh}h_{t-1} + b_h)$ với $x_t = [1, 0]^\top$, $h_{t-1} = [0.5, 0.2]^\top$, $b_h = 0$:
