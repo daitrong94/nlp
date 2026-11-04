@@ -1,0 +1,405 @@
+experiment,model,setting,split,metric,value
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,x,"(8, 100, 128)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,Q,"(8, 4, 100, 32)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,K,"(8, 4, 100, 32)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,V,"(8, 4, 100, 32)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,scores,"(8, 4, 100, 100)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,weights,"(8, 4, 100, 100)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,heads,"(8, 4, 100, 32)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,concat,"(8, 100, 128)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,output,"(8, 100, 128)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,ffn_hidden,"(8, 100, 256)"
+shapes,TransformerBlock,"B=8,T=100,d=128,h=4",-,block_output,"(8, 100, 128)"
+exp1_positional,random block,PE=False,-,‖mean(H1) − mean(H2)‖,2.004746164629978e-07
+exp1_positional,random block,PE=False,-,"cos(mean H1, mean H2)",0.9999999403953552
+exp1_positional,random block,PE=False,-,‖h(I) S1 − h(I) S2‖,0.0
+exp1_positional,random block,PE=False,-,‖h(love) S1 − h(love) S2‖,3.082776061091863e-07
+exp1_positional,random block,PE=False,-,‖h(NLP) S1 − h(NLP) S2‖,1.3328003944934608e-07
+exp1_positional,random block,PE=True,-,‖mean(H1) − mean(H2)‖,0.17384783923625946
+exp1_positional,random block,PE=True,-,"cos(mean H1, mean H2)",0.9982036352157593
+exp1_positional,random block,PE=True,-,‖h(I) S1 − h(I) S2‖,1.0255002975463867
+exp1_positional,random block,PE=True,-,‖h(love) S1 − h(love) S2‖,0.11488033086061478
+exp1_positional,random block,PE=True,-,‖h(NLP) S1 − h(NLP) S2‖,1.3298351764678955
+permutation,random block,PE=False,-,‖mean(H1) − mean(H2)‖,4.214684778958144e-08
+permutation,random block,PE=False,-,"cos(mean H1, mean H2)",1.0
+permutation,random block,PE=False,-,‖h(dog) S1 − h(dog) S2‖,0.0
+permutation,random block,PE=False,-,‖h(bites) S1 − h(bites) S2‖,0.0
+permutation,random block,PE=False,-,‖h(man) S1 − h(man) S2‖,0.0
+permutation,random block,PE=True,-,‖mean(H1) − mean(H2)‖,0.2576875388622284
+permutation,random block,PE=True,-,"cos(mean H1, mean H2)",0.9892229437828064
+permutation,random block,PE=True,-,‖h(dog) S1 − h(dog) S2‖,1.671650767326355
+permutation,random block,PE=True,-,‖h(bites) S1 − h(bites) S2‖,0.09803967922925949
+permutation,random block,PE=True,-,‖h(man) S1 − h(man) S2‖,1.3592453002929688
+exp4_vs_lstm,LSTM,L=128,-,params,2692609
+exp4_vs_lstm,LSTM,L=128,-,train_time_s,204.15288400000009
+exp4_vs_lstm,LSTM,L=128,-,best_epoch,5
+exp4_vs_lstm,LSTM,L=128,test,accuracy,0.8108031445011752
+exp4_vs_lstm,LSTM,L=128,test,precision,0.7940305308726361
+exp4_vs_lstm,LSTM,L=128,test,recall,0.8423300032226877
+exp4_vs_lstm,LSTM,L=128,test,f1,0.8174674537706712
+exp4_vs_lstm,LSTM,L=128 epoch=1,validation,train_loss,0.6583774612442124
+exp4_vs_lstm,LSTM,L=128 epoch=1,validation,val_loss,0.6048588700573072
+exp4_vs_lstm,LSTM,L=128 epoch=1,validation,val_f1,0.6915057915057915
+exp4_vs_lstm,LSTM,L=128 epoch=1,validation,epoch_time_s,49.50554699999998
+exp4_vs_lstm,LSTM,L=128 epoch=2,validation,train_loss,0.5534368708990774
+exp4_vs_lstm,LSTM,L=128 epoch=2,validation,val_loss,0.5215921799755676
+exp4_vs_lstm,LSTM,L=128 epoch=2,validation,val_f1,0.7513789581205311
+exp4_vs_lstm,LSTM,L=128 epoch=2,validation,epoch_time_s,36.87891300000001
+exp4_vs_lstm,LSTM,L=128 epoch=3,validation,train_loss,0.42885712106406304
+exp4_vs_lstm,LSTM,L=128 epoch=3,validation,val_loss,0.4520674022580232
+exp4_vs_lstm,LSTM,L=128 epoch=3,validation,val_f1,0.7996839193994468
+exp4_vs_lstm,LSTM,L=128 epoch=3,validation,epoch_time_s,36.442927600000075
+exp4_vs_lstm,LSTM,L=128 epoch=4,validation,train_loss,0.35210657273227774
+exp4_vs_lstm,LSTM,L=128 epoch=4,validation,val_loss,0.43002805087606566
+exp4_vs_lstm,LSTM,L=128 epoch=4,validation,val_f1,0.8145884270578647
+exp4_vs_lstm,LSTM,L=128 epoch=4,validation,epoch_time_s,40.31727389999992
+exp4_vs_lstm,LSTM,L=128 epoch=5,validation,train_loss,0.2698704516595072
+exp4_vs_lstm,LSTM,L=128 epoch=5,validation,val_loss,0.42677691129781437
+exp4_vs_lstm,LSTM,L=128 epoch=5,validation,val_f1,0.8339398582647003
+exp4_vs_lstm,LSTM,L=128 epoch=5,validation,epoch_time_s,40.991646400000036
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean,-,params,2692993
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean,-,train_time_s,611.8820029999999
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean,-,best_epoch,3
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean,test,accuracy,0.8146932490477349
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean,test,precision,0.832640244419927
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean,test,recall,0.7904447309055752
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean,test,f1,0.8109940070262451
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=1,validation,train_loss,0.586136147694757
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=1,validation,val_loss,0.4691533173980964
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=1,validation,val_f1,0.7807867167424393
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=1,validation,epoch_time_s,105.71312420000004
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=2,validation,train_loss,0.40642791465152933
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=2,validation,val_loss,0.39491913599584566
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=2,validation,val_f1,0.8292971057294743
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=2,validation,epoch_time_s,104.35867340000004
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=3,validation,train_loss,0.31759519658970414
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=3,validation,val_loss,0.3717941763787021
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=3,validation,val_f1,0.837968561064087
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=3,validation,epoch_time_s,108.8343304
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=4,validation,train_loss,0.25510348968612845
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=4,validation,val_loss,0.40743837196888494
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=4,validation,val_f1,0.8371150729335495
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=4,validation,epoch_time_s,154.90687389999994
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=5,validation,train_loss,0.1902039222909535
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=5,validation,val_loss,0.45658361735975383
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=5,validation,val_f1,0.8210084033613445
+exp4_vs_lstm,Transformer,L=128 h=4 PE mean epoch=5,validation,epoch_time_s,138.05512489999978
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean,-,params,2692993
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean,-,train_time_s,585.5816869999999
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean,-,best_epoch,3
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean,test,accuracy,0.8162330820974147
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean,test,precision,0.8167269802975472
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean,test,recall,0.8182404125040283
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean,test,f1,0.817482995935123
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=1,validation,train_loss,0.5400893300710382
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=1,validation,val_loss,0.438091783368404
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=1,validation,val_f1,0.8085187297965393
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=1,validation,epoch_time_s,104.27734279999981
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=2,validation,train_loss,0.3733295429463739
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=2,validation,val_loss,0.39109519728563374
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=2,validation,val_f1,0.8248949369621773
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=2,validation,epoch_time_s,106.41608229999974
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=3,validation,train_loss,0.28970881060071724
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=3,validation,val_loss,0.3808244468027104
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=3,validation,val_f1,0.8455316630499112
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=3,validation,epoch_time_s,114.9675715999997
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=4,validation,train_loss,0.22178688342597705
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=4,validation,val_loss,0.42295735022028347
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=4,validation,val_f1,0.832423691125935
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=4,validation,epoch_time_s,128.55213219999996
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=5,validation,train_loss,0.16114891860590147
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=5,validation,val_loss,0.48032778240679297
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=5,validation,val_f1,0.8358853553199843
+exp4_vs_lstm,Transformer (no PE),L=128 h=4 noPE mean epoch=5,validation,epoch_time_s,131.35796530000016
+permutation_trained,LSTM,dog bites man | man bites dog,-,p_pos_diff,0.17502621
+permutation_trained,Transformer,dog bites man | man bites dog,-,p_pos_diff,0.018284768
+permutation_trained,Transformer (no PE),dog bites man | man bites dog,-,p_pos_diff,0.0
+permutation_trained,LSTM,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_diff,0.023158833
+permutation_trained,Transformer,"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_diff,0.04979845
+permutation_trained,Transformer (no PE),"the movie was not bad , it was good | the movie was not good , it was bad",-,p_pos_diff,0.0
+permutation_trained,LSTM,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_diff,0.34146056
+permutation_trained,Transformer,i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_diff,0.10255095
+permutation_trained,Transformer (no PE),i expected it to be bad but it was great | i expected it to be great but it was bad,-,p_pos_diff,5.9604645e-08
+permutation_trained,LSTM,"great actors , boring story | boring actors , great story",-,p_pos_diff,0.04753065
+permutation_trained,Transformer,"great actors , boring story | boring actors , great story",-,p_pos_diff,0.026224941
+permutation_trained,Transformer (no PE),"great actors , boring story | boring actors , great story",-,p_pos_diff,0.0
+exp4_acc_by_length,n,≤64,test,n,1352.0
+exp4_acc_by_length,LSTM,≤64,test,accuracy,0.8735207100591716
+exp4_acc_by_length,Transformer,≤64,test,accuracy,0.8727810650887574
+exp4_acc_by_length,Transformer (no PE),≤64,test,accuracy,0.8683431952662722
+exp4_acc_by_length,n,65-128,test,n,5223.0
+exp4_acc_by_length,LSTM,65-128,test,accuracy,0.8650201033888569
+exp4_acc_by_length,Transformer,65-128,test,accuracy,0.8529580700746697
+exp4_acc_by_length,Transformer (no PE),65-128,test,accuracy,0.8604250430786904
+exp4_acc_by_length,n,129-256,test,n,11213.0
+exp4_acc_by_length,LSTM,129-256,test,accuracy,0.822170694729332
+exp4_acc_by_length,Transformer,129-256,test,accuracy,0.8310889146526353
+exp4_acc_by_length,Transformer (no PE),129-256,test,accuracy,0.8307321858557032
+exp4_acc_by_length,n,>256,test,n,6890.0
+exp4_acc_by_length,LSTM,>256,test,accuracy,0.7388969521044992
+exp4_acc_by_length,Transformer,>256,test,accuracy,0.7476052249637155
+exp4_acc_by_length,Transformer (no PE),>256,test,accuracy,0.7489114658925979
+exp2_heads,Transformer h=1,L=128 h=1,-,params,2692993
+exp2_heads,Transformer h=1,L=128 h=1,-,train_time_s,395.6072567000001
+exp2_heads,Transformer h=1,L=128 h=1,-,best_epoch,3
+exp2_heads,Transformer h=1,L=128 h=1,test,accuracy,0.799659615852176
+exp2_heads,Transformer h=1,L=128 h=1,test,precision,0.8438305709023941
+exp2_heads,Transformer h=1,L=128 h=1,test,recall,0.7383177570093458
+exp2_heads,Transformer h=1,L=128 h=1,test,f1,0.78755586112066
+exp2_heads,Transformer h=1,L=128 h=1 epoch=1,validation,train_loss,0.5952280014117595
+exp2_heads,Transformer h=1,L=128 h=1 epoch=1,validation,val_loss,0.4714045494215597
+exp2_heads,Transformer h=1,L=128 h=1 epoch=1,validation,val_f1,0.7895339954163484
+exp2_heads,Transformer h=1,L=128 h=1 epoch=1,validation,epoch_time_s,74.17809339999985
+exp2_heads,Transformer h=1,L=128 h=1 epoch=2,validation,train_loss,0.4115344615925126
+exp2_heads,Transformer h=1,L=128 h=1 epoch=2,validation,val_loss,0.40992476092553326
+exp2_heads,Transformer h=1,L=128 h=1 epoch=2,validation,val_f1,0.8074380165289257
+exp2_heads,Transformer h=1,L=128 h=1 epoch=2,validation,epoch_time_s,87.78611739999997
+exp2_heads,Transformer h=1,L=128 h=1 epoch=3,validation,train_loss,0.32585175065027805
+exp2_heads,Transformer h=1,L=128 h=1 epoch=3,validation,val_loss,0.3945878089644784
+exp2_heads,Transformer h=1,L=128 h=1 epoch=3,validation,val_f1,0.8177667081776671
+exp2_heads,Transformer h=1,L=128 h=1 epoch=3,validation,epoch_time_s,77.4933119999996
+exp2_heads,Transformer h=1,L=128 h=1 epoch=4,validation,train_loss,0.259630405269509
+exp2_heads,Transformer h=1,L=128 h=1 epoch=4,validation,val_loss,0.43006887456612125
+exp2_heads,Transformer h=1,L=128 h=1 epoch=4,validation,val_f1,0.8354129530600118
+exp2_heads,Transformer h=1,L=128 h=1 epoch=4,validation,epoch_time_s,78.79704390000006
+exp2_heads,Transformer h=1,L=128 h=1 epoch=5,validation,train_loss,0.2022067199705691
+exp2_heads,Transformer h=1,L=128 h=1 epoch=5,validation,val_loss,0.45858324062012606
+exp2_heads,Transformer h=1,L=128 h=1 epoch=5,validation,val_f1,0.8232577665827037
+exp2_heads,Transformer h=1,L=128 h=1 epoch=5,validation,epoch_time_s,77.33991629999991
+exp2_heads,Transformer h=2,L=128 h=2,-,params,2692993
+exp2_heads,Transformer h=2,L=128 h=2,-,train_time_s,427.89616290000004
+exp2_heads,Transformer h=2,L=128 h=2,-,best_epoch,3
+exp2_heads,Transformer h=2,L=128 h=2,test,accuracy,0.8091012237620553
+exp2_heads,Transformer h=2,L=128 h=2,test,precision,0.8373193166885676
+exp2_heads,Transformer h=2,L=128 h=2,test,recall,0.7700612310667097
+exp2_heads,Transformer h=2,L=128 h=2,test,f1,0.8022831241868469
+exp2_heads,Transformer h=2,L=128 h=2 epoch=1,validation,train_loss,0.5917611639734098
+exp2_heads,Transformer h=2,L=128 h=2 epoch=1,validation,val_loss,0.4749772475884759
+exp2_heads,Transformer h=2,L=128 h=2 epoch=1,validation,val_f1,0.7854545454545454
+exp2_heads,Transformer h=2,L=128 h=2 epoch=1,validation,epoch_time_s,85.01188339999999
+exp2_heads,Transformer h=2,L=128 h=2 epoch=2,validation,train_loss,0.4050897668880888
+exp2_heads,Transformer h=2,L=128 h=2 epoch=2,validation,val_loss,0.4007168900334893
+exp2_heads,Transformer h=2,L=128 h=2 epoch=2,validation,val_f1,0.8206699346405228
+exp2_heads,Transformer h=2,L=128 h=2 epoch=2,validation,epoch_time_s,84.22368230000029
+exp2_heads,Transformer h=2,L=128 h=2 epoch=3,validation,train_loss,0.3182209404152225
+exp2_heads,Transformer h=2,L=128 h=2 epoch=3,validation,val_loss,0.38139583427738344
+exp2_heads,Transformer h=2,L=128 h=2 epoch=3,validation,val_f1,0.825487012987013
+exp2_heads,Transformer h=2,L=128 h=2 epoch=3,validation,epoch_time_s,84.80164509999986
+exp2_heads,Transformer h=2,L=128 h=2 epoch=4,validation,train_loss,0.2500196894054784
+exp2_heads,Transformer h=2,L=128 h=2 epoch=4,validation,val_loss,0.4190070572156823
+exp2_heads,Transformer h=2,L=128 h=2 epoch=4,validation,val_f1,0.8388372552896974
+exp2_heads,Transformer h=2,L=128 h=2 epoch=4,validation,epoch_time_s,85.36385960000007
+exp2_heads,Transformer h=2,L=128 h=2 epoch=5,validation,train_loss,0.19062380931539624
+exp2_heads,Transformer h=2,L=128 h=2 epoch=5,validation,val_loss,0.46310934236743945
+exp2_heads,Transformer h=2,L=128 h=2 epoch=5,validation,val_f1,0.8204912870039891
+exp2_heads,Transformer h=2,L=128 h=2 epoch=5,validation,epoch_time_s,88.4806652000002
+exp2_heads,Transformer h=8,L=128 h=8,-,params,2692993
+exp2_heads,Transformer h=8,L=128 h=8,-,train_time_s,711.2895788000001
+exp2_heads,Transformer h=8,L=128 h=8,-,best_epoch,3
+exp2_heads,Transformer h=8,L=128 h=8,test,accuracy,0.8108841883458952
+exp2_heads,Transformer h=8,L=128 h=8,test,precision,0.8223054515189346
+exp2_heads,Transformer h=8,L=128 h=8,test,recall,0.7960038672252658
+exp2_heads,Transformer h=8,L=128 h=8,test,f1,0.8089409260244811
+exp2_heads,Transformer h=8,L=128 h=8 epoch=1,validation,train_loss,0.5771195170499173
+exp2_heads,Transformer h=8,L=128 h=8 epoch=1,validation,val_loss,0.46369235303000145
+exp2_heads,Transformer h=8,L=128 h=8 epoch=1,validation,val_f1,0.7927650567635174
+exp2_heads,Transformer h=8,L=128 h=8 epoch=1,validation,epoch_time_s,146.5642726000001
+exp2_heads,Transformer h=8,L=128 h=8 epoch=2,validation,train_loss,0.40517843813294957
+exp2_heads,Transformer h=8,L=128 h=8 epoch=2,validation,val_loss,0.40598583865975835
+exp2_heads,Transformer h=8,L=128 h=8 epoch=2,validation,val_f1,0.8107998375964272
+exp2_heads,Transformer h=8,L=128 h=8 epoch=2,validation,epoch_time_s,143.8141786000001
+exp2_heads,Transformer h=8,L=128 h=8 epoch=3,validation,train_loss,0.32041597865057814
+exp2_heads,Transformer h=8,L=128 h=8 epoch=3,validation,val_loss,0.39047533032788934
+exp2_heads,Transformer h=8,L=128 h=8 epoch=3,validation,val_f1,0.8300220750551877
+exp2_heads,Transformer h=8,L=128 h=8 epoch=3,validation,epoch_time_s,148.1309656000003
+exp2_heads,Transformer h=8,L=128 h=8 epoch=4,validation,train_loss,0.2479121495852214
+exp2_heads,Transformer h=8,L=128 h=8 epoch=4,validation,val_loss,0.444314828279483
+exp2_heads,Transformer h=8,L=128 h=8 epoch=4,validation,val_f1,0.8273267326732673
+exp2_heads,Transformer h=8,L=128 h=8 epoch=4,validation,epoch_time_s,135.75212740000006
+exp2_heads,Transformer h=8,L=128 h=8 epoch=5,validation,train_loss,0.18139005467540223
+exp2_heads,Transformer h=8,L=128 h=8 epoch=5,validation,val_loss,0.498246574704561
+exp2_heads,Transformer h=8,L=128 h=8 epoch=5,validation,val_f1,0.7974082073434126
+exp2_heads,Transformer h=8,L=128 h=8 epoch=5,validation,epoch_time_s,137.01808100000017
+exp3_heads,Transformer h=4,head 1,test,entropy H/ln n,0.7657362595853837
+exp3_heads,Transformer h=4,head 1,test,max weight,0.19294999539852142
+exp3_heads,Transformer h=4,head 1,test,ΔF1 khi tắt head,0.014565735038318595
+exp3_heads,Transformer h=4,head 2,test,entropy H/ln n,0.7197783656821191
+exp3_heads,Transformer h=4,head 2,test,max weight,0.23916946351528168
+exp3_heads,Transformer h=4,head 2,test,ΔF1 khi tắt head,0.001156398177104112
+exp3_heads,Transformer h=4,head 3,test,entropy H/ln n,0.6506655545591092
+exp3_heads,Transformer h=4,head 3,test,max weight,0.2980321943759918
+exp3_heads,Transformer h=4,head 3,test,ΔF1 khi tắt head,0.004347481346486881
+exp3_heads,Transformer h=4,head 4,test,entropy H/ln n,0.7480281014729531
+exp3_heads,Transformer h=4,head 4,test,max weight,0.2094348818063736
+exp3_heads,Transformer h=4,head 4,test,ΔF1 khi tắt head,-0.002244578031271205
+exp5_length,Transformer L=32,L=32,-,params,2692993
+exp5_length,Transformer L=32,L=32,-,train_time_s,107.12051589999919
+exp5_length,Transformer L=32,L=32,-,best_epoch,3
+exp5_length,Transformer L=32,L=32,test,accuracy,0.7035821379366237
+exp5_length,Transformer L=32,L=32,test,precision,0.7199827362969357
+exp5_length,Transformer L=32,L=32,test,recall,0.6720109571382533
+exp5_length,Transformer L=32,L=32,test,f1,0.6951702296120348
+exp5_length,Transformer L=32,L=32 epoch=1,validation,train_loss,0.6478375714927267
+exp5_length,Transformer L=32,L=32 epoch=1,validation,val_loss,0.6052303092725855
+exp5_length,Transformer L=32,L=32 epoch=1,validation,val_f1,0.7187657219520376
+exp5_length,Transformer L=32,L=32 epoch=1,validation,epoch_time_s,20.93205180000041
+exp5_length,Transformer L=32,L=32 epoch=2,validation,train_loss,0.5600529546249536
+exp5_length,Transformer L=32,L=32 epoch=2,validation,val_loss,0.5658085447958772
+exp5_length,Transformer L=32,L=32 epoch=2,validation,val_f1,0.7393330942990319
+exp5_length,Transformer L=32,L=32 epoch=2,validation,epoch_time_s,21.518677000000025
+exp5_length,Transformer L=32,L=32 epoch=3,validation,train_loss,0.4860368642436389
+exp5_length,Transformer L=32,L=32 epoch=3,validation,val_loss,0.5296827984610682
+exp5_length,Transformer L=32,L=32 epoch=3,validation,val_f1,0.725091500610004
+exp5_length,Transformer L=32,L=32 epoch=3,validation,epoch_time_s,21.99511530000018
+exp5_length,Transformer L=32,L=32 epoch=4,validation,train_loss,0.415185185659125
+exp5_length,Transformer L=32,L=32 epoch=4,validation,val_loss,0.5682340835424353
+exp5_length,Transformer L=32,L=32 epoch=4,validation,val_f1,0.7079948696023942
+exp5_length,Transformer L=32,L=32 epoch=4,validation,epoch_time_s,21.8247549000007
+exp5_length,Transformer L=32,L=32 epoch=5,validation,train_loss,0.34691930420037426
+exp5_length,Transformer L=32,L=32 epoch=5,validation,val_loss,0.5973873790235742
+exp5_length,Transformer L=32,L=32 epoch=5,validation,val_f1,0.7079907231709889
+exp5_length,Transformer L=32,L=32 epoch=5,validation,epoch_time_s,20.841995400000087
+exp5_length,Transformer L=64,L=64,-,params,2692993
+exp5_length,Transformer L=64,L=64,-,train_time_s,707.9824755
+exp5_length,Transformer L=64,L=64,-,best_epoch,3
+exp5_length,Transformer L=64,L=64,test,accuracy,0.762906232271659
+exp5_length,Transformer L=64,L=64,test,precision,0.774128854349461
+exp5_length,Transformer L=64,L=64,test,recall,0.7463744763132453
+exp5_length,Transformer L=64,L=64,test,f1,0.7599983592436113
+exp5_length,Transformer L=64,L=64 epoch=1,validation,train_loss,0.619678244892986
+exp5_length,Transformer L=64,L=64 epoch=1,validation,val_loss,0.5411882777848853
+exp5_length,Transformer L=64,L=64 epoch=1,validation,val_f1,0.7489161849710982
+exp5_length,Transformer L=64,L=64 epoch=1,validation,epoch_time_s,42.69908699999996
+exp5_length,Transformer L=64,L=64 epoch=2,validation,train_loss,0.4874315368975405
+exp5_length,Transformer L=64,L=64 epoch=2,validation,val_loss,0.48871343363359904
+exp5_length,Transformer L=64,L=64 epoch=2,validation,val_f1,0.7793462109955424
+exp5_length,Transformer L=64,L=64 epoch=2,validation,epoch_time_s,249.30030999999963
+exp5_length,Transformer L=64,L=64 epoch=3,validation,train_loss,0.401720881883934
+exp5_length,Transformer L=64,L=64 epoch=3,validation,val_loss,0.4581975803241774
+exp5_length,Transformer L=64,L=64 epoch=3,validation,val_f1,0.7908366533864541
+exp5_length,Transformer L=64,L=64 epoch=3,validation,epoch_time_s,290.03296000000046
+exp5_length,Transformer L=64,L=64 epoch=4,validation,train_loss,0.33020143848055966
+exp5_length,Transformer L=64,L=64 epoch=4,validation,val_loss,0.48752613180493487
+exp5_length,Transformer L=64,L=64 epoch=4,validation,val_f1,0.7777548066983667
+exp5_length,Transformer L=64,L=64 epoch=4,validation,epoch_time_s,60.95208739999998
+exp5_length,Transformer L=64,L=64 epoch=5,validation,train_loss,0.25793705905398673
+exp5_length,Transformer L=64,L=64 epoch=5,validation,val_loss,0.5369629381845784
+exp5_length,Transformer L=64,L=64 epoch=5,validation,val_f1,0.7653018151118616
+exp5_length,Transformer L=64,L=64 epoch=5,validation,epoch_time_s,64.95869589999984
+exp5_length,Transformer L=256,L=256,-,params,2692993
+exp5_length,Transformer L=256,L=256,-,train_time_s,1493.1728107
+exp5_length,Transformer L=256,L=256,-,best_epoch,3
+exp5_length,Transformer L=256,L=256,test,accuracy,0.8445579058270525
+exp5_length,Transformer L=256,L=256,test,precision,0.8658078826138884
+exp5_length,Transformer L=256,L=256,test,recall,0.8176764421527554
+exp5_length,Transformer L=256,L=256,test,f1,0.841054114527223
+exp5_length,Transformer L=256,L=256 epoch=1,validation,train_loss,0.5598757068375977
+exp5_length,Transformer L=256,L=256 epoch=1,validation,val_loss,0.44509476519518293
+exp5_length,Transformer L=256,L=256 epoch=1,validation,val_f1,0.8153846153846154
+exp5_length,Transformer L=256,L=256 epoch=1,validation,epoch_time_s,292.46762450000006
+exp5_length,Transformer L=256,L=256 epoch=2,validation,train_loss,0.3491125712715789
+exp5_length,Transformer L=256,L=256 epoch=2,validation,val_loss,0.3455600359615838
+exp5_length,Transformer L=256,L=256 epoch=2,validation,val_f1,0.8479207920792079
+exp5_length,Transformer L=256,L=256 epoch=2,validation,epoch_time_s,258.6707091999997
+exp5_length,Transformer L=256,L=256 epoch=3,validation,train_loss,0.2623653123243586
+exp5_length,Transformer L=256,L=256 epoch=3,validation,val_loss,0.3268469583345477
+exp5_length,Transformer L=256,L=256 epoch=3,validation,val_f1,0.8614762386248737
+exp5_length,Transformer L=256,L=256 epoch=3,validation,epoch_time_s,257.20694019999974
+exp5_length,Transformer L=256,L=256 epoch=4,validation,train_loss,0.2013344195386836
+exp5_length,Transformer L=256,L=256 epoch=4,validation,val_loss,0.35883919579467083
+exp5_length,Transformer L=256,L=256 epoch=4,validation,val_f1,0.8615260395639887
+exp5_length,Transformer L=256,L=256 epoch=4,validation,epoch_time_s,319.3323584999998
+exp5_length,Transformer L=256,L=256 epoch=5,validation,train_loss,0.14279872420690018
+exp5_length,Transformer L=256,L=256 epoch=5,validation,val_loss,0.42804561868632945
+exp5_length,Transformer L=256,L=256 epoch=5,validation,val_f1,0.8622707764338665
+exp5_length,Transformer L=256,L=256 epoch=5,validation,epoch_time_s,365.48211660000015
+exp5_length,Transformer,L=32,test,tokens retained %,13.99493634787815
+exp5_length,Transformer,L=32,test,T²,1024.0
+exp5_length,Transformer,L=32,test,attention memory (MB),1.0
+exp5_length,Transformer,L=32,test,s/epoch,21.42251888000028
+exp5_length,Transformer,L=32,test,train_time_s,107.12051589999919
+exp5_length,Transformer,L=32,test,f1,0.6951702296120348
+exp5_length,Transformer,L=64,test,tokens retained %,27.670290840769848
+exp5_length,Transformer,L=64,test,T²,4096.0
+exp5_length,Transformer,L=64,test,attention memory (MB),4.0
+exp5_length,Transformer,L=64,test,s/epoch,141.58862805999996
+exp5_length,Transformer,L=64,test,train_time_s,707.9824755
+exp5_length,Transformer,L=64,test,f1,0.7599983592436113
+exp5_length,Transformer,L=128,test,tokens retained %,52.05383659613047
+exp5_length,Transformer,L=128,test,T²,16384.0
+exp5_length,Transformer,L=128,test,attention memory (MB),16.0
+exp5_length,Transformer,L=128,test,s/epoch,122.37362535999996
+exp5_length,Transformer,L=128,test,train_time_s,611.8820029999999
+exp5_length,Transformer,L=128,test,f1,0.8109940070262451
+exp5_length,Transformer,L=256,test,tokens retained %,77.52827022507998
+exp5_length,Transformer,L=256,test,T²,65536.0
+exp5_length,Transformer,L=256,test,attention memory (MB),64.0
+exp5_length,Transformer,L=256,test,s/epoch,298.6319497999999
+exp5_length,Transformer,L=256,test,train_time_s,1493.1728107
+exp5_length,Transformer,L=256,test,f1,0.841054114527223
+exp6_pooling,Transformer CLS,L=128 cls,-,params,2692993
+exp6_pooling,Transformer CLS,L=128 cls,-,train_time_s,720.7078462
+exp6_pooling,Transformer CLS,L=128 cls,-,best_epoch,5
+exp6_pooling,Transformer CLS,L=128 cls,test,accuracy,0.7982413485695762
+exp6_pooling,Transformer CLS,L=128 cls,test,precision,0.8226968828688026
+exp6_pooling,Transformer CLS,L=128 cls,test,recall,0.7633741540444731
+exp6_pooling,Transformer CLS,L=128 cls,test,f1,0.7919261147561536
+exp6_pooling,Transformer CLS,L=128 cls epoch=1,validation,train_loss,0.6205591747262108
+exp6_pooling,Transformer CLS,L=128 cls epoch=1,validation,val_loss,0.5557765799648036
+exp6_pooling,Transformer CLS,L=128 cls epoch=1,validation,val_f1,0.7439817255315411
+exp6_pooling,Transformer CLS,L=128 cls epoch=1,validation,epoch_time_s,130.19128929999988
+exp6_pooling,Transformer CLS,L=128 cls epoch=2,validation,train_loss,0.5169338150710842
+exp6_pooling,Transformer CLS,L=128 cls epoch=2,validation,val_loss,0.48404871666072136
+exp6_pooling,Transformer CLS,L=128 cls epoch=2,validation,val_f1,0.7738597163664239
+exp6_pooling,Transformer CLS,L=128 cls epoch=2,validation,epoch_time_s,145.96221289999994
+exp6_pooling,Transformer CLS,L=128 cls epoch=3,validation,train_loss,0.44356383444081404
+exp6_pooling,Transformer CLS,L=128 cls epoch=3,validation,val_loss,0.4522977699173206
+exp6_pooling,Transformer CLS,L=128 cls epoch=3,validation,val_f1,0.7918515530455829
+exp6_pooling,Transformer CLS,L=128 cls epoch=3,validation,epoch_time_s,147.88285870000072
+exp6_pooling,Transformer CLS,L=128 cls epoch=4,validation,train_loss,0.38193899396223
+exp6_pooling,Transformer CLS,L=128 cls epoch=4,validation,val_loss,0.41344088822983904
+exp6_pooling,Transformer CLS,L=128 cls epoch=4,validation,val_f1,0.8103727714748784
+exp6_pooling,Transformer CLS,L=128 cls epoch=4,validation,epoch_time_s,147.55112290000034
+exp6_pooling,Transformer CLS,L=128 cls epoch=5,validation,train_loss,0.3260811187937599
+exp6_pooling,Transformer CLS,L=128 cls epoch=5,validation,val_loss,0.41289456216724996
+exp6_pooling,Transformer CLS,L=128 cls epoch=5,validation,val_f1,0.8168094655242758
+exp6_pooling,Transformer CLS,L=128 cls epoch=5,validation,epoch_time_s,149.09743849999995
+evaluation,LSTM,final,test,accuracy,0.8108031445011752
+evaluation,LSTM,final,test,precision,0.7940305308726361
+evaluation,LSTM,final,test,recall,0.8423300032226877
+evaluation,LSTM,final,test,f1,0.8174674537706712
+evaluation,Transformer,final,test,accuracy,0.8146932490477349
+evaluation,Transformer,final,test,precision,0.832640244419927
+evaluation,Transformer,final,test,recall,0.7904447309055752
+evaluation,Transformer,final,test,f1,0.8109940070262451
+evaluation,Transformer (no PE),final,test,accuracy,0.8162330820974147
+evaluation,Transformer (no PE),final,test,precision,0.8167269802975472
+evaluation,Transformer (no PE),final,test,recall,0.8182404125040283
+evaluation,Transformer (no PE),final,test,f1,0.817482995935123
+evaluation,Transformer CLS,final,test,accuracy,0.7982413485695762
+evaluation,Transformer CLS,final,test,precision,0.8226968828688026
+evaluation,Transformer CLS,final,test,recall,0.7633741540444731
+evaluation,Transformer CLS,final,test,f1,0.7919261147561536
+evaluation,LSTM,confusion_matrix,test,TP,10455
+evaluation,LSTM,confusion_matrix,test,FN,1957
+evaluation,LSTM,confusion_matrix,test,FP,2712
+evaluation,LSTM,confusion_matrix,test,TN,9554
+evaluation,Transformer,confusion_matrix,test,TP,9811
+evaluation,Transformer,confusion_matrix,test,FN,2601
+evaluation,Transformer,confusion_matrix,test,FP,1972
+evaluation,Transformer,confusion_matrix,test,TN,10294
+evaluation,Transformer (no PE),confusion_matrix,test,TP,10156
+evaluation,Transformer (no PE),confusion_matrix,test,FN,2256
+evaluation,Transformer (no PE),confusion_matrix,test,FP,2279
+evaluation,Transformer (no PE),confusion_matrix,test,TN,9987
+evaluation,Transformer CLS,confusion_matrix,test,TP,9475
+evaluation,Transformer CLS,confusion_matrix,test,FN,2937
+evaluation,Transformer CLS,confusion_matrix,test,FP,2042
+evaluation,Transformer CLS,confusion_matrix,test,TN,10224
+application,Transformer,ngắn,-,p_pos,0.9626170682342771
+application,Transformer,dài,-,p_pos,0.6417236077692154
+application,Transformer,negation,-,p_pos,0.0025534627659863232
+application,Transformer,contrast,-,p_pos,0.12912084585890685
+application,Transformer,ambiguous,-,p_pos,0.003965120342586277
+faithfulness,Transformer,200 reviews,test,"spearman(attention, |Δz|)",0.2742446787417989
+faithfulness,Transformer,200 reviews,test,top-1 trùng,0.485
