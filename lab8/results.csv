@@ -1,0 +1,312 @@
+experiment,model,setting,split,metric,value
+setup,-,split,train,samples,19923
+setup,-,split,validation,samples,4981
+setup,-,split,test,samples,24678
+setup,-,split,test_sub,samples,5000
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,-,n_train,19923
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,-,params,11171074
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,-,trainable,11171074
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,-,train_time_s,2171.1697381
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,-,best_epoch,2
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,-,infer_time_s,204.18715730000076
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,test,accuracy,0.8424102439419726
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,test,f1,0.843014572316635
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,test_sub,sub_accuracy,0.8418
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,test_sub,sub_precision,0.8370607028753994
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,test_sub,sub_recall,0.845502218636547
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,test_sub,sub_f1,0.8412602849688943
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,test,precision,0.8447536607070625
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128,test,recall,0.8412826297131808
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128 epoch=1,validation,train_loss,0.4707143258527598
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128 epoch=1,validation,val_loss,0.37945306301116943
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128 epoch=1,validation,val_acc,0.838185103392893
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128 epoch=1,validation,epoch_time_s,1207.9600074999998
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128 epoch=2,validation,train_loss,0.3060502533464375
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128 epoch=2,validation,val_loss,0.3553866744041443
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128 epoch=2,validation,val_acc,0.8496285886368199
+exp1_pretrained_vs_scratch,Pretrained (fine-tune),frac=1.0 L=128 epoch=2,validation,epoch_time_s,963.1679525999998
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,-,n_train,19923
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,-,params,11171074
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,-,trainable,11171074
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,-,train_time_s,2069.5226711000005
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,-,best_epoch,2
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,-,infer_time_s,232.54092839999976
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,test,accuracy,0.8152605559607747
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,test,f1,0.814183819034033
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,test_sub,sub_accuracy,0.8122
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,test_sub,sub_precision,0.8181818181818182
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,test_sub,sub_recall,0.7987091569181122
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,test_sub,sub_f1,0.8083282302510717
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,test,precision,0.8238884764497236
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128,test,recall,0.8047051240734773
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128 epoch=1,validation,train_loss,0.5468507667986892
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128 epoch=1,validation,val_loss,0.3961912989616394
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128 epoch=1,validation,val_acc,0.8201164424814295
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128 epoch=1,validation,epoch_time_s,914.7721661000005
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128 epoch=2,validation,train_loss,0.3165320333979524
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128 epoch=2,validation,val_loss,0.3878835141658783
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128 epoch=2,validation,val_acc,0.8371812888978117
+exp1_pretrained_vs_scratch,From scratch,frac=1.0 L=128 epoch=2,validation,epoch_time_s,1154.7029757999999
+exp2_frozen_vs_finetune,"Frozen, [CLS]",L=128,test,accuracy,0.7402949995947807
+exp2_frozen_vs_finetune,"Frozen, [CLS]",L=128,test,precision,0.7521633201713853
+exp2_frozen_vs_finetune,"Frozen, [CLS]",L=128,test,recall,0.721318079278118
+exp2_frozen_vs_finetune,"Frozen, [CLS]",L=128,test,f1,0.7364178490643636
+exp2_frozen_vs_finetune,"Frozen, [CLS]",L=128,test,train_time_s,502.36470479999934
+exp2_frozen_vs_finetune,"Frozen, [CLS]",L=128,test,trainable params,514
+exp2_frozen_vs_finetune,"Frozen, mean pooling",L=128,test,accuracy,0.7448739768214604
+exp2_frozen_vs_finetune,"Frozen, mean pooling",L=128,test,precision,0.7500408830744072
+exp2_frozen_vs_finetune,"Frozen, mean pooling",L=128,test,recall,0.7390428617466968
+exp2_frozen_vs_finetune,"Frozen, mean pooling",L=128,test,f1,0.7445012580147715
+exp2_frozen_vs_finetune,"Frozen, mean pooling",L=128,test,train_time_s,501.39320139999927
+exp2_frozen_vs_finetune,"Frozen, mean pooling",L=128,test,trainable params,514
+exp3_data,Pretrained 10%,frac=0.1 L=128,-,n_train,1991
+exp3_data,Pretrained 10%,frac=0.1 L=128,-,params,11171074
+exp3_data,Pretrained 10%,frac=0.1 L=128,-,trainable,11171074
+exp3_data,Pretrained 10%,frac=0.1 L=128,-,train_time_s,342.85943000000043
+exp3_data,Pretrained 10%,frac=0.1 L=128,-,best_epoch,2
+exp3_data,Pretrained 10%,frac=0.1 L=128,-,infer_time_s,57.59159289999934
+exp3_data,Pretrained 10%,frac=0.1 L=128,test_sub,sub_accuracy,0.792
+exp3_data,Pretrained 10%,frac=0.1 L=128,test_sub,sub_precision,0.7969459347915807
+exp3_data,Pretrained 10%,frac=0.1 L=128,test_sub,sub_recall,0.7789431222267044
+exp3_data,Pretrained 10%,frac=0.1 L=128,test_sub,sub_f1,0.7878416972664218
+exp3_data,Pretrained 10%,frac=0.1 L=128 epoch=1,validation,train_loss,0.6553689437047852
+exp3_data,Pretrained 10%,frac=0.1 L=128 epoch=1,validation,val_loss,0.5172973871231079
+exp3_data,Pretrained 10%,frac=0.1 L=128 epoch=1,validation,val_acc,0.7612929130696647
+exp3_data,Pretrained 10%,frac=0.1 L=128 epoch=1,validation,epoch_time_s,172.14374359999965
+exp3_data,Pretrained 10%,frac=0.1 L=128 epoch=2,validation,train_loss,0.4467754958862638
+exp3_data,Pretrained 10%,frac=0.1 L=128 epoch=2,validation,val_loss,0.47193005681037903
+exp3_data,Pretrained 10%,frac=0.1 L=128 epoch=2,validation,val_acc,0.7843806464565348
+exp3_data,Pretrained 10%,frac=0.1 L=128 epoch=2,validation,epoch_time_s,170.63277769999968
+exp3_data,From scratch 10%,frac=0.1 L=128,-,n_train,1991
+exp3_data,From scratch 10%,frac=0.1 L=128,-,params,11171074
+exp3_data,From scratch 10%,frac=0.1 L=128,-,trainable,11171074
+exp3_data,From scratch 10%,frac=0.1 L=128,-,train_time_s,329.22169159999976
+exp3_data,From scratch 10%,frac=0.1 L=128,-,best_epoch,2
+exp3_data,From scratch 10%,frac=0.1 L=128,-,infer_time_s,54.514861600000586
+exp3_data,From scratch 10%,frac=0.1 L=128,test_sub,sub_accuracy,0.5316
+exp3_data,From scratch 10%,frac=0.1 L=128,test_sub,sub_precision,0.8186046511627907
+exp3_data,From scratch 10%,frac=0.1 L=128,test_sub,sub_recall,0.07099636950383219
+exp3_data,From scratch 10%,frac=0.1 L=128,test_sub,sub_f1,0.13066072754268745
+exp3_data,From scratch 10%,frac=0.1 L=128 epoch=1,validation,train_loss,0.7176110172379502
+exp3_data,From scratch 10%,frac=0.1 L=128 epoch=1,validation,val_loss,0.6925131678581238
+exp3_data,From scratch 10%,frac=0.1 L=128 epoch=1,validation,val_acc,0.49909656695442683
+exp3_data,From scratch 10%,frac=0.1 L=128 epoch=1,validation,epoch_time_s,164.6544917000001
+exp3_data,From scratch 10%,frac=0.1 L=128 epoch=2,validation,train_loss,0.7042400319333174
+exp3_data,From scratch 10%,frac=0.1 L=128 epoch=2,validation,val_loss,0.6851032972335815
+exp3_data,From scratch 10%,frac=0.1 L=128 epoch=2,validation,val_acc,0.5358361774744027
+exp3_data,From scratch 10%,frac=0.1 L=128 epoch=2,validation,epoch_time_s,164.5139448
+exp3_data,Pretrained 25%,frac=0.25 L=128,-,n_train,4980
+exp3_data,Pretrained 25%,frac=0.25 L=128,-,params,11171074
+exp3_data,Pretrained 25%,frac=0.25 L=128,-,trainable,11171074
+exp3_data,Pretrained 25%,frac=0.25 L=128,-,train_time_s,678.4077531000003
+exp3_data,Pretrained 25%,frac=0.25 L=128,-,best_epoch,2
+exp3_data,Pretrained 25%,frac=0.25 L=128,-,infer_time_s,49.7779131999996
+exp3_data,Pretrained 25%,frac=0.25 L=128,test_sub,sub_accuracy,0.8148
+exp3_data,Pretrained 25%,frac=0.25 L=128,test_sub,sub_precision,0.8386393371129525
+exp3_data,Pretrained 25%,frac=0.25 L=128,test_sub,sub_recall,0.7757160145219847
+exp3_data,Pretrained 25%,frac=0.25 L=128,test_sub,sub_f1,0.805951383067896
+exp3_data,Pretrained 25%,frac=0.25 L=128 epoch=1,validation,train_loss,0.5663282864543807
+exp3_data,Pretrained 25%,frac=0.25 L=128 epoch=1,validation,val_loss,0.4615693986415863
+exp3_data,Pretrained 25%,frac=0.25 L=128 epoch=1,validation,val_acc,0.7896004818309577
+exp3_data,Pretrained 25%,frac=0.25 L=128 epoch=1,validation,epoch_time_s,341.2468530999995
+exp3_data,Pretrained 25%,frac=0.25 L=128 epoch=2,validation,train_loss,0.382685800297672
+exp3_data,Pretrained 25%,frac=0.25 L=128 epoch=2,validation,val_loss,0.4078482687473297
+exp3_data,Pretrained 25%,frac=0.25 L=128 epoch=2,validation,val_acc,0.8120859265207789
+exp3_data,Pretrained 25%,frac=0.25 L=128 epoch=2,validation,epoch_time_s,337.10657119999996
+exp3_data,From scratch 25%,frac=0.25 L=128,-,n_train,4980
+exp3_data,From scratch 25%,frac=0.25 L=128,-,params,11171074
+exp3_data,From scratch 25%,frac=0.25 L=128,-,trainable,11171074
+exp3_data,From scratch 25%,frac=0.25 L=128,-,train_time_s,630.7245103000005
+exp3_data,From scratch 25%,frac=0.25 L=128,-,best_epoch,2
+exp3_data,From scratch 25%,frac=0.25 L=128,-,infer_time_s,39.8430825000014
+exp3_data,From scratch 25%,frac=0.25 L=128,test_sub,sub_accuracy,0.7248
+exp3_data,From scratch 25%,frac=0.25 L=128,test_sub,sub_precision,0.7417799210872424
+exp3_data,From scratch 25%,frac=0.25 L=128,test_sub,sub_recall,0.682533279548205
+exp3_data,From scratch 25%,frac=0.25 L=128,test_sub,sub_f1,0.7109243697478992
+exp3_data,From scratch 25%,frac=0.25 L=128 epoch=1,validation,train_loss,0.7106628644897277
+exp3_data,From scratch 25%,frac=0.25 L=128 epoch=1,validation,val_loss,0.6853434443473816
+exp3_data,From scratch 25%,frac=0.25 L=128 epoch=1,validation,val_acc,0.4994980927524593
+exp3_data,From scratch 25%,frac=0.25 L=128 epoch=1,validation,epoch_time_s,336.4863580000001
+exp3_data,From scratch 25%,frac=0.25 L=128 epoch=2,validation,train_loss,0.5968787545420559
+exp3_data,From scratch 25%,frac=0.25 L=128 epoch=2,validation,val_loss,0.5311740636825562
+exp3_data,From scratch 25%,frac=0.25 L=128 epoch=2,validation,val_acc,0.7374021280867296
+exp3_data,From scratch 25%,frac=0.25 L=128 epoch=2,validation,epoch_time_s,294.18453559999944
+exp3_data,Pretrained 50%,frac=0.5 L=128,-,n_train,9961
+exp3_data,Pretrained 50%,frac=0.5 L=128,-,params,11171074
+exp3_data,Pretrained 50%,frac=0.5 L=128,-,trainable,11171074
+exp3_data,Pretrained 50%,frac=0.5 L=128,-,train_time_s,998.7484464999998
+exp3_data,Pretrained 50%,frac=0.5 L=128,-,best_epoch,2
+exp3_data,Pretrained 50%,frac=0.5 L=128,-,infer_time_s,36.826802300000054
+exp3_data,Pretrained 50%,frac=0.5 L=128,test_sub,sub_accuracy,0.832
+exp3_data,Pretrained 50%,frac=0.5 L=128,test_sub,sub_precision,0.8436058700209643
+exp3_data,Pretrained 50%,frac=0.5 L=128,test_sub,sub_recall,0.8116175877369908
+exp3_data,Pretrained 50%,frac=0.5 L=128,test_sub,sub_f1,0.8273026315789473
+exp3_data,Pretrained 50%,frac=0.5 L=128 epoch=1,validation,train_loss,0.5158612117950677
+exp3_data,Pretrained 50%,frac=0.5 L=128 epoch=1,validation,val_loss,0.39660245180130005
+exp3_data,Pretrained 50%,frac=0.5 L=128 epoch=1,validation,val_acc,0.8215217827745432
+exp3_data,Pretrained 50%,frac=0.5 L=128 epoch=1,validation,epoch_time_s,521.1705975999994
+exp3_data,Pretrained 50%,frac=0.5 L=128 epoch=2,validation,train_loss,0.3524445392136808
+exp3_data,Pretrained 50%,frac=0.5 L=128 epoch=2,validation,val_loss,0.38425272703170776
+exp3_data,Pretrained 50%,frac=0.5 L=128 epoch=2,validation,val_acc,0.8347721341096166
+exp3_data,Pretrained 50%,frac=0.5 L=128 epoch=2,validation,epoch_time_s,477.5279928
+exp3_data,From scratch 50%,frac=0.5 L=128,-,n_train,9961
+exp3_data,From scratch 50%,frac=0.5 L=128,-,params,11171074
+exp3_data,From scratch 50%,frac=0.5 L=128,-,trainable,11171074
+exp3_data,From scratch 50%,frac=0.5 L=128,-,train_time_s,1033.7799569
+exp3_data,From scratch 50%,frac=0.5 L=128,-,best_epoch,2
+exp3_data,From scratch 50%,frac=0.5 L=128,-,infer_time_s,50.08812029999899
+exp3_data,From scratch 50%,frac=0.5 L=128,test_sub,sub_accuracy,0.7892
+exp3_data,From scratch 50%,frac=0.5 L=128,test_sub,sub_precision,0.7926078028747433
+exp3_data,From scratch 50%,frac=0.5 L=128,test_sub,sub_recall,0.7785397337636144
+exp3_data,From scratch 50%,frac=0.5 L=128,test_sub,sub_f1,0.7855107855107855
+exp3_data,From scratch 50%,frac=0.5 L=128 epoch=1,validation,train_loss,0.6443523825974173
+exp3_data,From scratch 50%,frac=0.5 L=128 epoch=1,validation,val_loss,0.4585746228694916
+exp3_data,From scratch 50%,frac=0.5 L=128 epoch=1,validation,val_acc,0.7859867496486649
+exp3_data,From scratch 50%,frac=0.5 L=128 epoch=1,validation,epoch_time_s,472.5353765
+exp3_data,From scratch 50%,frac=0.5 L=128 epoch=2,validation,train_loss,0.37885854223677823
+exp3_data,From scratch 50%,frac=0.5 L=128 epoch=2,validation,val_loss,0.4320775270462036
+exp3_data,From scratch 50%,frac=0.5 L=128 epoch=2,validation,val_acc,0.8126882152178277
+exp3_data,From scratch 50%,frac=0.5 L=128 epoch=2,validation,epoch_time_s,561.1890560000011
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,-,n_train,4980
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,-,params,11171074
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,-,trainable,11171074
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,-,train_time_s,336.22050769999987
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,-,best_epoch,2
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,-,infer_time_s,26.03442520000135
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,test_sub,sub_accuracy,0.758
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,test_sub,sub_precision,0.7567786321327398
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,test_sub,sub_recall,0.754336425978217
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64,test_sub,sub_f1,0.7555555555555555
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64 epoch=1,validation,train_loss,0.6251340742092056
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64 epoch=1,validation,val_loss,0.5241879224777222
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64 epoch=1,validation,val_acc,0.7414173860670548
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64 epoch=1,validation,epoch_time_s,168.60722279999936
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64 epoch=2,validation,train_loss,0.4756470598370196
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64 epoch=2,validation,val_loss,0.5062613487243652
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64 epoch=2,validation,val_acc,0.7536639229070468
+exp4_length,Pretrained 25% L=64,frac=0.25 L=64 epoch=2,validation,epoch_time_s,167.5645480000003
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,-,n_train,4980
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,-,params,11171074
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,-,trainable,11171074
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,-,train_time_s,1526.8589673999995
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,-,best_epoch,2
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,-,infer_time_s,90.58791620000011
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,test_sub,sub_accuracy,0.8564
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,test_sub,sub_precision,0.8670279283034598
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,test_sub,sub_recall,0.8390480032271077
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256,test_sub,sub_f1,0.8528085280852808
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256 epoch=1,validation,train_loss,0.525655787776273
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256 epoch=1,validation,val_loss,0.3564207851886749
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256 epoch=1,validation,val_acc,0.8448102790604296
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256 epoch=1,validation,epoch_time_s,770.3822180999996
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256 epoch=2,validation,train_loss,0.31847026526449196
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256 epoch=2,validation,val_loss,0.34189438819885254
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256 epoch=2,validation,val_acc,0.8524392692230476
+exp4_length,Pretrained 25% L=256,frac=0.25 L=256 epoch=2,validation,epoch_time_s,756.4393701999998
+exp4_length,Pretrained 25%,L=64,test_sub,% review không bị cắt,2.04
+exp4_length,Pretrained 25%,L=64,test_sub,accuracy,0.758
+exp4_length,Pretrained 25%,L=64,test_sub,f1,0.7555555555555555
+exp4_length,Pretrained 25%,L=64,test_sub,train_time_s,336.22050769999987
+exp4_length,Pretrained 25%,L=64,test_sub,s/epoch,168.08588539999982
+exp4_length,Pretrained 25%,L=64,test_sub,attention memory (MB),8.0
+exp4_length,Pretrained 25%,L=128,test_sub,% review không bị cắt,12.879999999999999
+exp4_length,Pretrained 25%,L=128,test_sub,accuracy,0.8148
+exp4_length,Pretrained 25%,L=128,test_sub,f1,0.805951383067896
+exp4_length,Pretrained 25%,L=128,test_sub,train_time_s,678.4077531000003
+exp4_length,Pretrained 25%,L=128,test_sub,s/epoch,339.17671214999973
+exp4_length,Pretrained 25%,L=128,test_sub,attention memory (MB),32.0
+exp4_length,Pretrained 25%,L=256,test_sub,% review không bị cắt,60.24
+exp4_length,Pretrained 25%,L=256,test_sub,accuracy,0.8564
+exp4_length,Pretrained 25%,L=256,test_sub,f1,0.8528085280852808
+exp4_length,Pretrained 25%,L=256,test_sub,train_time_s,1526.8589673999995
+exp4_length,Pretrained 25%,L=256,test_sub,s/epoch,763.4107941499997
+exp4_length,Pretrained 25%,L=256,test_sub,attention memory (MB),128.0
+exp5_domain,Pretrained (fine-tune),IMDb (in-domain),test,accuracy,0.8424102439419726
+exp5_domain,Pretrained (fine-tune),IMDb (in-domain),test,precision,0.8447536607070625
+exp5_domain,Pretrained (fine-tune),IMDb (in-domain),test,recall,0.8412826297131808
+exp5_domain,Pretrained (fine-tune),IMDb (in-domain),test,f1,0.843014572316635
+exp5_domain,From scratch,IMDb (in-domain),test,accuracy,0.8152605559607747
+exp5_domain,From scratch,IMDb (in-domain),test,precision,0.8238884764497236
+exp5_domain,From scratch,IMDb (in-domain),test,recall,0.8047051240734773
+exp5_domain,From scratch,IMDb (in-domain),test,f1,0.814183819034033
+exp5_domain,Pretrained (fine-tune),"SST-2 (phim, câu ngắn)",test,accuracy,0.7775229357798165
+exp5_domain,Pretrained (fine-tune),"SST-2 (phim, câu ngắn)",test,precision,0.7385496183206107
+exp5_domain,Pretrained (fine-tune),"SST-2 (phim, câu ngắn)",test,recall,0.8716216216216216
+exp5_domain,Pretrained (fine-tune),"SST-2 (phim, câu ngắn)",test,f1,0.7995867768595041
+exp5_domain,From scratch,"SST-2 (phim, câu ngắn)",test,accuracy,0.7362385321100917
+exp5_domain,From scratch,"SST-2 (phim, câu ngắn)",test,precision,0.7688442211055276
+exp5_domain,From scratch,"SST-2 (phim, câu ngắn)",test,recall,0.6891891891891891
+exp5_domain,From scratch,"SST-2 (phim, câu ngắn)",test,f1,0.7268408551068883
+exp5_domain,Pretrained (fine-tune),Amazon (sản phẩm),test,accuracy,0.82
+exp5_domain,Pretrained (fine-tune),Amazon (sản phẩm),test,precision,0.7841918294849023
+exp5_domain,Pretrained (fine-tune),Amazon (sản phẩm),test,recall,0.883
+exp5_domain,Pretrained (fine-tune),Amazon (sản phẩm),test,f1,0.8306679209783632
+exp5_domain,From scratch,Amazon (sản phẩm),test,accuracy,0.7775
+exp5_domain,From scratch,Amazon (sản phẩm),test,precision,0.7484333034914951
+exp5_domain,From scratch,Amazon (sản phẩm),test,recall,0.836
+exp5_domain,From scratch,Amazon (sản phẩm),test,f1,0.7897968823807274
+exp5_domain,Pretrained (fine-tune),Yelp (nhà hàng),test,accuracy,0.82
+exp5_domain,Pretrained (fine-tune),Yelp (nhà hàng),test,precision,0.811284046692607
+exp5_domain,Pretrained (fine-tune),Yelp (nhà hàng),test,recall,0.834
+exp5_domain,Pretrained (fine-tune),Yelp (nhà hàng),test,f1,0.8224852071005917
+exp5_domain,From scratch,Yelp (nhà hàng),test,accuracy,0.7605
+exp5_domain,From scratch,Yelp (nhà hàng),test,precision,0.7516908212560387
+exp5_domain,From scratch,Yelp (nhà hàng),test,recall,0.778
+exp5_domain,From scratch,Yelp (nhà hàng),test,f1,0.7646191646191646
+evaluation,Pretrained (fine-tune),confusion_matrix,test,TP,10442
+evaluation,Pretrained (fine-tune),confusion_matrix,test,FN,1970
+evaluation,Pretrained (fine-tune),confusion_matrix,test,FP,1919
+evaluation,Pretrained (fine-tune),confusion_matrix,test,TN,10347
+evaluation,Frozen encoder,confusion_matrix,test,TP,8953
+evaluation,Frozen encoder,confusion_matrix,test,FN,3459
+evaluation,Frozen encoder,confusion_matrix,test,FP,2950
+evaluation,Frozen encoder,confusion_matrix,test,TN,9316
+evaluation,From scratch,confusion_matrix,test,TP,9988
+evaluation,From scratch,confusion_matrix,test,FN,2424
+evaluation,From scratch,confusion_matrix,test,FP,2135
+evaluation,From scratch,confusion_matrix,test,TN,10131
+confidence,Pretrained (fine-tune),low (<0.7),test,n,3244.0
+confidence,Pretrained (fine-tune),low (<0.7),test,accuracy,0.5539457459926017
+confidence,Pretrained (fine-tune),low (<0.7),test,mean_confidence,0.6015616059303284
+confidence,Pretrained (fine-tune),low (<0.7),test,% mẫu,13.145311613582948
+confidence,Pretrained (fine-tune),medium (0.7-0.9),test,n,5298.0
+confidence,Pretrained (fine-tune),medium (0.7-0.9),test,accuracy,0.726878067195168
+confidence,Pretrained (fine-tune),medium (0.7-0.9),test,mean_confidence,0.8148879408836365
+confidence,Pretrained (fine-tune),medium (0.7-0.9),test,% mẫu,21.468514466326283
+confidence,Pretrained (fine-tune),high (≥0.9),test,n,16136.0
+confidence,Pretrained (fine-tune),high (≥0.9),test,accuracy,0.9383366385721368
+confidence,Pretrained (fine-tune),high (≥0.9),test,mean_confidence,0.9726665616035461
+confidence,Pretrained (fine-tune),high (≥0.9),test,% mẫu,65.38617392009077
+confidence,From scratch,low (<0.7),test,n,4307.0
+confidence,From scratch,low (<0.7),test,accuracy,0.5616438356164384
+confidence,From scratch,low (<0.7),test,mean_confidence,0.6031460165977478
+confidence,From scratch,low (<0.7),test,% mẫu,17.452791960450604
+confidence,From scratch,medium (0.7-0.9),test,n,6597.0
+confidence,From scratch,medium (0.7-0.9),test,accuracy,0.7383659239048053
+confidence,From scratch,medium (0.7-0.9),test,mean_confidence,0.8122765421867371
+confidence,From scratch,medium (0.7-0.9),test,% mẫu,26.73231218088986
+confidence,From scratch,high (≥0.9),test,n,13774.0
+confidence,From scratch,high (≥0.9),test,accuracy,0.9313924785828372
+confidence,From scratch,high (≥0.9),test,mean_confidence,0.9684625864028931
+confidence,From scratch,high (≥0.9),test,% mẫu,55.81489585865953
+application,Pretrained (fine-tune),I really enjoyed this movie.,-,p_pos,0.9943532943725586
+application,From scratch,I really enjoyed this movie.,-,p_pos,0.9994243383407593
+application,Pretrained (fine-tune),I did not like this movie at all.,-,p_pos,0.3337123692035675
+application,From scratch,I did not like this movie at all.,-,p_pos,0.0015042274026200175
+application,Pretrained (fine-tune),"I thought this movie would be bad, but it was actually excellent.",-,p_pos,0.9035235643386841
+application,From scratch,"I thought this movie would be bad, but it was actually excellent.",-,p_pos,0.09866932034492493
+application,Pretrained (fine-tune),"The movie was okay, not great but not terrible either.",-,p_pos,0.019286220893263817
+application,From scratch,"The movie was okay, not great but not terrible either.",-,p_pos,0.00038637069519609213
+application,Pretrained (fine-tune),"Oh great, another two hours of my life I will never get back.",-,p_pos,0.9897253513336182
+application,From scratch,"Oh great, another two hours of my life I will never get back.",-,p_pos,0.9605117440223694
+reproducibility,-,Model,-,value,google/bert_uncased_L-4_H-256_A-4
+reproducibility,-,Tokenizer,-,value,bert-base-uncased
+reproducibility,-,Dataset,-,value,"IMDb (stanfordnlp/imdb), dedup + bỏ trùng train/test"
+reproducibility,-,Max sequence length,-,value,128
+reproducibility,-,Batch size,-,value,32
+reproducibility,-,Learning rate,-,value,0.0001
+reproducibility,-,Epochs,-,value,2
+reproducibility,-,Optimizer,-,value,"AdamW (weight decay 0.01), linear warmup 10% + decay, clip 1.0"
+reproducibility,-,Random seed,-,value,42
+reproducibility,-,Hardware,-,value,"CPU Intel64 Family 6 Model 126 Stepping 5, GenuineIntel, 8 threads, không GPU"
+reproducibility,-,torch,-,value,2.13.0+cpu
