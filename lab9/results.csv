@@ -1,0 +1,148 @@
+experiment,model,setting,split,metric,value
+training,Transformer,epoch=1,validation,train_loss,0.2741444697243418
+training,Transformer,epoch=1,validation,val_entity_P,0.9050410316529894
+training,Transformer,epoch=1,validation,val_entity_R,0.9094580949175362
+training,Transformer,epoch=1,validation,val_entity_F1,0.9072441870225803
+training,Transformer,epoch=1,validation,epoch_time_s,780.2562616
+training,Transformer,epoch=2,validation,train_loss,0.03341853786221419
+training,Transformer,epoch=2,validation,val_entity_P,0.9253931080628973
+training,Transformer,epoch=2,validation,val_entity_R,0.9309996634129922
+training,Transformer,epoch=2,validation,val_entity_F1,0.9281879194630873
+training,Transformer,epoch=2,validation,epoch_time_s,664.4268772
+training,Transformer,epoch=3,validation,train_loss,0.014120309698744917
+training,Transformer,epoch=3,validation,val_entity_P,0.9312010661335999
+training,Transformer,epoch=3,validation,val_entity_R,0.9407606866374958
+training,Transformer,epoch=3,validation,val_entity_F1,0.9359564671410633
+training,Transformer,epoch=3,validation,epoch_time_s,820.3414669000003
+exp2_baseline_vs_transformer,Baseline,entity-level,test,precision,0.753144390407513
+exp2_baseline_vs_transformer,Baseline,entity-level,test,recall,0.7951487252124646
+exp2_baseline_vs_transformer,Baseline,entity-level,test,f1,0.7735767806390491
+exp2_baseline_vs_transformer,Baseline,entity-level,test,tp,4491
+exp2_baseline_vs_transformer,Baseline,entity-level,test,fp,1472
+exp2_baseline_vs_transformer,Baseline,entity-level,test,fn,1157
+exp2_baseline_vs_transformer,Baseline,-,test,train_time_s,121.04178569999976
+exp2_baseline_vs_transformer,Baseline,-,test,infer_time_s,1.9498438999999053
+exp2_baseline_vs_transformer,Baseline,-,test,params,1930185
+exp2_baseline_vs_transformer,Transformer,entity-level,test,precision,0.8852828878861506
+exp2_baseline_vs_transformer,Transformer,entity-level,test,recall,0.9031515580736544
+exp2_baseline_vs_transformer,Transformer,entity-level,test,f1,0.8941279579316389
+exp2_baseline_vs_transformer,Transformer,entity-level,test,tp,5101
+exp2_baseline_vs_transformer,Transformer,entity-level,test,fp,661
+exp2_baseline_vs_transformer,Transformer,entity-level,test,fn,547
+exp2_baseline_vs_transformer,Transformer,-,test,train_time_s,2401.2604961
+exp2_baseline_vs_transformer,Transformer,-,test,infer_time_s,49.82131130000016
+exp2_baseline_vs_transformer,Transformer,-,test,params,65197833
+exp3_token_vs_entity,Baseline,token-level,test,accuracy,0.9614514913319694
+exp3_token_vs_entity,Baseline,token-level,test,precision,0.8263131813676908
+exp3_token_vs_entity,Baseline,token-level,test,recall,0.8222386587771203
+exp3_token_vs_entity,Baseline,token-level,test,f1,0.824270884824518
+exp3_token_vs_entity,Transformer,token-level,test,accuracy,0.9788521589318402
+exp3_token_vs_entity,Transformer,token-level,test,precision,0.9028973208873803
+exp3_token_vs_entity,Transformer,token-level,test,recall,0.9181459566074951
+exp3_token_vs_entity,Transformer,token-level,test,f1,0.9104577959782408
+exp4_entity_type,Baseline,PER,test,precision,0.7695356738391846
+exp4_entity_type,Baseline,PER,test,recall,0.8404452690166976
+exp4_entity_type,Baseline,PER,test,f1,0.803428909252143
+exp4_entity_type,Baseline,ORG,test,precision,0.6583000570450656
+exp4_entity_type,Baseline,ORG,test,recall,0.6947621914509332
+exp4_entity_type,Baseline,ORG,test,f1,0.6760398359695371
+exp4_entity_type,Baseline,LOC,test,precision,0.8310265282583622
+exp4_entity_type,Baseline,LOC,test,recall,0.8639088729016786
+exp4_entity_type,Baseline,LOC,test,f1,0.847148736037625
+exp4_entity_type,Baseline,MISC,test,precision,0.7563380281690141
+exp4_entity_type,Baseline,MISC,test,recall,0.7649572649572649
+exp4_entity_type,Baseline,MISC,test,f1,0.7606232294617563
+exp4_entity_type,Transformer,PER,test,precision,0.9527950310559006
+exp4_entity_type,Transformer,PER,test,recall,0.9486703772418058
+exp4_entity_type,Transformer,PER,test,f1,0.9507282305546948
+exp4_entity_type,Transformer,ORG,test,precision,0.8496844520940906
+exp4_entity_type,Transformer,ORG,test,recall,0.8916315472606864
+exp4_entity_type,Transformer,ORG,test,f1,0.8701527614571093
+exp4_entity_type,Transformer,LOC,test,precision,0.9304029304029304
+exp4_entity_type,Transformer,LOC,test,recall,0.9136690647482014
+exp4_entity_type,Transformer,LOC,test,f1,0.9219600725952813
+exp4_entity_type,Transformer,MISC,test,precision,0.728923476005188
+exp4_entity_type,Transformer,MISC,test,recall,0.8005698005698005
+exp4_entity_type,Transformer,MISC,test,f1,0.7630685675492193
+exp5_entity_length,Baseline,length=1,test,f1,0.7558973022285939
+exp5_entity_length,Baseline,length=2,test,f1,0.8361943555426244
+exp5_entity_length,Baseline,length=3,test,f1,0.6486486486486486
+exp5_entity_length,Baseline,length=4+,test,f1,0.4680851063829787
+exp5_rare_entity,Baseline,train_freq=0 (chưa gặp),test,recall,0.6638461538461539
+exp5_rare_entity,Baseline,train_freq=1-2,test,recall,0.7792207792207793
+exp5_rare_entity,Baseline,train_freq=3-9,test,recall,0.8932160804020101
+exp5_rare_entity,Baseline,train_freq=10+,test,recall,0.9621026894865525
+exp5_subwords,Baseline,subwords=1,test,recall,0.8637545501820073
+exp5_subwords,Baseline,subwords=2-3,test,recall,0.732187973724103
+exp5_subwords,Baseline,subwords=4-5,test,recall,0.7992156862745098
+exp5_subwords,Baseline,subwords=6+,test,recall,0.7685774946921444
+exp5_entity_length,Transformer,length=1,test,f1,0.8904525386313467
+exp5_entity_length,Transformer,length=2,test,f1,0.9081718618365626
+exp5_entity_length,Transformer,length=3,test,f1,0.8535031847133757
+exp5_entity_length,Transformer,length=4+,test,f1,0.8615384615384616
+exp5_rare_entity,Transformer,train_freq=0 (chưa gặp),test,recall,0.8626923076923076
+exp5_rare_entity,Transformer,train_freq=1-2,test,recall,0.8847402597402597
+exp5_rare_entity,Transformer,train_freq=3-9,test,recall,0.9233668341708543
+exp5_rare_entity,Transformer,train_freq=10+,test,recall,0.9645476772616137
+exp5_subwords,Transformer,subwords=1,test,recall,0.9251170046801872
+exp5_subwords,Transformer,subwords=2-3,test,recall,0.8837796867104598
+exp5_subwords,Transformer,subwords=4-5,test,recall,0.908235294117647
+exp5_subwords,Transformer,subwords=6+,test,recall,0.881104033970276
+confusion_matrix,Baseline,O,test,row_recall,0.9909192912872166
+confusion_matrix,Baseline,B-PER,test,row_recall,0.8608534322820037
+confusion_matrix,Baseline,I-PER,test,row_recall,0.9524221453287197
+confusion_matrix,Baseline,B-ORG,test,row_recall,0.741119807344973
+confusion_matrix,Baseline,I-ORG,test,row_recall,0.7353293413173653
+confusion_matrix,Baseline,B-LOC,test,row_recall,0.8788968824940048
+confusion_matrix,Baseline,I-LOC,test,row_recall,0.6848249027237354
+confusion_matrix,Baseline,B-MISC,test,row_recall,0.7834757834757835
+confusion_matrix,Baseline,I-MISC,test,row_recall,0.6481481481481481
+confusion_matrix,Transformer,O,test,row_recall,0.9917021110038358
+confusion_matrix,Transformer,B-PER,test,row_recall,0.9492888064316636
+confusion_matrix,Transformer,I-PER,test,row_recall,0.9870242214532872
+confusion_matrix,Transformer,B-ORG,test,row_recall,0.9048765803732691
+confusion_matrix,Transformer,I-ORG,test,row_recall,0.9233532934131736
+confusion_matrix,Transformer,B-LOC,test,row_recall,0.920263788968825
+confusion_matrix,Transformer,I-LOC,test,row_recall,0.8599221789883269
+confusion_matrix,Transformer,B-MISC,test,row_recall,0.8290598290598291
+confusion_matrix,Transformer,I-MISC,test,row_recall,0.7407407407407407
+context_ambiguous,Baseline,367 occurrences,test,recall,0.7411444141689373
+context_ambiguous,Transformer,367 occurrences,test,recall,0.8583106267029973
+setup,-,Model,-,value,"distilbert/distilbert-base-cased (6 layer, hidden 768, 12 head)"
+setup,-,Tokenizer,-,value,"distilbert/distilbert-base-cased (WordPiece cased, 28,996 token)"
+setup,-,Dataset,-,value,"CoNLL-2003 (lhoestq/conll2003), 9 nhãn BIO"
+setup,-,Train / validation / test,-,value,14041 / 3250 / 3453 câu
+setup,-,Label alignment,-,value,"Strategy A: token đầu của word mang nhãn, subword sau = -100"
+setup,-,Max sequence length,-,value,128
+setup,-,Batch size,-,value,32
+setup,-,Learning rate,-,value,5e-05
+setup,-,Epochs,-,value,3
+setup,-,Optimizer,-,value,"AdamW (weight decay 0.01), linear warmup 10% + decay, clip 1.0, batch gom theo độ dài"
+setup,-,Random seed,-,value,42
+setup,-,Hardware,-,value,"CPU Intel64 Family 6 Model 126 Stepping 5, GenuineIntel, 8 threads, không GPU"
+setup,-,torch,-,value,2.13.0+cpu
+setup,Transformer,best_epoch,validation,value,3
+information_extraction,Transformer,PERSON,30 câu tin tức,precision,0.9411764705882353
+information_extraction,Transformer,PERSON,30 câu tin tức,recall,0.8888888888888888
+information_extraction,Transformer,PERSON,30 câu tin tức,f1,0.9142857142857143
+information_extraction,Transformer,PERSON,30 câu tin tức,tp,16.0
+information_extraction,Transformer,PERSON,30 câu tin tức,fp,1.0
+information_extraction,Transformer,PERSON,30 câu tin tức,fn,2.0
+information_extraction,Transformer,ORGANIZATION,30 câu tin tức,precision,0.9285714285714286
+information_extraction,Transformer,ORGANIZATION,30 câu tin tức,recall,0.9285714285714286
+information_extraction,Transformer,ORGANIZATION,30 câu tin tức,f1,0.9285714285714286
+information_extraction,Transformer,ORGANIZATION,30 câu tin tức,tp,26.0
+information_extraction,Transformer,ORGANIZATION,30 câu tin tức,fp,2.0
+information_extraction,Transformer,ORGANIZATION,30 câu tin tức,fn,2.0
+information_extraction,Transformer,LOCATION,30 câu tin tức,precision,1.0
+information_extraction,Transformer,LOCATION,30 câu tin tức,recall,0.9655172413793104
+information_extraction,Transformer,LOCATION,30 câu tin tức,f1,0.9824561403508771
+information_extraction,Transformer,LOCATION,30 câu tin tức,tp,28.0
+information_extraction,Transformer,LOCATION,30 câu tin tức,fp,0.0
+information_extraction,Transformer,LOCATION,30 câu tin tức,fn,1.0
+information_extraction,Transformer,ALL,30 câu tin tức,precision,0.958904109589041
+information_extraction,Transformer,ALL,30 câu tin tức,recall,0.9333333333333333
+information_extraction,Transformer,ALL,30 câu tin tức,f1,0.9459459459459458
+information_extraction,Transformer,ALL,30 câu tin tức,tp,70.0
+information_extraction,Transformer,ALL,30 câu tin tức,fp,3.0
+information_extraction,Transformer,ALL,30 câu tin tức,fn,5.0

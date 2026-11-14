@@ -1,0 +1,9 @@
+model,type,precision,recall,f1,test support,train entities,% test chưa gặp trong train
+Baseline,PER,0.7695,0.8404,0.8034,1617,6600,85.2814
+Baseline,ORG,0.6583,0.6948,0.676,1661,6321,41.9025
+Baseline,LOC,0.831,0.8639,0.8471,1668,7140,17.8657
+Baseline,MISC,0.7563,0.765,0.7606,702,3438,32.3362
+Transformer,PER,0.9528,0.9487,0.9507,1617,6600,85.2814
+Transformer,ORG,0.8497,0.8916,0.8702,1661,6321,41.9025
+Transformer,LOC,0.9304,0.9137,0.922,1668,7140,17.8657
+Transformer,MISC,0.7289,0.8006,0.7631,702,3438,32.3362
