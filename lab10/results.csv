@@ -1,0 +1,115 @@
+experiment,model,setting,metric,value
+exp3_em_f1,Baseline,test,EM,8.92147587511826
+exp3_em_f1,Baseline,test,F1,22.38642395553828
+exp2_learning_curve,Transformer,epoch=0.25,train_loss,3.1140153758458937
+exp2_learning_curve,Transformer,epoch=0.25,val_loss,1.9715428818415126
+exp2_learning_curve,Transformer,epoch=0.25,val_EM,42.9
+exp2_learning_curve,Transformer,epoch=0.25,val_F1,56.71011873822474
+exp2_learning_curve,Transformer,epoch=0.50,train_loss,1.682512143514005
+exp2_learning_curve,Transformer,epoch=0.50,val_loss,1.5047112391235458
+exp2_learning_curve,Transformer,epoch=0.50,val_EM,53.449999999999996
+exp2_learning_curve,Transformer,epoch=0.50,val_F1,67.9702281700126
+exp2_learning_curve,Transformer,epoch=0.75,train_loss,1.408209378557332
+exp2_learning_curve,Transformer,epoch=0.75,val_loss,1.3712724694788783
+exp2_learning_curve,Transformer,epoch=0.75,val_EM,56.8
+exp2_learning_curve,Transformer,epoch=0.75,val_F1,70.67693021169622
+exp2_learning_curve,Transformer,epoch=1.00,train_loss,1.3156070282853107
+exp2_learning_curve,Transformer,epoch=1.00,val_loss,1.3268777011818278
+exp2_learning_curve,Transformer,epoch=1.00,val_EM,56.95
+exp2_learning_curve,Transformer,epoch=1.00,val_F1,71.06907198047357
+exp2_learning_curve,Transformer,epoch=1.25,train_loss,1.061093195854649
+exp2_learning_curve,Transformer,epoch=1.25,val_loss,1.3222870287229573
+exp2_learning_curve,Transformer,epoch=1.25,val_EM,57.550000000000004
+exp2_learning_curve,Transformer,epoch=1.25,val_F1,71.87336886771837
+exp2_learning_curve,Transformer,epoch=1.50,train_loss,1.0291771524677953
+exp2_learning_curve,Transformer,epoch=1.50,val_loss,1.2812430652527447
+exp2_learning_curve,Transformer,epoch=1.50,val_EM,59.3
+exp2_learning_curve,Transformer,epoch=1.50,val_F1,73.37092907655047
+exp2_learning_curve,Transformer,epoch=1.75,train_loss,1.0209048538299572
+exp2_learning_curve,Transformer,epoch=1.75,val_loss,1.267591277225303
+exp2_learning_curve,Transformer,epoch=1.75,val_EM,59.550000000000004
+exp2_learning_curve,Transformer,epoch=1.75,val_F1,73.5651878690109
+exp2_learning_curve,Transformer,epoch=2.00,train_loss,0.9800726842563764
+exp2_learning_curve,Transformer,epoch=2.00,val_loss,1.2466066357394208
+exp2_learning_curve,Transformer,epoch=2.00,val_EM,60.0
+exp2_learning_curve,Transformer,epoch=2.00,val_F1,73.94312682036079
+exp2_learning_curve,Transformer,-,train_time_s,879.209817103
+exp3_em_f1,Transformer,test,EM,74.63576158940397
+exp3_em_f1,Transformer,test,F1,82.94812785686088
+exp3_em_f1,Transformer,test,infer_time_s,29.861412757999915
+exp3_em_f1,Baseline,EM = 1,% câu hỏi,8.92147587511826
+exp3_em_f1,Baseline,"EM = 0, F1 > 0",% câu hỏi,25.74266792809839
+exp3_em_f1,Baseline,F1 = 0,% câu hỏi,65.33585619678335
+exp3_em_f1,Transformer,EM = 1,% câu hỏi,74.63576158940397
+exp3_em_f1,Transformer,"EM = 0, F1 > 0",% câu hỏi,15.033112582781458
+exp3_em_f1,Transformer,F1 = 0,% câu hỏi,10.331125827814569
+exp4_overlap,Baseline,thấp (≤ 0.4),F1,12.510753125181893
+exp4_overlap,Transformer,thấp (≤ 0.4),F1,75.79971072545804
+exp4_overlap,Baseline,trung bình,F1,22.990046220487375
+exp4_overlap,Transformer,trung bình,F1,84.4152026266884
+exp4_overlap,Baseline,cao (> 0.7),F1,32.36572369494368
+exp4_overlap,Transformer,cao (> 0.7),F1,88.92465275365336
+exp5_answer_length,Baseline,len=1,EM,12.540099154272383
+exp5_answer_length,Baseline,len=1,F1,23.528736786553246
+exp5_answer_length,Transformer,len=1,EM,79.84835228929718
+exp5_answer_length,Transformer,len=1,F1,84.57344061677209
+exp5_answer_length,Baseline,len=2-3,EM,8.284153005464482
+exp5_answer_length,Baseline,len=2-3,F1,22.395616430852954
+exp5_answer_length,Transformer,len=2-3,EM,76.8743169398907
+exp5_answer_length,Transformer,len=2-3,F1,84.24435094279265
+exp5_answer_length,Baseline,len=4-6,EM,7.281553398058252
+exp5_answer_length,Baseline,len=4-6,F1,21.22964363710723
+exp5_answer_length,Transformer,len=4-6,EM,70.08495145631069
+exp5_answer_length,Transformer,len=4-6,F1,82.60346964683674
+exp5_answer_length,Baseline,len=7+,EM,1.5250544662309369
+exp5_answer_length,Baseline,len=7+,F1,20.150397476953756
+exp5_answer_length,Transformer,len=7+,EM,52.17864923747276
+exp5_answer_length,Transformer,len=7+,F1,71.03590417303354
+controlled_context,Transformer,original,EM,79.10000000000001
+controlled_context,Transformer,original,F1,86.62017237316907
+controlled_context,Baseline,original,F1,22.830257967007196
+controlled_context,Transformer,+ irrelevant,EM,78.5
+controlled_context,Transformer,+ irrelevant,F1,86.09000611012355
+controlled_context,Baseline,+ irrelevant,F1,22.830257967007196
+controlled_context,Transformer,+ distractor,EM,21.099999999999998
+controlled_context,Transformer,+ distractor,F1,23.6584667525457
+controlled_context,Baseline,+ distractor,F1,4.797852930523209
+controlled_context,Transformer,reordered,EM,77.10000000000001
+controlled_context,Transformer,reordered,F1,84.66844363520747
+controlled_context,Baseline,reordered,F1,22.684325288574517
+error_analysis,Transformer,wrong span (câu khác),count,712
+error_analysis,Transformer,wrong start,count,665
+error_analysis,Transformer,wrong span (cùng câu),count,615
+error_analysis,Transformer,wrong end,count,578
+error_analysis,Transformer,wrong boundary,count,111
+error_analysis,Transformer,all,wrong_start,2103
+error_analysis,Transformer,all,wrong_end,2016
+exp1_context_length,Transformer,max_length=128,EM,59.92431409649953
+exp1_context_length,Transformer,max_length=128,F1,69.81940150135134
+exp1_context_length,Transformer,max_length=128,train_time_s,138.33519291099992
+exp1_context_length,Transformer,max_length=128,infer_time_s,41.2015394670002
+exp1_context_length,Transformer,max_length=128,GPU peak MB,2451.87744140625
+exp1_context_length,Transformer,max_length=256,EM,53.292336802270576
+exp1_context_length,Transformer,max_length=256,F1,63.69676185867813
+exp1_context_length,Transformer,max_length=256,train_time_s,102.18089875700025
+exp1_context_length,Transformer,max_length=256,infer_time_s,31.134496394000053
+exp1_context_length,Transformer,max_length=256,GPU peak MB,3274.50244140625
+exp1_context_length,Transformer,max_length=384,EM,52.82876064333018
+exp1_context_length,Transformer,max_length=384,F1,63.09617176845447
+exp1_context_length,Transformer,max_length=384,train_time_s,97.41465111900015
+exp1_context_length,Transformer,max_length=384,infer_time_s,29.53207505799992
+exp1_context_length,Transformer,max_length=384,GPU peak MB,4111.23681640625
+document_qa,Transformer,20 câu hỏi,EM,75.0
+document_qa,Transformer,20 câu hỏi,F1,84.09340659340658
+setup,-,Model,value,"distilbert/distilbert-base-cased (6 layer, hidden 768)"
+setup,-,Tokenizer,value,distilbert/distilbert-base-cased (WordPiece cased)
+setup,-,Dataset,value,SQuAD v1.1 (rajpurkar/squad)
+setup,-,Train / validation / test,value,85548 / 2000 / 10570 câu hỏi
+setup,-,Max sequence length / stride,value,384 / 128
+setup,-,Batch size,value,32
+setup,-,Learning rate,value,3e-05
+setup,-,Epochs,value,2
+setup,-,Optimizer,value,"AdamW (weight decay 0.01), linear warmup 10% + decay, clip 1.0"
+setup,-,Random seed,value,42
+setup,-,Hardware,value,"GPU Tesla T4, fp16"
+setup,-,torch,value,2.14.1+cu130
